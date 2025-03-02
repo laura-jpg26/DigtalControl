@@ -138,13 +138,19 @@ $C=\frac{d}{ds}\left[(s&plus;8)^{3}\frac{3}{(s&plus;5)(s&plus;8)^{3}}\right]_{s=
 
 ahora
 
-$\frac{d}{ds}(\frac{3}{s&plus;5})_{s=-8}=\left[\frac{0(s&plus;5)-3(1)}{(s&plus;2)^{2}}\right]_{s=-8}$
+$\frac{d}{ds}(\frac{3}{s&plus;5})_{s=-8}=$ 
+
+$\left[\frac{0(s&plus;5)-3(1)}{(s&plus;2)^{2}}\right]_{s=-8}$
 
 $B=\frac{-3}{9}=\frac{-1}{3}$
 
 $D=\frac{d^{2}}{ds^{2}}=\left[(s&plus;8)^{3}\frac{3}{(s&plus;5)(s&plus;8)^{3}}\right]_{s=-8}$
 
-$D=\frac{d^{2}}{ds^{2}}=\left[(s&plus;8)^{3}\frac{3}{(s&plus;5)(s&plus;8)^{3}}\right]_{s=-8}=[\frac{0(s&plus;5)^{2}&plus;3&plus;(2(s&plus;5))}{(s&plus;5)^{4}}]_{_{s=-8}}$
+$D=\frac{d^{2}}{ds^{2}}=$
+
+$\left[(s&plus;8)^{3}\frac{3}{(s&plus;5)(s&plus;8)^{3}}\right]_{s=-8}=$
+
+$[\frac{0(s&plus;5)^{2}&plus;3&plus;(2(s&plus;5))}{(s&plus;5)^{4}}]{{s=-8}}$
 
 $[=\frac{-18}{81}=\frac{-2}{9}]$
 
@@ -167,16 +173,80 @@ $D=\frac{d^{2}}{dd^{2}}=\left[\frac{2(s&plus;2)-1(25-3)}{(s&plus;2)^{2}}\right]_
 $\left[\frac{(2-2)(s&plus;2)^{2}-2(s&plus;2)(2(s&plus;2))-(25-3)}{(s&plus;2)^{4}}\right]_{s=-10}=\frac{-112}{4096}$
 
 
+## 6. EJERCICIOS EN MATLAB, DESARROLLANDO LA TRANSFORMADA INVERSA:
 
+6.1 Ejercicio 1
 
+Declaramos las variables simbolicas s y t:
 
+syms = s t 
+
+colocamos la funcion a la cual queremos halla su transformada inversa:
+
+$F=\frac{3}{5s&plus;4})$
+
+llamamos la operacion ilaplace de la siguiente manera para que el programa nos de la solucion:
+
+ilaplace(F)
+
+al oprimir enter el programa mostrada la siguiente solucion:
+
+(3*exp(-(4*t)/5))/5
+
+es decir:
+
+$=\frac{3e^{\frac{-4t}{5}}}{5}$
+
+6.2 ejercicio 2
+
+Declaramos las variables simbolicas s y t:
+
+syms = s t 
+
+colocamos la funcion a la cual queremos halla su transformada inversa:
+
+$G=\frac{3}{(S&plus;5)(S&plus;8)^{3}}$
+
+llamamos la operacion ilaplace de la siguiente manera para que el programa nos de la solucion:
+
+ilaplace(F)
+
+al oprimir enter el programa mostrada la siguiente solucion:
+
+exp(-5*t)/9 - exp(-8*t)/9 - (t*exp(-8*t))/3 - (t^2*exp(-8*t))/2
+
+es decir:
+
+$=\frac{e^{-5t}}{9}-\frac{e^{-8t}}{9}-\frac{te^{-8t}}{3}-\frac{t^{2}e^{-8t}}{2}$
+
+## 7. Ejemplos en matlab con raices reales diferentes 
+
+Declaramos las variables simbolicas s y t:
+
+syms = s t 
+
+colocamos la funcion a la cual queremos halla su transformada inversa:
+
+$F=\frac{s&plus;8}{(s&plus;1)(s&plus;2)}$
+
+llamamos la operacion ilaplace de la siguiente manera para que el programa nos de la solucion:
+
+ilaplace(F)
+
+al oprimir enter el programa mostrada la siguiente solucion:
+
+2*exp(-t) - exp(-2*t)
+
+es decir:
+
+$=2e^{-t}-e^{-2t}$
 
 
 
 
 
 ## 8. Conclusiones
-En conclusión, la clase explicó qué son los sistemas dinámicos y cómo se pueden estudiar usando modelos matemáticos y ecuaciones diferenciales. Se diferenciaron los sistemas lineales y no lineales, resaltando la importancia de validar los modelos para que sean precisos. También se repasó la transformada de Laplace y su inversa, herramientas útiles para resolver ecuaciones de manera más sencilla.
+La implementación de la transformada inversa con raíces reales iguales en MATLAB se utiliza para reconstruir señales o sistemas cuando las raíces del polinomio característico son repetidas. Este tipo de transformada es común en sistemas de control y procesamiento de señales donde se manejan ecuaciones diferenciales con raíces múltiples. MATLAB facilita el cálculo de la transformada inversa al ofrecer funciones como residue para descomponer fracciones racionales y simplificar la expresión. Al trabajar con raíces reales iguales, el proceso implica aplicar la forma estándar de la solución, lo que permite obtener la respuesta temporal del sistema. Esto es esencial en la modelización y análisis de sistemas dinámicos y en la resolución de problemas de ingeniería relacionados. 
 
 ## 9. Referencias
 Ejercicio 1: Ejemplo formulado por el estudiante.
