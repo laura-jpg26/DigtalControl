@@ -162,9 +162,98 @@ $\frac{2}{3}=-C+D$
 
 $D=\frac{2}{3}$
 
-
 ## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
+📚 Ejercicio #1
+
+$$ \frac{2x^{2}+4x+22}{x^{2}+2x+10}=\frac{as+b}{x^{2}+2x+10}=6$$
+
+$x=\frac{-b\frac{+}{}\sqrt{b^{2-4ac}}}{2a}=\frac{-2\frac{+}{}\sqrt{4-4(1)(10)}}{2(1)}$
+
+$=\frac{-2\frac{+}{}\sqrt{36}}{2}==\frac{-2\frac{+}{}\sqrt{36i}}{2}=\frac{-2\frac{+}{}6i}{2}=-1\frac{+}{}3i$
+
+$[\frac{(x^{2}+2x+10)(2x^{2}+4x+22)}{(x^{2}+2x+10)}=\frac{(x^{2}+2x+10)As+B}{(x^{2}+2x+10)}]$
+
+$[2x^{2}+4x+22],{s=-1+3j}=[As+B],{s=-1+3j}$
+
+$2(-1+3j)^{2}+4(-1+3j)+22=A(-1+3j)+B$
+
+$2(1+6j+9j^{2})-4+12j+22=-A+3Aj+B$
+
+$2(1+6j+9)-4+12j+22=-A+3Aj+B$
+
+$2-12j-18-4+12j+22=-A+3Aj+B$
+
+$-18+20=-A+3Aj+B$
+
+$2=-A+3Aj+B$
+
+$3Aj=0, A=0$
+
+$2=-A+B\mapsto B=2$
+
+$G(x)=\frac{As+B}{x^{2}+2x+10}\mapsto \frac{2}{x^{2}+2x+10}$
+
+$G(s)=\frac{2}{x^{2}+2x+10}$
+
+📚 Ejercicio #2
+
+$$\frac{x-5}{(x^{2}+2x+5)(x^{2}+6x+10)}=\frac{Ax+B}{(x^{2}+2x+5)}+\frac{Cx+D}{(x^{2}+6x+10)}$$
+
+$x^{2}+2x+5\to \frac{-2\frac{+}{}\sqrt{4-4(1)(5)}}{2}=\frac{-2\frac{+}{}\sqrt{4-20}}{2}$
+
+$\frac{-2\frac{+}{}\sqrt{-16}}{2}\to \frac{-2\frac{+}{}4i}{2}=-1\frac{+}{}2i$
+
+$x^{2}+5x+10\to \frac{-6\frac{+}{}\sqrt{36-4(10)(1)}}{2}=\frac{-6\frac{+}{}\sqrt{-4}}{2}$
+
+$\frac{-6\frac{+}{2i}}{2}\to -13\frac{+}{}i$
+
+$[\frac{(x^{2}+2x+5)(x-5)}{(x^{2}+2x+5)(x^{2}+6x+10)}=\frac{(x^{2}+2x+5)Ax+B}{(x^{2}+2x+5)}+\frac{(x^{2}+2x+5)Cx+D}{(x^{2}+6x+10)}]$
+
+$[\frac{x-5}{x^{2}+6x+10}],x=-1+2j  =[Ax+B],x=-1+2j ,x=-1+2j $
+
+$\frac{(-1+2j)+5}{(-1+2j)^{2}+6(-1+2j)+10}=A(-1+2j)+B$
+
+$\frac{2j+4}{1-4j+4j^{2}-6+12j+10}=-A+2Aj+B$
+
+$\frac{2j+4}{8j+1}=-A+2Aj+B$
+
+$\frac{2j+4}{1+8j}*\frac{1-8j}{1-8j}=\frac{2j+16+4-32j}{1+64}$
+
+$\frac{-30j+20}{65}=\frac{-30}{65}+\frac{20}{65}=-A+2Aj+B$
+
+$2Aj=\frac{-30j}{65}\to 2A=\frac{-30}{65}\to A=\frac{\frac{-30}{65}}{\frac{2}{1}}=\frac{-30}{130}$
+
+$$A=\frac{-3}{13}$$
+
+$\frac{20}{65}=-A+B,\frac{20}{65}=\frac{3}{13}+B$
+
+$B=\frac{20}{65}-\frac{3}{13}=\frac{260-195}{845}=\frac{65}{45}=\frac{5}{65}$
+
+$$B=\frac{1}{13}$$
+
+Multiplicar todo por $(x^{2}+6x+10)$
+
+$[\frac{(x-5)}{(x^{2}+2x+5)}=Cx+D],x=-3+j$
+
+$\frac{((-3+j)-5)}{(-3+j)^{2}+2(-3+j)+5}C(-3+j)+D$
+
+$\frac{-8+j}{9-6j-1-6+2j+5}=-3C+Cj+D$
+
+$\frac{-8+j}{-4j+7}=-3C+Cj+D$
+
+$\frac{-8+j}{7-4j}*\frac{7+4j}{7+4j}=\frac{-56-32j+7j-4}{49+16}$
+
+$\frac{-60-25j}{65}=-3C+Cj+D$
+
+$\frac{-60}{65}-\frac{25j}{65}=-3C+Cj+D$
+
+$Cj=\frac{-25j}{65}, C=\frac{-25}{65}=\frac{-5}{13}$
+
+$-3C+D=\frac{-60}{65},-3(\frac{-5}{13})+D=\frac{-60}{65}$
+
+$\frac{15}{13}+D=\frac{-60}{65},D=\frac{-60}{65}-\frac{15}{13}=\frac{-780-975}{845}=\frac{-1755}{545}=\frac{-135}{65}=\frac{-27}{13}$
+
+$$G(x)=\frac{x(\frac{-3}{13})+\frac{1}{3}}{(x^{2}+2x+5)}+\frac{(\frac{-5}{13})x-\frac{27}{13}}{(x^{2}+6x+10)}$$
 
 
 
