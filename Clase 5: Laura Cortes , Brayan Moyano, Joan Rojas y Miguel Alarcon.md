@@ -258,7 +258,7 @@ $$G(x)=\frac{x(\frac{-3}{13})+\frac{1}{3}}{(x^{2}+2x+5)}+\frac{(\frac{-5}{13})x-
 
 
 ## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
+En la clase se abordaron los métodos para resolver fracciones parciales con raíces reales diferentes e iguales. Se aplicaron estos conceptos a ejercicios específicos, descomponiendo funciones en términos parciales y utilizando derivadas para determinar coeficientes. Además, se explicó la solución resumida cuando aparecen factores cuadráticos en el denominador, empleando números complejos y sistemas de ecuaciones. Estos métodos permiten simplificar expresiones racionales para su análisis y resolución en contextos de sistemas dinámicos y transformadas de Laplace.
 
 ## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+-OpenStax. (s.f.). Cálculo, Volumen 2 (Sección 3.4: Fracciones parciales). Recuperado el [fecha de acceso], de https://openstax.org/books/c%C3%A1lculo-volumen-2/pages/3-4-fracciones-parciales
