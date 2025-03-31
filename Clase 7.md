@@ -93,7 +93,10 @@ $$P_{media}=\frac{W_{realizado}(t_{2}-t_{1})}{(t_{2}-t_{1})}$$
 ## 4. Aplicando a sistemas mecanicos 
 ### 4.1 Resorte
 
-<img src="images/plantilla/resorte.png" alt="SISTEMA ROTACIONAL" width="200">
+<p align="center">
+  <img src="images/plantilla/resorte.png" alt="SISTEMA ROTACIONAL" width="200">
+</p>
+
 
 $ u= \int_{0}^{x}Fdx $ Aplicando ley de hooke ya que hablamos de resortes $u= \int_{0}^{x}Kxdx$ Evaluando la integral teniendo en cuenta K como constante $k[\frac{x^{2}}{2}]_{0}^{x} $ Nos queda que $ u= \frac{1}{2}kx^{2}$
 
