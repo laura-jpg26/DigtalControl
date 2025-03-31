@@ -35,7 +35,7 @@ $T-F_{R}-F_{F}=J\alpha $ donde $\alpha $ es la acelaracion angular
 Y ahora utilizamos nuestras ecuaciones auxiliares para reemplazar y expresar todo en términos de una única variable.
 
 $T(t)-k\theta(t)-b\left ( \frac{d\theta (t)}{dt} \right )= J\left ( \frac{d^{2}\theta (t)}{dt^{2}} \right )$
-##3. TRABAJO Y ENERGIAS
+## 3. TRABAJO Y ENERGIAS
  ### 3.1 Trabajo
   >El trabajo es una medida de la realización de un esfuerzo mediante la aplicación de una fuerza que provoca un desplazamiento.
 
