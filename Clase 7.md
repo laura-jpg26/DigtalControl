@@ -11,7 +11,7 @@ Las leyes que rigen estos tipos de sistemas son:
 
  $F_{R}=k*\varphi$ donde $\varphi$ es un angulo de torsion
 
- $F_{F}=b\left(\frac{d\varphi}{dt}\right)$ donde $\frac{d\varphi}{dt}}\right$ es la velocidad angular
+ $F_{F}=b\left(\frac{d\varphi}{dt}\right)$ donde $(\frac{d\varphi}{dt}\right)\right$ es la velocidad angular
 
  $T=J(\frac{d^{2}\varphi}{dt^{2}})$ donde J es el movimiento de inercia
  
