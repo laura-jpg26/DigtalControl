@@ -43,10 +43,10 @@ $$W=F_{x}[N*m]$$
 
 Donde definimos en trabajo total realizado como $\int_{0}^{x}kxdx=\frac{1}{2}kx$
 
-### 3.2 Energia
+### 3.2 Energia y Potencia
 
- > Es la capacidad de un sistema para realizar trabajo, manifestándose principalmente en dos formas: energía cinética, asociada al movimiento, y energía potencial, relacionada con la posición o configuración de un objeto dentro de un campo de fuerzas.
-
+ > *Energia* Es la capacidad de un sistema para realizar trabajo, manifestándose principalmente en dos formas: energía cinética, asociada al movimiento, y energía potencial, relacionada con la posición o configuración de un objeto dentro de un campo de fuerzas.
+ >*Potencia*  Es la cantidad de trabajo realizado o energía transferida en un determinado período de tiempo. Indica qué tan rápido se realiza un trabajo o se transforma la energía en un sistema y se mide en vatios (W)
  #### 3.2.1 Energia Potencial:
   >La energía potencial es la energía que un objeto tiene debido a su posición o estado, como un resorte comprimido o un objeto elevado sobre el suelo.
  
@@ -75,21 +75,25 @@ $\int_{t1}^{t2}Fvdt$
 nose
 
 $\int_{t1}^{t2}m\dot{v}vdt$
+Dandonos como resultado en sistemas mecanicos:
 
 $\int_{v1}^{v2}mvdv= \frac{1}{2}mv_{2}^{2}-\frac{1}{2}mv_{1}^{2}$
 
+Dandonos como resultado en sistemas rotacionales:
+
+$$\Delta T= \frac{1}{2}J\dot{\theta _{2}^{2}}-\frac{1}{2}J\dot{\theta _{1}^{2}}$$
+#### 3.2.3 Potencia
+Como dijimos anteriormente es la variacion del trabajo respecto al tiempo, quedandonos expresadosde tal forma:
+
+$$P=\frac{dW}{dt}$$
+
+Y expresamos la potencia media como: 
+$$P_{media}=\frac{W_{realizado}(t_{2}-t_{1})}{(t_{2}-t_{1})}$$
+
+## 4. Aplicando a sistemas mecanicos 
 
 
 
-
-
-
-
-
-  
-
- 
- 
 
  
 ## 3. Subsecciones
