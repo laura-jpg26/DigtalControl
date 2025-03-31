@@ -91,6 +91,32 @@ Y expresamos la potencia media como:
 $$P_{media}=\frac{W_{realizado}(t_{2}-t_{1})}{(t_{2}-t_{1})}$$
 
 ## 4. Aplicando a sistemas mecanicos 
+### 4.1 Resorte
+
+![*ENERGIA POTENCIAL EN UN RESORTE*](images/plantilla/
+
+$ u= \int_{0}^{x}Fdx $ Aplicando ley de hooke ya que hablamos de resortes $u= \int_{0}^{x}Kxdx$ Evaluando la integral teniendo en cuenta K como constante $k[\frac{x^{2}}{2}]_{0}^{x} $ Nos queda que $ u= \frac{1}{2}kx^{2}$
+
+Y aplicando lo mismo para EL CAMBIO DE ENERGIA nos da que :
+
+$\Delta u= \int_{x_{1}}^{x_{2}}Fdx = \int_{x_1}^{x_2}Kxdx = K [\frac{x^{2}}{2}]_{x_1}^{x_2}$
+
+$\Delta u= \frac{1}{2}kx_{1}^{2}-\frac{1}{2}kx_{2}^{1}$
+
+*POTENCIA EN UN RESORTE*
+
+Sabemos que la potencia es definida como la variacion del trabajo con respecto al tiempo
+
+$P= \frac{dW}{dt}= \frac{Fdx}{dt}$ 
+
+Sabiendo que $\frac{dx}{dt}=\dot{x}$ Tenemos que $P = F\dot{x}$ Y remplazando con ley de hooke y derivando $P= kx\dot{x}$ 
+
+Retomando que $u= \frac{1}{2}kx^{2}$ Tenemos que:
+
+$u= \frac{1}{2}kx^{2}$ Derivamos $u=\frac{1}{2}2kx\dot{x}= kx\dot{x}= P$
+### 4.2 Masa
+*POTENCIA EN UNA MASA*
+
 
 
 
