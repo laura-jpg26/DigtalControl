@@ -1,4 +1,4 @@
-# ECUACION DIFERENCIAL Y SISTEMAS ROTACIONALES
+# ECUACION DIFERENCIAL, SISTEMAS ROTACIONALES, TRABAJO Y ENERGIA
 Se resuelve  el analisis parra la ecuacion diferencial de la clase anterior y se ve el tema de sistemas rotacionales
 ## 1. ECUACION DIFERENCIAL, SIMULINK  Y OPE 45
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
@@ -8,17 +8,83 @@ Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla es
 >🔑 *Sistema Rotacional:*Al igual que los sistemas mecánicos, que se rigen por principios físicos fundamentales, en este caso también nos encontramos ante un fenómeno físico. Sin embargo, la diferencia radica en la naturaleza del movimiento, ya que en lugar de tratarse de un desplazamiento lineal, ahora estamos frente a un movimiento de tipo angular. Es decir, en lugar de que un cuerpo se traslade en línea recta, experimenta una rotación alrededor de un eje, lo que implica la intervención de magnitudes como el momento de inercia, el torque y la velocidad angular.
 ### 2.1 LEYES
 Las leyes que rigen estos tipos de sistemas son:
+ FUERZA DE TORSION  
 
  $F_{R}=k*\varphi$ donde $\varphi$ es un angulo de torsion
 
+FUERZA DE FRICCION
+
  $F_{F}=b\left(\frac{d\varphi}{dt}\right)$ donde $\frac{d\varphi }{dt}$ es la velocidad angular
+
+ TORQUE
 
  $T=J(\frac{d^{2}\varphi}{dt^{2}})$ donde J es el movimiento de inercia
  
  ### 2.2 ANALISIS
+![SISTEMA ROTACIONAL](images/plantilla/imagen_2025-03-31_122007381.png)
+
+Tomando el sentido de T como positivo,nos queda el planteamiento de la suma de fuerzas de tal manera:
+
+$T-F_{R}-F_{F}=J\alpha $ donde $\alpha $ es la acelaracion angular
+
+ Si la fuerza de torsion no es significativa:
+ 
+ $T-F_{F}=J\alpha$
+
+Y ahora utilizamos nuestras ecuaciones auxiliares para reemplazar y expresar todo en términos de una única variable.
+
+$T(t)-k\theta(t)-b\left ( \frac{d\theta (t)}{dt} \right )= J\left ( \frac{d^{2}\theta (t)}{dt^{2}} \right )$
+##3. TRABAJO Y ENERGIAS
+ ### 3.1 Trabajo
+  >*Trabajo*= El trabajo es una medida de la realización de un esfuerzo mediante la aplicación de una fuerza que provoca un desplazamiento.
+
+$$W=F_{x}[N*m]$$
+
+Donde definimos en trabajo total realizado como $\int_{0}^{x}kxdx= \frac{1}{2}kx$
+### 3.2 Energia
+ >*Energia* = Es la capacidad de un sistema para realizar trabajo, manifestándose principalmente en dos formas: energía cinética, asociada al movimiento, y energía potencial, relacionada con la posición o configuración de un objeto dentro de un campo de fuerzas.
+
+ #### 3.2.1 Energia Potencial:
+  >La energía potencial es la energía que un objeto tiene debido a su posición o estado, como un resorte comprimido o un objeto elevado sobre el suelo.
+ 
+ Se expresa de tal forma:
+
+$$U= \int_{0}^{h}mgdx=mgh$$
+ #### 3.2.2 Energia Cinetica:
+  >La energía cinética es la energía que tiene un objeto debido a su movimiento. Cuanto más rápido se mueve el objeto y mayor sea su masa, más energía cinética posee. Esta energía se libera cuando el objeto se detiene o cambia su velocidad.
+
+Y se expresa de tal forma para sistemas lineales:
+
+$T= \frac{1}{2} mv^{2}$
+
+Y para sistemas rotacionales:
+ $T= \frac{1}{2}J\dot{\theta }^{2}$
+
+Un cambio en la energía cinética de un objeto ocurre cuando una fuerza realiza trabajo sobre él, ya sea acelerándolo o desacelerándolo. Esta fuerza provoca una variación en la velocidad del objeto, lo que resulta en un aumento o disminución de su energía cinética. Este concepto está relacionado con el teorema del trabajo y la energía.
+
+$\Delta T= \Delta W = \int_{x1}^{x2} F dx$ evaluamos en funcion al tiempo :
+
+$\int_{t1}^{t2} F\frac{dx}{dt}dt$ como $\frac{dx}{dt}= v$ reemplazamos:
+
+$\int_{t1}^{t2}Fvdt$
+
+nose
+
+$\int_{v1}^{v2}mvdv= \frac{1}{2}mv_{2}^{2}-\frac{1}{2}mv_{1}^{2}$
+
+
+
+
+
+
+
+
+
+  
+
+ 
  
 
-![SISTEMA ROTACIONAL](images/plantilla/imagen_2025-03-31_122007381.png)
  
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
