@@ -23,7 +23,7 @@ FUERZA DE FRICCION
  
  ### 2.2 ANALISIS
  <p align="center">
-   <img src="images/plantilla/imagen_2025-03-31_122007381.png" alt="SISTEMA ROTACIONAL" width="300" heigh="500">
+   <img src="images/plantilla/imagen_2025-03-31_122007381.png" alt="SISTEMA ROTACIONAL" width="300" height="200">
 </p>
 
 
