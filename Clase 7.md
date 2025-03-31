@@ -4,8 +4,9 @@ Se resuelve  el analisis parra la ecuacion diferencial de la clase anterior y se
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
 ## 2. SISTEMA ROTACIONAL
-Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
->🔑 *Sistema Rotacional:*Al igual que los sistemas mecánicos, que se rigen por principios físicos fundamentales, en este caso también nos encontramos ante un fenómeno físico. Sin embargo, la diferencia radica en la naturaleza del movimiento, ya que en lugar de tratarse de un desplazamiento lineal, ahora estamos frente a un movimiento de tipo angular. Es decir, en lugar de que un cuerpo se traslade en línea recta, experimenta una rotación alrededor de un eje, lo que implica la intervención de magnitudes como el momento de inercia, el torque y la velocidad angular.
+
+>🔑 *Sistema Rotacional:* Al igual que los sistemas mecánicos, que se rigen por principios físicos fundamentales, en este caso también nos encontramos ante un fenómeno físico. Sin embargo, la diferencia radica en la naturaleza del movimiento, ya que en lugar de tratarse de un desplazamiento lineal, ahora estamos frente a un movimiento de tipo angular. Es decir, en lugar de que un cuerpo se traslade en línea recta, experimenta una rotación alrededor de un eje, lo que implica la intervención de magnitudes como el momento de inercia, el torque y la velocidad angular.
+
 ### 2.1 LEYES
 Las leyes que rigen estos tipos de sistemas son:
  FUERZA DE TORSION  
@@ -36,13 +37,15 @@ Y ahora utilizamos nuestras ecuaciones auxiliares para reemplazar y expresar tod
 $T(t)-k\theta(t)-b\left ( \frac{d\theta (t)}{dt} \right )= J\left ( \frac{d^{2}\theta (t)}{dt^{2}} \right )$
 ##3. TRABAJO Y ENERGIAS
  ### 3.1 Trabajo
-  >*Trabajo*= El trabajo es una medida de la realización de un esfuerzo mediante la aplicación de una fuerza que provoca un desplazamiento.
+  >El trabajo es una medida de la realización de un esfuerzo mediante la aplicación de una fuerza que provoca un desplazamiento.
 
 $$W=F_{x}[N*m]$$
 
-Donde definimos en trabajo total realizado como $\int_{0}^{x}kxdx= \frac{1}{2}kx$
+Donde definimos en trabajo total realizado como $\int_{0}^{x}kxdx=\frac{1}{2}kx$
+
 ### 3.2 Energia
- >*Energia* = Es la capacidad de un sistema para realizar trabajo, manifestándose principalmente en dos formas: energía cinética, asociada al movimiento, y energía potencial, relacionada con la posición o configuración de un objeto dentro de un campo de fuerzas.
+
+ > Es la capacidad de un sistema para realizar trabajo, manifestándose principalmente en dos formas: energía cinética, asociada al movimiento, y energía potencial, relacionada con la posición o configuración de un objeto dentro de un campo de fuerzas.
 
  #### 3.2.1 Energia Potencial:
   >La energía potencial es la energía que un objeto tiene debido a su posición o estado, como un resorte comprimido o un objeto elevado sobre el suelo.
@@ -50,6 +53,7 @@ Donde definimos en trabajo total realizado como $\int_{0}^{x}kxdx= \frac{1}{2}kx
  Se expresa de tal forma:
 
 $$U= \int_{0}^{h}mgdx=mgh$$
+
  #### 3.2.2 Energia Cinetica:
   >La energía cinética es la energía que tiene un objeto debido a su movimiento. Cuanto más rápido se mueve el objeto y mayor sea su masa, más energía cinética posee. Esta energía se libera cuando el objeto se detiene o cambia su velocidad.
 
@@ -69,6 +73,8 @@ $\int_{t1}^{t2} F\frac{dx}{dt}dt$ como $\frac{dx}{dt}= v$ reemplazamos:
 $\int_{t1}^{t2}Fvdt$
 
 nose
+
+$\int_{t1}^{t2}m\dot{v}vdt$
 
 $\int_{v1}^{v2}mvdv= \frac{1}{2}mv_{2}^{2}-\frac{1}{2}mv_{1}^{2}$
 
