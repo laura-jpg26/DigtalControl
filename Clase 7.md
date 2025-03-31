@@ -22,7 +22,13 @@ FUERZA DE FRICCION
  $T=J(\frac{d^{2}\varphi}{dt^{2}})$ donde J es el movimiento de inercia
  
  ### 2.2 ANALISIS
-![SISTEMA ROTACIONAL](images/plantilla/imagen_2025-03-31_122007381.png)
+ <p align="center">
+   <img src="images/plantilla/imagen_2025-03-31_122007381.png" alt="SISTEMA ROTACIONAL" width="200">
+  
+</p>
+  ![SISTEMA ROTACIONAL](images/plantilla/imagen_2025-03-31_122007381.png)
+
+
 
 Tomando el sentido de T como positivo,nos queda el planteamiento de la suma de fuerzas de tal manera:
 
