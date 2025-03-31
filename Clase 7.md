@@ -17,6 +17,7 @@ Las leyes que rigen estos tipos de sistemas son:
  ###2.2 ANALISIS
  
 
+![SISTEMA ROTACIONAL](images/plantilla/imagen_2025-03-31_122007381.png)
  
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
