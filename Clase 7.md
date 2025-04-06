@@ -159,9 +159,20 @@ $b\int_{t1}^{t2}\dot{x}\frac{dx}{dt}dt= b\int_{t1}^{t2}\dot{x^{2}}dt$
 
  Teniendo en cuenta que $F=b\dot{x}$ decimos que $P=b\dot{x}$
 
+## 5. SISTEMAS CONSERVATIVOS
+>Un sistema conservativo es aquel en el que la energía total (como la suma de energía cinética y potencial) se mantiene constante a lo largo del tiempo, ya que no hay pérdida de energía por efectos como la fricción o el rozamiento.
 
+Sabemos que toda la energía (cinética y potencial) sale del sistema en forma de trabajo mecánico:
 
- 
+$\Delta (T+u)=\Delta w$
+
+Si no entra energía externa al sistema, entonces la suma de la energía cinética (T) y la energía potencial (U) se mantiene constante.
+
+ $\Delta (T+u)= 0$
+
+ EJEMPLO:
+ ![Imagen de WhatsApp 2025-04-06 a las 13 58 24_f159af83](https://github.com/user-attachments/assets/fe84cbfa-5ed9-44cd-8a07-f2ccc5114811)
+
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
