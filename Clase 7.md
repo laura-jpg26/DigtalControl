@@ -171,7 +171,7 @@ Si no entra energía externa al sistema, entonces la suma de la energía cinéti
  $\Delta (T+u)= 0$
 
  EJEMPLO:
- ![Imagen de WhatsApp 2025-04-06 a las 13 58 24_f159af83](https://github.com/user-attachments/assets/fe84cbfa-5ed9-44cd-8a07-f2ccc5114811)
+
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
