@@ -101,12 +101,15 @@ $$P_{media}=\frac{W_{realizado}(t_{2}-t_{1})}{(t_{2}-t_{1})}$$
   <img src="images/plantilla/resorte.png" alt="SISTEMA ROTACIONAL" width="200">
 </p>
 
+Tenemos  que
 
-$u= \int_{0}^{x}Fdx$ Aplicando ley de hooke ya que hablamos de resortes $u= \int_{0}^{x}Kxdx$ 
+$$u= \int_{0}^{x}Fdx$$
+
+Aplicando ley de hooke ya que hablamos de resortes $u= \int_{0}^{x}Kxdx$ 
 
 Evaluando la integral teniendo en cuenta K como constante $k[\frac{x^{2}}{2}]_{0}^{x}$
 
-Nos queda que $ u= \frac{1}{2}kx^{2}$
+Nos queda que $u= \frac{1}{2}kx^{2}$
 
 Y aplicando lo mismo para EL CAMBIO DE ENERGIA nos da que :
 
