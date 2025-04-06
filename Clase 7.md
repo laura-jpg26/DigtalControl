@@ -99,7 +99,7 @@ $$P_{media}=\frac{W_{realizado}(t_{2}-t_{1})}{(t_{2}-t_{1})}$$
 ### 4.1 Resorte
 
 <p align="center">
-  <img src="images/plantilla/resorte.png" alt="SISTEMA ROTACIONAL" width="200">
+  <img src="images/plantilla/resorte.png" alt=RESORTE" width="200">
 </p>
 
 Tenemos  que
@@ -171,7 +171,9 @@ Si no entra energía externa al sistema, entonces la suma de la energía cinéti
  $\Delta (T+u)= 0$
 
  EJEMPLO:
-
+ <p align="center">
+   <img src="images/plantilla/EJEMPLO.jpg" alt="SISTEMA" width="500" height="200">
+</p>
 
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
