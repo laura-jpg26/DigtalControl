@@ -131,7 +131,7 @@ $$ P=m\ddot{x}\dot{x}$$
 Considerando que $T= \frac{1}{2}mv^{2}$ representa la energía cinética de la masa, obtenemos que:
 
 $$P=m\ddot{x}\dot{x}-m\dot{v}v=\dot{T}$$
-
+### 4.3 Amortiguador
 *ENERGIA DISIPADA*
 
 La energía que se pierde en un amortiguador equivale al trabajo neto efectuado sobre él:
@@ -143,7 +143,13 @@ Respecto al tiempo tenemos que(por $\frac{dt}{dt}$)
 $b\int_{t1}^{t2}\dot{x}\frac{dx}{dt}dt= b\int_{t1}^{t2}\dot{x^{2}}dt$
 
 *no importa el signo de la velocidad* ($\dot{x}$)
+ *POTENCIA DISIPADA*
 
+ La potencia que se disipa debido a las fuerzas de amortiguamiento en el cilindro corresponde a:
+
+ $$P= \frac{dw}{dt}= F\frac{dx}{dt}= F\dot{x}$$
+
+ Teniendo en cuenta que $F=b\dot{x}$ decimos que $P=b\dot{x}$
 
 
 
