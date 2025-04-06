@@ -142,7 +142,7 @@ Respecto al tiempo tenemos que(por $\frac{dt}{dt}$)
 
 $b\int_{t1}^{t2}\dot{x}\frac{dx}{dt}dt= b\int_{t1}^{t2}\dot{x^{2}}dt$
 
-*no importa el signo de la velocidad* ($\dot{x]$)
+*no importa el signo de la velocidad* ($\dot{x}$)
 
 
 
