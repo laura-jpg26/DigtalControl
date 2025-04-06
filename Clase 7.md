@@ -175,6 +175,27 @@ Si no entra energía externa al sistema, entonces la suma de la energía cinéti
    <img src="images/plantilla/EJEMPLO.jpg" alt="SISTEMA" width="500" height="200">
 </p>
 
+Ya que trabajamos con sistemas conservativos, decimos que si no hay fricción, la disipación de energía se desprecia.
+
+Siendo el planteamiento de ecuaciones de tal forma:
+
+$$T+u= \frac{1}{2}m\dot{x^{2}}+\frac{1}{2}kx^{2}= CONSTANTE$$
+
+AL momento de derivar nos da que:
+ $$\frac{d}{dt}(T+u)= m\dot{x}\ddot{x}+k\dot{x}x$$
+
+Como es conservativo $\Delta (T+u)= 0$
+
+$0= m\dot{x}\ddot{x}+k\dot{x}x$
+
+Y factorizamos $\dot{x}$
+
+$(m\ddot{x}+kx)\dot{x}=0$
+
+Para mantener el sistema conservativo alguno de los terminos ya sea ($(m\ddot{x}+kx)$) o ($\dot{x}$) tienen que ser 0, asi que por facilidad decimos que :
+
+$$m\ddot{x}+kx=0$$
+
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
