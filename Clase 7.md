@@ -18,6 +18,7 @@ FUERZA DE FRICCION
  $F_{F}=b\left(\frac{d\varphi}{dt}\right)$ donde $\frac{d\varphi }{dt}$ es la velocidad angular
 
  TORQUE
+ >Es una medida de la fuerza que hace girar un objeto alrededor de un eje o punto. Se calcula multiplicando la fuerza aplicada por la distancia al eje de giro.
 
  $T=J(\frac{d^{2}\varphi}{dt^{2}})$ donde J es el movimiento de inercia
  
