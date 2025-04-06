@@ -124,6 +124,25 @@ $u= \frac{1}{2}kx^{2}$ Derivamos $u=\frac{1}{2}2kx\dot{x}= kx\dot{x}= P$
 ### 4.2 Masa
 *POTENCIA EN UNA MASA*
 
+La cantidad de potencia necesaria para acelerar una masa en movimiento rectilíneo es equivalente a:
+
+$$ P=m\ddot{x}\dot{x}$$
+
+Considerando que $T= \frac{1}{2}mv^{2}$ representa la energía cinética de la masa, obtenemos que:
+
+$$P=m\ddot{x}\dot{x}-m\dot{v}v=\dot{T}$$
+
+*ENERGIA DISIPADA*
+
+La energía que se pierde en un amortiguador equivale al trabajo neto efectuado sobre él:
+
+$\Delta w= \int_{x1}^{x2}Fdx= \int_{x1}^{x2}b\dot{x}dx$
+
+Respecto al tiempo tenemos que(por $\frac{dt}{dt}$)
+
+b\int_{t1}^{t2}\dot{x}\frac{dx}{dt}dt= b\int_{t1}^{t2}\dot{x^{2}}dt
+
+*no importa el signo de la velocidad ($\dot{x]$)*
 
 
 
