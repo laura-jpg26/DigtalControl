@@ -190,7 +190,7 @@ $m_{1}\ddot{x}{1}=-k{1}x_{1}-k_{2}(x_{1}-x_{2})-c(\dot{x}{1}-\dot{x}{2})$
 
 Para m2:
 
-$m_{2}\ddot{x}_{2}=-k_{2}(x_{2}-x_{1})-c(\hat{x}_{2}-\dot{x}_{1})$
+$m_{2}$$\ddot{x}_{2}$$=-k_{2}(x_{2}-x_{1})$$-c(\hat{x}_{2}-\dot{x}_{1})$
 
 Ahora en simulink
 
