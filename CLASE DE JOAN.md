@@ -87,7 +87,7 @@
  
  ## 3 . EJERCICIOS PROPUESTOS
  
- EJERCCIo 1
+ EJERCCIO 1
  
  $y′′+4y=sin(2t),           y(0)=0,          y′(0)=14$
  
