@@ -1,0 +1,109 @@
+
+# 🧪 Procedimiento de Laboratorio: Interfaz de Hardware Virtual  
+**Curso de Robótica**  
+**Uso de Qube-Servo 3 y Simulink con QUARC**
+
+---
+
+## Introducción
+
+1. Asegúrate de tener **Quanser Interactive Labs** abierto en:  
+   **Qube 3 - DC Motor → Servo Workspace**.
+2. Inicia **MATLAB** y navega al directorio de trabajo que contiene los modelos **Simulink** para este laboratorio.
+
+> En este laboratorio, crearemos un modelo Simulink utilizando bloques **QUARC** para controlar el motor de corriente continua y medir el ángulo correspondiente.
+
+![Simulink Model con QUARC](#)
+*Figura 1: Modelo Simulink para controlar el motor y leer el ángulo en el Qube-Servo 3*
+
+---
+
+## Configuración del Modelo
+
+1. Abre **MATLAB** y abre el archivo `qs3_interfacing.slx` para iniciar Simulink.
+2. Abre la ventana del **Simulink Library Browser** haciendo clic en el icono correspondiente.
+
+![QUARC Targets](#)
+*Figura 2: Objetivos QUARC en Simulink Library Browser*
+
+3. Expande:  
+   `QUARC Targets → Data Acquisition → Generic → Configuration`
+4. Arrastra el bloque `HIL Initialize` al modelo Simulink.
+5. Haz doble clic en el bloque `HIL Initialize` para configurarlo.
+6. Configura en la pestaña **Main**:
+   - **Board type**: `qube_servo3_usb`
+   - Haz clic en **Defaults** para aplicar las opciones por defecto.
+   - **Board identifier**: `0@tcpip://localhost:18922`  
+     *(Para usar el Qube-Servo 3 virtual con disco)*
+   - Marca la opción **Active during normal simulation**
+   - Haz clic en **OK**
+
+7. Verifica que el disco del Qube-Servo 3 esté abierto en **Quanser Interactive Labs**.
+
+---
+
+## Ejecutar el Modelo
+
+8. Ejecuta el controlador QUARC con el botón **Run** de la pestaña **Simulation**.
+
+![Run Simulation](#)
+*Figura 3: Botón "Run" en la pestaña Simulation*
+
+9. Si no hay errores, la tira LED del Qube-Servo 3 se pondrá **verde**.
+10. El botón "Run" ahora será un botón "Stop". Haz clic en él para detener el modelo.
+
+---
+
+## Conduciendo el Motor DC
+
+11. Añade el bloque `HIL Read Encoder Timebase` desde:  
+    `QUARC Targets → Data Acquisition → Generic → Timebases`
+12. Arrástralo al modelo.
+13. Haz doble clic y configura:
+    - **Main tab**: Marca **Active during normal simulation**
+    - **Advanced tab**: Establece **Buffer overflow mode** en `Synchronize`
+14. Conecta el bloque como en la Figura 1 *(sin el bloque HIL Write Analog todavía)*.
+15. Añade `HIL Write Analog` desde:  
+    `QUARC Targets → Data Acquisition → Generic → Immediate I/O`
+16. Configúralo:
+    - **Main tab**: Marca **Active during normal simulation**
+17. Conecta el bloque `Constant` con `HIL Write Analog`, como se muestra en la Figura 1.
+
+> 💡 **Stall Detection**: Monitorea el voltaje y la velocidad del motor. Si permanece inmóvil por más de 20 segundos con voltaje mayor a ±5V, la simulación se detiene para prevenir sobrecalentamiento.
+
+![Stall Detection](#)
+*Figura 4: Subsistema de detección de bloqueo (Stall)*
+
+18. Ejecuta el controlador QUARC nuevamente.
+19. Establece el bloque `Constant` a `0.5` para aplicar 0.5V al motor.  
+    Observa la dirección de rotación del disco y verifica la medición del encoder.
+
+---
+
+## Lectura del Encoder
+
+20. Establece el tiempo de parada (`Stop Time`) en `5 segundos`.
+21. Usa el `Manual Switch` para cambiar el bloque de entrada a un `Pulse Generator` con:
+    - Amplitud: `0.15`
+    - Periodo: `10 s`
+    - Ancho de pulso: `20%`
+22. Ejecuta el controlador nuevamente. Se aplicará 0.15V por 2 segundos.
+23. Observa cuántas vueltas da la rueda de inercia.  
+    El bloque `Display` muestra los **conteos del encoder** (proporcionales al ángulo del disco).
+
+> 📷 Usa la vista superior (Top View) en Quanser Interactive Labs para ver las revoluciones.
+
+24. Compara el número de conteos del encoder con las vueltas observadas.
+25. Revisa cómo el encoder se reinicia al relanzar la simulación.  
+    Registra tus observaciones.
+26. Determina cuántos conteos produce el encoder por **una vuelta completa**. Regístralo.
+27. Ajusta el bloque `Gain` para convertir conteos a **grados** (ganancia del sensor).
+28. Ejecuta la simulación y verifica que el ángulo mostrado en `Display` sea correcto.  
+    Registra el valor de ganancia utilizado.
+
+29. Puedes volver a usar el bloque `Constant` con un valor de 0.15V para experimentar.
+30. Detén el modelo haciendo clic en el botón **Stop**.  
+    La tira LED volverá a ponerse **roja**.
+31. Cierra **Quanser Interactive Labs**.
+
+---
