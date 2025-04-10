@@ -1,7 +1,7 @@
 
 # 🧪 Guía para uso de gemelos digitales de Quanser 
 
-**Uso de Qube-Servo 3 y Simulink con QUARC**
+**Uso de Qube-Servo 2 y Simulink con QUARC**
 
 ---
 
@@ -18,7 +18,7 @@
 > En este laboratorio, crearemos un modelo Simulink básico utilizando bloques **QUARC** para manejar el motor de corriente continua y medir el ángulo correspondiente.
 
 ![Simulink Model con QUARC](#)
-*Figura 1: Modelo Simulink para controlar el motor y leer el ángulo en el Qube-Servo 3*
+*Figura 1: Modelo Simulink para controlar el motor y leer el ángulo en el Qube-Servo 2*
 
 ---
 
@@ -27,22 +27,22 @@
 1. Abre **MATLAB** y abre un modelo en blanco para iniciar en Simulink.
 2. Abre la ventana del **Simulink Library Browser** haciendo clic en el icono correspondiente.
 
-![QUARC Targets](#)
-*Figura 2: Objetivos QUARC en Simulink Library Browser*
+![QUARC componentes](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/componentes%20quanser.png)
+*Figura 2: Componentes QUARC en Simulink Library Browser*
 
 3. Expande:  
    `QUARC Targets → Data Acquisition → Generic → Configuration`
 4. Arrastra el bloque `HIL Initialize` al modelo Simulink.
 5. Haz doble clic en el bloque `HIL Initialize` para configurarlo.
 6. Configura en la pestaña **Main**:
-   - **Board type**: `qube_servo3_usb`
+   - **Board type**: `qube_servo2_usb`
    - Haz clic en **Defaults** para aplicar las opciones por defecto.
-   - **Board identifier**: `0@tcpip://localhost:18922`  
-     *(Para usar el Qube-Servo 3 virtual con disco)*
+   - **Board identifier**: `0@tcpip://localhost:18920`  
+     *(Para usar el Qube-Servo 2 virtual con disco)*
    - Marca la opción **Active during normal simulation**
    - Haz clic en **OK**
 
-7. Verifica que el disco del Qube-Servo 3 esté abierto en **Quanser Interactive Labs**.
+7. Verifica que el disco del Qube-Servo 2 esté abierto en **Quanser Interactive Labs**.
 
 ---
 
@@ -50,15 +50,15 @@
 
 8. Ejecuta el controlador QUARC con el botón **Run** de la pestaña **Simulation**.
 
-![Run Simulation](#)
+![Run Simulation](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/boton%20run.png)
 *Figura 3: Botón "Run" en la pestaña Simulation*
 
-9. Si no hay errores, la tira LED del Qube-Servo 3 se pondrá **verde**.
+9. Si no hay errores, la tira LED del Qube-Servo 2 se pondrá **verde**.
 10. El botón "Run" ahora será un botón "Stop". Haz clic en él para detener el modelo.
 
 ---
 
-## Conduciendo el Motor DC
+## Acelerando el Motor DC
 
 11. Añade el bloque `HIL Read Encoder Timebase` desde:  
     `QUARC Targets → Data Acquisition → Generic → Timebases`
@@ -75,7 +75,7 @@
 
 > 💡 **Stall Detection**: Monitorea el voltaje y la velocidad del motor. Si permanece inmóvil por más de 20 segundos con voltaje mayor a ±5V, la simulación se detiene para prevenir sobrecalentamiento.
 
-![Stall Detection](#)
+![Stall Detection](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/stall%20torque%20detector.png)
 *Figura 4: Subsistema de detección de bloqueo (Stall)*
 
 18. Ejecuta el controlador QUARC nuevamente.
