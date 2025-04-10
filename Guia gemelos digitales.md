@@ -1,16 +1,15 @@
 
-# 🧪 Procedimiento de Laboratorio: Interfaz de Hardware Virtual  
-**Curso de Robótica**  
+# 🧪 Guía para uso de gemelos digitales de Quanser 
+
 **Uso de Qube-Servo 3 y Simulink con QUARC**
 
 ---
 
 ## Introducción
 
-1. Asegúrate de tener **Quanser Interactive Labs** abierto en:  
-   **Qube 3 - DC Motor → Servo Workspace**.
-2. Inicia **MATLAB** y navega al directorio de trabajo que contiene los modelos **Simulink** para este laboratorio.
-
+1.  Registrarse en https://portal.quanser.com/Accounts/Login?returnUrl=/ utilizando su correo institucional
+2.	Abrir Matlab, descargar e instalar el complemento Quanser interactive Labs for Matlab
+![Complemento QUARC matlab]([images/plantilla/Quanser interactive labs.png](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/Quanser%20interactive%20labs.png))
 > En este laboratorio, crearemos un modelo Simulink utilizando bloques **QUARC** para controlar el motor de corriente continua y medir el ángulo correspondiente.
 
 ![Simulink Model con QUARC](#)
