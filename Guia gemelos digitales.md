@@ -31,7 +31,7 @@
  
 *Figura 3: Gemelos digitales disponibles para universidad ECCI*
 
-4. Pulsar en el motor DC Qube 2 y se brirá otra ventana emergente como la siguiente:
+4. Pulsar en el motor DC Qube 2 y se abrirá otra ventana emergente como la siguiente:
 
 ![interfaz qube servo](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/interfaz%20qube%20servo.PNG)
 
