@@ -9,8 +9,13 @@
 
 1.  Registrarse en https://portal.quanser.com/Accounts/Login?returnUrl=/ utilizando su correo institucional
 2.	Abrir Matlab, descargar e instalar el complemento Quanser interactive Labs for Matlab
-![Complemento QUARC matlab]([images/plantilla/Quanser interactive labs.png](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/Quanser%20interactive%20labs.png))
-> En este laboratorio, crearemos un modelo Simulink utilizando bloques **QUARC** para controlar el motor de corriente continua y medir el ángulo correspondiente.
+   
+![Complemento QUARC matlab](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/Quanser%20interactive%20labs.png)
+
+*Figura 1: Complemento Quanser interactive labs para gemelos digitales*
+
+
+> En este laboratorio, crearemos un modelo Simulink básico utilizando bloques **QUARC** para manejar el motor de corriente continua y medir el ángulo correspondiente.
 
 ![Simulink Model con QUARC](#)
 *Figura 1: Modelo Simulink para controlar el motor y leer el ángulo en el Qube-Servo 3*
@@ -19,7 +24,7 @@
 
 ## Configuración del Modelo
 
-1. Abre **MATLAB** y abre el archivo `qs3_interfacing.slx` para iniciar Simulink.
+1. Abre **MATLAB** y abre un modelo en blanco para iniciar en Simulink.
 2. Abre la ventana del **Simulink Library Browser** haciendo clic en el icono correspondiente.
 
 ![QUARC Targets](#)
