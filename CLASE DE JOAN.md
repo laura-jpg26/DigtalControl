@@ -2,7 +2,7 @@
 > Una solución de una ecuación diferencial es una función f definida en un intervalo S que tiene al menos N derivadas continuas en S y que al sustituirlas en la ecuación diferencial ordinaria de N-ésimo orden reducen la ecuación a la identidad.
  ## 1. METODOLOGIA Y SOLUCION 
  Se aplica la Transformada de la place a toda la ecuación una a una de tal manera que se desarrolle o obtenga una ecuación algebratica en el dominio de S. Se despeja la variable que representa la salida de la ecuación (después del =), se aplica la transformada inversa de la place a la expresión obtenida para hacer la solucion en el dominio del tiempo (ΔT).
- 
+ .
  $L{{f}\'(t)}=SF(s)-f(0)$
  
  ## 2. EJERCICIOS DE CLASE
