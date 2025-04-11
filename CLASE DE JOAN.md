@@ -81,7 +81,7 @@
  
  $X(s)=\frac{3/5}{s}-\frac{3/5s-6/5}{s^{2}+2s+5-4+4}$
  
- $\frac{s}{5}\left ( \frac{s+2}{(s+1)^{2}+4} \right )\frac{3}{5}\left ( \frac{s+1}{(s+1)^{2}+4}+\left ( \frac{1}{(s+1)+4} \right )$
+ $\frac{s}{5}\left ( \frac{s+2}{(s+1)^{2}+4} \right )\frac{3}{5}( \frac{s+1}{(s+1)^{2}+4})+\left ( \frac{1}{(s+1)+4} \right )$
  
  $L^{-1}{X(s)}=\frac{3}{5}-\frac{3}{5}e^{-t}cos(2t)-\frac{3}{10}e^{-t}sen(2t)$
  
