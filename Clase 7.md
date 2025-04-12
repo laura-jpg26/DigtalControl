@@ -167,10 +167,11 @@ $x_2(t) = 50 + 100e^{-t}\cos(3t) + 133.33e^{-t}\sin(3t)$
  <p align="center">
    <img src="images/plantilla/imagen_2025-04-12_165408030.png" alt="SITEMA DE BLOQUES" width="600" height="400">
 </p>
- <p >
-   <img src="images/plantilla/X1.png" alt="SITEMA DE BLOQUES" alt="x1" width="600" height="400">
-   <img src="images/plantilla/X2.png" alt="SITEMA DE BLOQUES"alt="x2" width="600" height="400">
-</p>
+ <div align="center" style="display: flex; justify-content: center; gap: 20px;">
+  <img src="images/plantilla/X1.png" alt="x1" width="600" height="400">
+  <img src="images/plantilla/X2.png" alt="x2" width="600" height="400">
+</div>
+
 
 
 
