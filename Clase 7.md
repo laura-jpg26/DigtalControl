@@ -3,97 +3,118 @@ Se resuelve  el analisis parra la ecuacion diferencial de la clase anterior y se
 ## 1. ECUACION DIFERENCIAL, SIMULINK  Y OPE 45
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
+Perfecto, amor. Aquí te dejo el proceso completo y detallado para resolver el sistema de ecuaciones que me diste:
 
 
+---
 
-1. $$0.3x_1 + x_2(5s^2 - 0.3) = \frac{550}{s}$$
+Sistema original en dominio de Laplace:
 
-
-2. $$x_1(10s^2 + 0.1s - 0.1) + 0.3x_2 = \frac{98}{s}$$
-
-
-
-Paso 1: Despejar  de la primera ecuación
-
-De la ecuación (1):
-
-0.3x_1 + x_2(5s^2 - 0.3) = \frac{550}{s}
-
-Despejamos :
-
-x_1 = \frac{1}{0.3} \left( \frac{550}{s} - x_2(5s^2 - 0.3) \right)
+$0.3x_1 + x_2[5s^2 - 0.3] = \dfrac{550}{s}$
+$x_1[10s^2 + 0.1s - 0.1] + 0.3x_2 = \dfrac{98}{s}$
 
 
-Paso 2: Sustituimos  en la ecuación (2)
+---
 
-La ecuación (2) es:
+Paso 1: Despejamos $x_1$ de la primera ecuación:
 
-x_1(10s^2 + 0.1s - 0.1) + 0.3x_2 = \frac{98}{s}
+De: $0.3x_1 + x_2[5s^2 - 0.3] = \dfrac{550}{s}$
 
-Sustituimos el valor de :
+Despejamos $x_1$:
 
-\left[ \frac{1}{0.3} \left( \frac{550}{s} - x_2(5s^2 - 0.3) \right) \right] (10s^2 + 0.1s - 0.1) + 0.3x_2 = \frac{98}{s}
+$x_1 = \dfrac{1}{0.3} \left[\dfrac{550}{s} - x_2[5s^2 - 0.3] \right]$
 
-
-
-Paso 3: Expandimos y simplificamos
-
-Distribuimos los términos:
-
-Primero, expandimos el producto:
+$x_1 = \dfrac{550}{0.3s} - \dfrac{1}{0.3} x_2[5s^2 - 0.3]$
 
 
-\frac{1}{0.3}(10s^2 + 0.1s - 0.1) \cdot \left( \frac{550}{s} \right) - \frac{1}{0.3}(10s^2 + 0.1s - 0.1)(5s^2 - 0.3)x_2 + 0.3x_2 = \frac{98}{s}
+---
 
-Multiplicamos los coeficientes y simplificamos para aislar .
+Paso 2: Sustituimos esta expresión en la segunda ecuación:
+
+$x_1[10s^2 + 0.1s - 0.1] + 0.3x_2 = \dfrac{98}{s}$
+
+Sustituimos $x_1$:
+
+$\left[\dfrac{550}{0.3s} - \dfrac{1}{0.3} x_2[5s^2 - 0.3] \right][10s^2 + 0.1s - 0.1] + 0.3x_2 = \dfrac{98}{s}$
+
+Distribuimos cada término:
+
+$\dfrac{550}{0.3s}[10s^2 + 0.1s - 0.1] - \dfrac{1}{0.3}x_2[5s^2 - 0.3][10s^2 + 0.1s - 0.1] + 0.3x_2 = \dfrac{98}{s}$
 
 
-Paso 4: Aislar 
+---
 
-Llevamos la ecuación a la forma:
+Paso 3: Simplificamos términos numéricos:
 
-A(s)x_2 = B(s)
+$\dfrac{550}{0.3s} = \dfrac{5500}{3s}$
 
-Y obtenemos:
+Entonces:
 
-x_2(s) = \frac{B(s)}{A(s)}
+$\dfrac{5500}{3s}[10s^2 + 0.1s - 0.1] - \dfrac{1}{0.3}x_2[5s^2 - 0.3][10s^2 + 0.1s - 0.1] + 0.3x_2 = \dfrac{98}{s}$
+
+Multiplicamos los polinomios para simplificar la parte de $x_2$:
+
+$[5s^2 - 0.3][10s^2 + 0.1s - 0.1] = 50s^4 + 0.5s^3 - 0.5s^2 - 3s^2 - 0.03s + 0.03$
+
+$= 50s^4 + 0.5s^3 - 3.5s^2 - 0.03s + 0.03$
+
+Y ahora toda la parte de $x_2$ queda:
+
+$- \dfrac{1}{0.3}x_2[50s^4 + 0.5s^3 - 3.5s^2 - 0.03s + 0.03] + 0.3x_2$
 
 
-Paso 5: Sustituir  en la ecuación de 
+---
 
-Recordamos:
+Paso 4: Reunimos todos los términos:
 
-x_1(s) = \frac{1}{0.3} \left( \frac{550}{s} - x_2(s)(5s^2 - 0.3) \right)
+$\dfrac{5500}{3s}[10s^2 + 0.1s - 0.1] - \dfrac{1}{0.3}x_2[50s^4 + 0.5s^3 - 3.5s^2 - 0.03s + 0.03] + 0.3x_2 = \dfrac{98}{s}$
 
-Así obtenemos ambas funciones en el dominio de Laplace.
+Calculamos el primer producto escalar:
 
-Paso 6: Fracciones Parciales
+$\dfrac{5500}{3s}(10s^2 + 0.1s - 0.1) = \dfrac{5500}{3s}[10s^2 + 0.1s - 0.1] = \dfrac{5500}{3}[10s + 0.1 - \dfrac{0.1}{s}]$
 
-Descomponemos las funciones racionales para poder aplicar la transformada inversa:
+
+---
+
+Paso 5: Reorganizamos todo como una ecuación racional para despejar $x_2$:
+
+$\left(- \dfrac{1}{0.3}[50s^4 + 0.5s^3 - 3.5s^2 - 0.03s + 0.03] + 0.3 \right) x_2 = \dfrac{98}{s} - \dfrac{5500}{3s}(10s^2 + 0.1s - 0.1)$
+
+Y luego simplificamos para obtener:
+
+$x_2(s) = \dfrac{\text{Numerador}}{\text{Denominador}}$
+
+Donde el denominador es:
+
+$- \dfrac{1}{0.3}[50s^4 + 0.5s^3 - 3.5s^2 - 0.03s + 0.03] + 0.3$
+
+
+---
+
+Paso 6: Una vez que tenemos $x_2(s)$, sustituimos en la fórmula de $x_1(s)$:
+
+$x_1 = \dfrac{550}{0.3s} - \dfrac{1}{0.3} x_2[5s^2 - 0.3]$
+
+
+---
+
+Paso 7: Fracciones parciales y transformada inversa
+
+Cuando tengas $x_1(s)$ y $x_2(s)$ expresados como fracciones racionales, se procede con fracciones parciales:
 
 Ejemplo:
 
-x_1(s) = \frac{As + B}{s^2 + \omega^2} + \frac{C}{s}
+$\dfrac{A}{s} + \dfrac{Bs + C}{s^2 + as + b}$
+
+Y luego:
+
+$\mathcal{L}^{-1} \left[ \dfrac{A}{s} \right] = A$
+$\mathcal{L}^{-1} \left[ \dfrac{Bs + C}{s^2 + as + b} \right] = e^{-\alpha t}(B \cos(\omega t) + C \sin(\omega t))$ con $\omega = \sqrt{b - a^2/4}$
 
 
+---
 
-Paso 7: Transformada Inversa de Laplace
-
-Aplicamos:
-
-
-
-Resultado Final (en función del tiempo)
-
-Luego de resolver todo el sistema (sustitución, fracciones parciales e inversa), se obtienen funciones del tipo:
-
-x_1(t) = A_1 \cdot \cos(\omega_1 t) + A_2 \cdot \sin(\omega_1 t) + A_3
-
-x_2(t) = B_1 \cdot \cos(\omega_2 t) + B_2 \cdot \sin(\omega_2 t) + B_3
-
-Los valores exactos de , ,  dependen de los polinomios. Si quieres, los podemos resolver por completo con valores numéricos o simbólicos. ¿Deseas que te haga ya la parte de fracciones parciales con resultados y todo listo para aplicar la inversa de Laplace?
-
-
+¿Deseas que realice toda la parte de fracciones parciales y transformada inversa con números ya reemplazados completamente? Puedo continuar desde este punto con eso. Solo dime “sí, continúa” y lo hago todo seguido para copiar.
 
 *SIMULINK*
 
