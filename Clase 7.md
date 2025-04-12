@@ -14,7 +14,17 @@ $fr_2 - fw - u = -m_2 \cdot a_{m2}$
 *Ecuación 3 (Índice 1):*
 
 $k_1 \cdot x_1(t) + b \cdot \left[ \frac{d[x_1(t) - x_2(t)]}{dt} \right] - m_1 \cdot g - k_2 \cdot [x_1(t) - x_2(t)] = -m_1 \cdot \frac{d^2 x_1(t)}{dt^2}$
+*Ecuación 1:*
 
+$fk_1 + ff - fk_2 - fw = -m_1 \cdot a_{m1}$
+
+*Ecuación 2:*
+
+$fr_2 - fw - u = -m_2 \cdot a_{m2}$
+
+*Ecuación 3 (Índice 1):*
+
+$k_1 \cdot x_1(t) + b \cdot \left[ \frac{d[x_1(t) - x_2(t)]}{dt} \right] - m_1 \cdot g - k_2 \cdot [x_1(t) - x_2(t)] = -m_1 \cdot \frac{d^2 x_1(t)}{dt^2}$
 
 ---
 
