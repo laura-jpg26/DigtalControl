@@ -4,7 +4,7 @@ Se resuelve  el analisis parra la ecuacion diferencial de la clase anterior y se
 Tenemos el siguiente sistema mecanico
 
  <p align="center">
-   <img src="images/plantilla/sistema.png" alt="SITEMA DE BLOQUES" width="200" height="200">
+   <img src="images/plantilla/sistema.png" alt="SITEMA DE BLOQUES" width="500" height="450">
 </p>
 
 Y hacemos los diagramas de fuerzas
