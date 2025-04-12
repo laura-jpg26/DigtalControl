@@ -2,32 +2,31 @@
 Se resuelve  el analisis parra la ecuacion diferencial de la clase anterior y se ve el tema de sistemas rotacionales
 ## 1. ECUACION DIFERENCIAL, SIMULINK  Y OPE 45
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
-*Ecuación 1:*
 
+DE DIAGRAMA 1
 $fk_1 + ff - fk_2 - fw = -m_1 \cdot a_{m1}$
 
-*Ecuación 2:*
+DE DIAGRAMA 2
 
 $fr_2 - fw - u = -m_2 \cdot a_{m2}$
 
-*Ecuación 3 (Índice 1):*
+1)
 
 $k_1 \cdot x_1(t) + b \cdot \left[ \frac{d[x_1(t) - x_2(t)]}{dt} \right] - m_1 \cdot g - k_2 \cdot [x_1(t) - x_2(t)] = -m_1 \cdot \frac{d^2 x_1(t)}{dt^2}$
 
-*Ecuación 4 (Índice 2):*
+2)
 
 $k_2 \cdot [x_1(t) - x_2(t)] - m_2 \cdot g - u = -m_2 \cdot \frac{d^2 x_2(t)}{dt^2}$
 
-*Ecuación 5:*
 
 $k_1 \cdot x_1 + b \cdot x_1' - k_2 \cdot [x_1 - x_2] - m_1 \cdot g = -m_1 \cdot x_1''$
+1)
 
-*Ecuación 6:*
 
 $k_2 \cdot [x_1 - x_2] - m_2 \cdot g - u = -m_2 \cdot x_2''$
 ---
 
-Sistema original en dominio de Laplace:
+Laplace:
 
 $0.3x_1 + x_2[5s^2 - 0.3] = \dfrac{550}{s}$
 
