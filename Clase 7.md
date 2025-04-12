@@ -3,6 +3,113 @@ Se resuelve  el analisis parra la ecuacion diferencial de la clase anterior y se
 ## 1. ECUACION DIFERENCIAL, SIMULINK  Y OPE 45
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
+
+
+transformado por Laplace:
+
+1. $0.3x_1 + x_2(5s^2 - 0.3) = \dfrac{550}{s}$
+
+
+2. $x_1(10s^2 + 0.1s - 0.1) + 0.3x_2 = \dfrac{98}{s}$
+
+Paso 1: Despejar $x_1$ de la primera ecuación
+
+De la ecuación (1):
+
+0.3x_1 + x_2(5s^2 - 0.3) = \dfrac{550}{s}
+
+Despejamos $x_1$:
+
+x_1 = \dfrac{1}{0.3} \left( \dfrac{550}{s} - x_2(5s^2 - 0.3) \right)
+
+
+---
+
+Paso 2: Sustituimos $x_1$ en la ecuación (2)
+
+La ecuación (2) es:
+
+x_1(10s^2 + 0.1s - 0.1) + 0.3x_2 = \dfrac{98}{s}
+
+Sustituimos el valor de $x_1$:
+
+\left[\dfrac{1}{0.3} \left( \dfrac{550}{s} - x_2(5s^2 - 0.3) \right) \right] (10s^2 + 0.1s - 0.1) + 0.3x_2 = \dfrac{98}{s}
+
+
+---
+
+Paso 3: Expandimos y simplificamos
+
+Distribuimos los términos:
+
+\dfrac{1}{0.3}(10s^2 + 0.1s - 0.1)\left( \dfrac{550}{s} \right) - \dfrac{1}{0.3}(10s^2 + 0.1s - 0.1)(5s^2 - 0.3)x_2 + 0.3x_2 = \dfrac{98}{s}
+
+Multiplicamos los términos y simplificamos:
+
+Calculamos los coeficientes.
+
+Reorganizamos la ecuación en función de $x_2$.
+
+Factorizamos si es posible.
+
+
+
+---
+
+Paso 4: Aislar $x_2$
+
+Después de simplificar se obtiene una expresión del tipo:
+
+Ax_2 = B
+
+Y entonces:
+
+x_2 = \dfrac{B}{A}
+
+
+---
+
+Paso 5: Sustituir $x_2$ nuevamente en la ecuación de $x_1$
+
+Recordamos que:
+
+x_1 = \dfrac{1}{0.3} \left( \dfrac{550}{s} - x_2(5s^2 - 0.3) \right)
+
+Sustituimos el valor de $x_2$ ya calculado para obtener $x_1(s)$.
+
+
+---
+
+Paso 6: Fracciones parciales
+
+Una vez tengas $x_1(s)$ y $x_2(s)$ expresados como funciones racionales (polinomios), se realiza descomposición en fracciones parciales para cada uno:
+
+Ejemplo:
+
+X_1(s) = \dfrac{N(s)}{D(s)} = \dfrac{A}{s} + \dfrac{Bs + C}{s^2 + \alpha s + \beta}
+
+
+---
+
+Paso 7: Transformada Inversa de Laplace
+
+Utilizamos la tabla de transformadas inversas:
+
+$\dfrac{1}{s} \rightarrow 1$
+
+$\dfrac{s}{s^2 + a^2} \rightarrow \cos(at)$
+
+$\dfrac{a}{s^2 + a^2} \rightarrow \sin(at)$
+
+$\dfrac{1}{(s + a)^2 + b^2} \rightarrow e^{-at}\sin(bt)$
+
+
+Aplicamos a cada término para obtener $x_1(t)$ y $x_2(t)$.
+
+
+---
+
+Si quieres que yo te ayude con la parte exacta de fracciones parciales o la inversa con los valores ya numéricos, dime y lo hago todo paso a paso también. ¿Te gustaría que continúe con eso?
 *SIMULINK*
 
  <p align="center">
