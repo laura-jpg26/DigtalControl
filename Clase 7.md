@@ -18,6 +18,7 @@ Y hacemos los diagramas de fuerzas
 </div>
 
 DE DIAGRAMA 1
+
 $fk_1 + ff - fk_2 - fw = -m_1 \cdot a_{m1}$
 
 DE DIAGRAMA 2
