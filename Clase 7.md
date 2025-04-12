@@ -1,7 +1,21 @@
 # ECUACION DIFERENCIAL, SISTEMAS ROTACIONALES, TRABAJO Y ENERGIA
 Se resuelve  el analisis parra la ecuacion diferencial de la clase anterior y se ve el tema de sistemas rotacionales
 ## 1. ECUACION DIFERENCIAL, SIMULINK  Y OPE 45
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+Tenemos el siguiente sistema mecanico
+
+ <p align="center">
+   <img src="images/plantilla/sistema.png" alt="SITEMA DE BLOQUES" width="600" height="400">
+</p>
+
+Y hacemos los diagramas de fuerzas
+
+
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/Diagramam1.png" alt="M1" width="400" height="200">
+
+  <img src="images/plantilla/Diagramam2.png" alt="M2" width="400" height="200">
+</div>
 
 DE DIAGRAMA 1
 $fk_1 + ff - fk_2 - fw = -m_1 \cdot a_{m1}$
