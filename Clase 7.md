@@ -236,7 +236,7 @@ end
 }
 ```
 <p align="center">
-   <img src="images/plantilla/FIGURAODE45.PNG" alt="OD 45" width="600" height="400">
+   <img src="images/plantilla/FIGURAODE45.png" alt="OD 45" width="600" height="400">
 </p>
 
 
