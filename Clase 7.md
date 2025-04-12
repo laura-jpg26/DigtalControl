@@ -6,8 +6,10 @@ Agregue todos los subtítulos que considere necesarios para estructurar el conte
 *SIMULINK*
 
  <p align="center">
-   <img src="imagen_2025-04-12_165408030.png" alt="SISTEMA ROTACIONAL" width="500" height="200">
+   <img src="imagen_2025-04-12_165408030.png" alt="SITEMA DE BLOQUES" width="600" height="200">
 </p>
+X1
+![image](https://github.com/user-attachments/assets/2952024e-fe97-4470-98ef-dce30f17a181)
 
 
 
