@@ -3,6 +3,15 @@ Se resuelve  el analisis parra la ecuacion diferencial de la clase anterior y se
 ## 1. ECUACION DIFERENCIAL, SIMULINK  Y OPE 45
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
+*SIMULINK*
+
+ <p align="center">
+   <img src="imagen_2025-04-12_165408030.png" alt="SISTEMA ROTACIONAL" width="500" height="200">
+</p>
+
+
+
+
 ## 2. SISTEMA ROTACIONAL
 
 >🔑 *Sistema Rotacional:* Al igual que los sistemas mecánicos, que se rigen por principios físicos fundamentales, en este caso también nos encontramos ante un fenómeno físico. Sin embargo, la diferencia radica en la naturaleza del movimiento, ya que en lugar de tratarse de un desplazamiento lineal, ahora estamos frente a un movimiento de tipo angular. Es decir, en lugar de que un cuerpo se traslade en línea recta, experimenta una rotación alrededor de un eje, lo que implica la intervención de magnitudes como el momento de inercia, el torque y la velocidad angular.
