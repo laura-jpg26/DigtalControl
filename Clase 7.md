@@ -176,6 +176,70 @@ $x_2(t) = 50 + 100e^{-t}\cos(3t) + 133.33e^{-t}\sin(3t)$
   <img src="images/plantilla/X2.png" alt="X2" width="400" height="200">
 </div>
 
+*OD45*
+
+```
+clc; clear;
+
+% Parámetros
+k1 = 0.2; 
+k2 = 0.3; 
+b  = 0.1; 
+m1 = 10; 
+m2 = 5; 
+g  = 9.81; 
+u  = 500; 
+
+% Tiempo integración
+tspan = (0:0.01:5);
+
+% Condiciones Iniciales: [x1(0), v1(0), x2(0), v2(0)]
+y0 = [0; 0; 0; 0]; 
+
+% Solver
+[t, y] = ode45(@miODE, tspan, y0);
+
+% Graficar
+plot(t, y(:,1), 'r', 'LineWidth', 1.5); hold on; % x1
+plot(t, y(:,3), 'b', 'LineWidth', 1.5);          % x2
+legend('x1', 'x2');
+xlabel('Tiempo (s)');
+ylabel('Posiciones (x)');
+title('Sistema de 2 masas, resortes y amortiguador');
+grid on;
+
+% EDO
+function dy = miODE(t, y)
+    % Parámetros dentro de la función
+    k1 = 0.2; 
+    k2 = 0.3; 
+    b  = 0.1; 
+    m1 = 10; 
+    m2 = 5; 
+    g  = 9.81; 
+    u  = 500; 
+
+    % Variables
+    x1 = y(1);
+    v1 = y(2);
+    x2 = y(3);
+    v2 = y(4);
+
+    % Ecuaciones
+    dx1 = v1;
+    dv1 = ((-k1 + k2)*x1 - b*v1 - k2*x2 + m1*g) / m1;
+    dx2 = v2;
+    dv2 = (-k2*x1 + k2*x2 + m2*g + u) / m2;
+
+    dy = [dx1; dv1; dx2; dv2];
+end
+}
+```
+<p align="center">
+   <img src="images/plantilla/FIGURAODE45" alt="SITEMA DE BLOQUES" width="600" height="400">
+</p>
+
+
 
 
 
@@ -427,11 +491,6 @@ Cada tabla debe llevar la etiqueta que describa su contenido y numeración conse
 Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
 
 💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
 
 ## 9. Ejercicios
 Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
