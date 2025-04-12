@@ -5,111 +5,96 @@ Agregue todos los subtítulos que considere necesarios para estructurar el conte
 
 
 
-transformado por Laplace:
 
-1. $0.3x_1 + x_2(5s^2 - 0.3) = \dfrac{550}{s}$
+1. $$0.3x_1 + x_2(5s^2 - 0.3) = \frac{550}{s}$$
 
 
-2. $x_1(10s^2 + 0.1s - 0.1) + 0.3x_2 = \dfrac{98}{s}$
+2. $$x_1(10s^2 + 0.1s - 0.1) + 0.3x_2 = \frac{98}{s}$$
 
-Paso 1: Despejar $x_1$ de la primera ecuación
+
+
+Paso 1: Despejar  de la primera ecuación
 
 De la ecuación (1):
 
-0.3x_1 + x_2(5s^2 - 0.3) = \dfrac{550}{s}
+0.3x_1 + x_2(5s^2 - 0.3) = \frac{550}{s}
 
-Despejamos $x_1$:
+Despejamos :
 
-x_1 = \dfrac{1}{0.3} \left( \dfrac{550}{s} - x_2(5s^2 - 0.3) \right)
+x_1 = \frac{1}{0.3} \left( \frac{550}{s} - x_2(5s^2 - 0.3) \right)
 
 
----
-
-Paso 2: Sustituimos $x_1$ en la ecuación (2)
+Paso 2: Sustituimos  en la ecuación (2)
 
 La ecuación (2) es:
 
-x_1(10s^2 + 0.1s - 0.1) + 0.3x_2 = \dfrac{98}{s}
+x_1(10s^2 + 0.1s - 0.1) + 0.3x_2 = \frac{98}{s}
 
-Sustituimos el valor de $x_1$:
+Sustituimos el valor de :
 
-\left[\dfrac{1}{0.3} \left( \dfrac{550}{s} - x_2(5s^2 - 0.3) \right) \right] (10s^2 + 0.1s - 0.1) + 0.3x_2 = \dfrac{98}{s}
+\left[ \frac{1}{0.3} \left( \frac{550}{s} - x_2(5s^2 - 0.3) \right) \right] (10s^2 + 0.1s - 0.1) + 0.3x_2 = \frac{98}{s}
 
 
----
 
 Paso 3: Expandimos y simplificamos
 
 Distribuimos los términos:
 
-\dfrac{1}{0.3}(10s^2 + 0.1s - 0.1)\left( \dfrac{550}{s} \right) - \dfrac{1}{0.3}(10s^2 + 0.1s - 0.1)(5s^2 - 0.3)x_2 + 0.3x_2 = \dfrac{98}{s}
-
-Multiplicamos los términos y simplificamos:
-
-Calculamos los coeficientes.
-
-Reorganizamos la ecuación en función de $x_2$.
-
-Factorizamos si es posible.
+Primero, expandimos el producto:
 
 
+\frac{1}{0.3}(10s^2 + 0.1s - 0.1) \cdot \left( \frac{550}{s} \right) - \frac{1}{0.3}(10s^2 + 0.1s - 0.1)(5s^2 - 0.3)x_2 + 0.3x_2 = \frac{98}{s}
 
----
-
-Paso 4: Aislar $x_2$
-
-Después de simplificar se obtiene una expresión del tipo:
-
-Ax_2 = B
-
-Y entonces:
-
-x_2 = \dfrac{B}{A}
+Multiplicamos los coeficientes y simplificamos para aislar .
 
 
----
+Paso 4: Aislar 
 
-Paso 5: Sustituir $x_2$ nuevamente en la ecuación de $x_1$
+Llevamos la ecuación a la forma:
 
-Recordamos que:
+A(s)x_2 = B(s)
 
-x_1 = \dfrac{1}{0.3} \left( \dfrac{550}{s} - x_2(5s^2 - 0.3) \right)
+Y obtenemos:
 
-Sustituimos el valor de $x_2$ ya calculado para obtener $x_1(s)$.
+x_2(s) = \frac{B(s)}{A(s)}
 
 
----
+Paso 5: Sustituir  en la ecuación de 
 
-Paso 6: Fracciones parciales
+Recordamos:
 
-Una vez tengas $x_1(s)$ y $x_2(s)$ expresados como funciones racionales (polinomios), se realiza descomposición en fracciones parciales para cada uno:
+x_1(s) = \frac{1}{0.3} \left( \frac{550}{s} - x_2(s)(5s^2 - 0.3) \right)
+
+Así obtenemos ambas funciones en el dominio de Laplace.
+
+Paso 6: Fracciones Parciales
+
+Descomponemos las funciones racionales para poder aplicar la transformada inversa:
 
 Ejemplo:
 
-X_1(s) = \dfrac{N(s)}{D(s)} = \dfrac{A}{s} + \dfrac{Bs + C}{s^2 + \alpha s + \beta}
+x_1(s) = \frac{As + B}{s^2 + \omega^2} + \frac{C}{s}
 
 
----
 
 Paso 7: Transformada Inversa de Laplace
 
-Utilizamos la tabla de transformadas inversas:
-
-$\dfrac{1}{s} \rightarrow 1$
-
-$\dfrac{s}{s^2 + a^2} \rightarrow \cos(at)$
-
-$\dfrac{a}{s^2 + a^2} \rightarrow \sin(at)$
-
-$\dfrac{1}{(s + a)^2 + b^2} \rightarrow e^{-at}\sin(bt)$
+Aplicamos:
 
 
-Aplicamos a cada término para obtener $x_1(t)$ y $x_2(t)$.
+
+Resultado Final (en función del tiempo)
+
+Luego de resolver todo el sistema (sustitución, fracciones parciales e inversa), se obtienen funciones del tipo:
+
+x_1(t) = A_1 \cdot \cos(\omega_1 t) + A_2 \cdot \sin(\omega_1 t) + A_3
+
+x_2(t) = B_1 \cdot \cos(\omega_2 t) + B_2 \cdot \sin(\omega_2 t) + B_3
+
+Los valores exactos de , ,  dependen de los polinomios. Si quieres, los podemos resolver por completo con valores numéricos o simbólicos. ¿Deseas que te haga ya la parte de fracciones parciales con resultados y todo listo para aplicar la inversa de Laplace?
 
 
----
 
-Si quieres que yo te ayude con la parte exacta de fracciones parciales o la inversa con los valores ya numéricos, dime y lo hago todo paso a paso también. ¿Te gustaría que continúe con eso?
 *SIMULINK*
 
  <p align="center">
