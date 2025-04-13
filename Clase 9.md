@@ -523,5 +523,10 @@ Posteriormente, se profundizó en el estudio de sistemas rotacionales, aplicando
 Se estudiaron también aplicaciones específicas como la energía potencial en un resorte, el cambio de energía en función de la deformación, y el concepto de energía disipada en un sistema amortiguado. Finalmente, se exploraron las condiciones de sistemas conservativos, destacando la importancia de la conservación de la energía mecánica total como criterio de análisis.
 
 Este recorrido permitió no solo entender el comportamiento físico de estos sistemas, sino también aplicar herramientas de simulación y formulación matemática, fundamentales para el diseño y análisis de sistemas mecánicos complejos.
+## 7. Referencias
+Aulas Virtuales ECCI - Sistemas Dinámicos
 
+Chen, C. - Analog and Digital Control System Design.
+
+Kuo, B. C. - Sistemas de Control: Teoría y Diseño.
 
