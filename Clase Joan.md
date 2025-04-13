@@ -9,6 +9,9 @@ Si está en equilibrio, entonces:
 
 $k\delta = mg$
 
+<p align="center">
+  <img src="images/plantilla/JOAN1.png" alt="Descripción de la imagen" width="400"/>
+</p>
 Ahora, la energía potencial total:
 
 $U = mg(x_{0} - x) + \frac{1}{2}k(\delta + x)^{2}$
@@ -42,7 +45,7 @@ Factorizando:
 $(mx'' + kx){x'} = 0$
 
 <p align="center">
-  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+  <img src="images/plantilla/JOAN2.png" alt="Descripción de la imagen" width="400"/>
 </p>
 
 El cilindro no se desliza (conservativo)
@@ -86,7 +89,7 @@ Usualmente se utilizan para sistemas simples, ya que entre más complejo sea el 
 
 IMAGEN
 <p align="center">
-  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+  <img src="images/plantilla/JOAN3" alt="Descripción de la imagen" width="400"/>
 </p>
 El fenómeno físico que modela este comportamiento
 
@@ -106,7 +109,7 @@ $v(t) = L\frac{di(t)}{dt}$
 
 EJEMPLO
 <p align="center">
-  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+  <img src="images/plantilla/JOAN4" alt="Descripción de la imagen" width="400"/>
 </p>
 
 APLICANDO LEY DE KIRCHHOFF
@@ -133,7 +136,7 @@ $$
 1.
  Obtener el modelo para el circuito de la figura:
  <p align="center">
-  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+  <img src="images/plantilla/JOAN5.png" alt="Descripción de la imagen" width="400"/>
 </p>
 APLICANDO LEY DE KIRCHHOFF
 
@@ -210,7 +213,7 @@ $$
 -u(t) + C R_{1} \frac{dy(t)}{dt} + C R_{2} \frac{dy(t)}{dt} + C R_{3} \frac{dy(t)}{dt}_
 
 <p align="center">
-  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+  <img src="images/plantilla/JOAN6.png" alt="Descripción de la imagen" width="400"/>
 </p>
 APLICANDO LEY DE KIRCHHOFF
 
