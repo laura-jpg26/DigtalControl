@@ -81,11 +81,10 @@
  
  $X(s)=\frac{3/5}{s}-\frac{3/5s-6/5}{s^{2}+2s+5-4+4}$
  
+ aaaa
+ 
  $\frac{s}{5}\left [ \frac{s+2}{(s+1)^{2}+4} \right ]\frac{3}{5}\left [ \frac{s+1}{(s+1)^{2}+4}+\left [ \frac{1}{(s+1)+4} \right ]$
  
-$
-\frac{s}{5} \left[ \frac{s+2}{(s+1)^{2}+4} \right] + \frac{3}{5} \left[ \frac{s+1}{(s+1)^{2}+4} + \frac{1}{(s+1)+4} \right]
-$
  $L^{-1}{X(s)}=\frac{3}{5}-\frac{3}{5}e^{-t}cos(2t)-\frac{3}{10}e^{-t}sen(2t)$
  
  ## 3 . EJERCICIOS PROPUESTOS
@@ -174,6 +173,11 @@ $
  Técnicas como la separación de variables, el método de los coeficientes indeterminados, la transformada de Laplace, y métodos numéricos como Euler o Runge-Kutta, nos ayudan a resolver problemas que están relacionados con cambios en el tiempo o en el espacio. A esto se le suma que las herramientas computacionales han dado un gran paso para solucionar ecuaciones diferenciales complejas que no se pueden resolver de manera analítica.
  En resumen, estudiar y resolver ecuaciones diferenciales es critical para entender y modelar sistemas dinámicos en el mundo real. Para aplicarlas de manera efectiva, no solo se necesita conocimiento teórico, sino también la habilidad de usar métodos computacionales avanzados que nos ofrezcan resultados precisos y útiles en la práctica.
  
+ ## 5. REFERENCIAS
+ 
+ Clase de sistemas dinamicos
+ https://www.youtube.com/watch?v=_-v7jWOX2PY
+
  ## 5. REFERENCIAS
  
  Clase de sistemas dinamicos
