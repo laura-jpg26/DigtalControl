@@ -69,7 +69,7 @@ Si el sistema está sometido a una fuerza externa $F(t)$, su respuesta puede div
 
 ## 4.💡 Ejemplo 1: Sistema Masa-Resorte-Amortiguador con Fuerza Externa
 
-![Ejemplo 1](ejemplo1.png)
+![Ejemplo 1](images/plantillaejemplo1.png)
 
 📌 Enunciado:
 Un sistema mecánico tiene:
