@@ -84,6 +84,7 @@
  aaaa
  
 $\frac{s}{5}*\left[\frac{(s+2)}{(s+1)^{2}+4} \right ]+ \frac{3}{5}*\left [\frac{s+1}{(s+1)^{2}+4}+\frac{1}{(s+1)+4}\right]$
+https://latex.codecogs.com/svg.image?\frac{s}{5}*\left[\frac{(s&plus;2)}{(s&plus;1)^{2}&plus;4}\right]&plus;\frac{3}{5}*\left[\frac{s&plus;1}{(s&plus;1)^{2}&plus;4}&plus;\frac{1}{(s&plus;1)&plus;4}\right]
  
  $L^{-1}{X(s)}=\frac{3}{5}-\frac{3}{5}e^{-t}cos(2t)-\frac{3}{10}e^{-t}sen(2t)$
  
