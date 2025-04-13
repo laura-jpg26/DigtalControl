@@ -83,9 +83,10 @@
  
  aaaa
  
-$
+$$
 \frac{s}{5} \left[ \frac{s+2}{(s+1)^{2}+4} \right] + \frac{3}{5} \left[ \frac{s+1}{(s+1)^{2}+4} + \frac{1}{(s+1)+4} \right]
-$
+$$
+
 
 
  
