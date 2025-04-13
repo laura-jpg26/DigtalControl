@@ -445,7 +445,9 @@ Si no entra energía externa al sistema, entonces la suma de la energía cinéti
 
  $\Delta (T+u)= 0$
 
- EJEMPLO:
+ ##5.📚 EJERCICIOS
+
+ 📚1.
  <p align="center">
    <img src="images/plantilla/EJEMPLO.jpg" alt="SISTEMA" width="500" height="200">
 </p>
@@ -471,6 +473,41 @@ Para mantener el sistema conservativo alguno de los terminos ya sea ($(m\ddot{x}
 
 $$m\ddot{x}+kx=0$$
 
+
+📚2.
+
+
+
+
+
+   $u_0 = m \cdot g \cdot x_0 + \frac{1}{2} \cdot k \cdot \delta^2$
+
+
+  $k \cdot \delta = m \cdot g$
+
+$u = m \cdot g \cdot (x_0 - x) + \frac{1}{2} \cdot k \cdot (\delta + x)^2$
+
+$u = m \cdot g \cdot x_0 - m \cdot g \cdot x + \frac{1}{2} \cdot k \cdot \delta^2 + k \cdot \delta \cdot x + \frac{1}{2} \cdot k \cdot x^2$
+
+$u = m \cdot g \cdot x_0 + \frac{1}{2} \cdot k \cdot \delta^2 - [m \cdot g + k \cdot \delta] \cdot x + \frac{1}{2} \cdot k \cdot x^2$
+
+$E_{\text{inicial}} = m \cdot g \cdot x_0 + \frac{1}{2} \cdot k \cdot \delta^2$
+
+$E_{\text{potencial}} = -[m \cdot g + k \cdot \delta] \cdot x + \frac{1}{2} \cdot k \cdot x^2$
+
+$T = \frac{1}{2} \cdot m \cdot (\dot{x})^2$
+
+$T + U = \frac{1}{2} \cdot m \cdot (\dot{x})^2 + U_0 + \frac{1}{2} \cdot k \cdot x^2 = \text{constante}$
+
+Al derivar se obtiene la ecuación de movimiento:
+
+$\frac{d}{dt}(T + U) = m \cdot \dot{x} \cdot \ddot{x} + k \cdot x \cdot \dot{x} = 0$
+
+$\dot{x} \cdot [m \cdot \ddot{x} + k \cdot x] = 0$
+
+Por lo tanto:
+
+$m \cdot \ddot{x} + k \cdot x = 0$
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
