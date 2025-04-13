@@ -479,9 +479,11 @@ $$m\ddot{x}+kx=0$$
 
 
 
+Se debe tomar en cuenta la posicion incial: 
 
    $u_0 = m \cdot g \cdot x_0 + \frac{1}{2} \cdot k \cdot \delta^2$
-
+   
+Si esta en equilibrio entonces: 
 
   $k \cdot \delta = m \cdot g$
 
@@ -494,6 +496,8 @@ $u = m \cdot g \cdot x_0 + \frac{1}{2} \cdot k \cdot \delta^2 - [m \cdot g + k \
 $E_{\text{inicial}} = m \cdot g \cdot x_0 + \frac{1}{2} \cdot k \cdot \delta^2$
 
 $E_{\text{potencial}} = -[m \cdot g + k \cdot \delta] \cdot x + \frac{1}{2} \cdot k \cdot x^2$
+
+Energia cinetica es: 
 
 $T = \frac{1}{2} \cdot m \cdot (\dot{x})^2$
 
@@ -508,6 +512,7 @@ $\dot{x} \cdot [m \cdot \ddot{x} + k \cdot x] = 0$
 Por lo tanto:
 
 $m \cdot \ddot{x} + k \cdot x = 0$
+
 ## 3. Subsecciones
 Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
 ### 3.1. Título de subsecciones
