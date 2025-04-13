@@ -1,177 +1,253 @@
- # SOLUCIONES DIFERENCIALES ECUACIONES
-> Una solución de una ecuación diferencial es una función f definida en un intervalo S que tiene al menos N derivadas continuas en S y que al sustituirlas en la ecuación diferencial ordinaria de N-ésimo orden reducen la ecuación a la identidad.
- ## 1. METODOLOGIA Y SOLUCION 
- Se aplica la Transformada de la place a toda la ecuación una a una de tal manera que se desarrolle o obtenga una ecuación algebratica en el dominio de S. Se despeja la variable que representa la salida de la ecuación (después del =), se aplica la transformada inversa de la place a la expresión obtenida para hacer la solucion en el dominio del tiempo (ΔT).
- 
- $L{{f}\'(t)}=SF(s)-f(0)$
- 
- ## 2. EJERCICIOS DE CLASE
- 
- EJEMPLO 1 CLASE
- 
- $x^{''}+x^{'}+2x=0,      x(0)=a,  x^{'}f(0)=b$
- 
- Aplicando transformada de Laplace
- 
- $[s^{2}X(s)-sx(0)-x^{'}]+3[sX(s)-x(0)]+2Xs=0$
- 
- Reemplazamos condiciones iniciales
- 
- $[s^{2}X(s)-as-b]+3[sX(s)-a]+2X(2)=0$
- 
- Despejando x
- 
- $(s^{2}+3s+2)X(s)=as+b+3a$
- 
- Solución Dominio
- 
- $X(s=\frac{as+b+3a}{s^{2}+3s+2})=\frac{as+b+3a}{(s+1)(s+2)}=\frac{2a+b}{s+1}-\frac{a+}{s+2}$
- 
- $L{f^{''}(t)}=s^{2}F(s)-sf(s)-f^{'}(0)$
- 
- $L{f^{''}(t)}=s^{3}F(s)-s^{2}f(0)-s^{'}f(0)-f^{''}(0)$
- 
- Aplicando transformada inversa  desde las tablas para volver al dominio del tiempo
- 
- $x(t)=L^{-1}[X(s)]=L^{-1}[\frac{2a+b}{s+1}]-L^{-1}[\frac{a+b}{s+2}]$
- 
- $x(t)=(2a+b)e^{-t}-(a+b)e^{-2t}              (t>=0)$
- 
- ## Ejemplo 2 CLASE
- 
- $x^{''}+2x^{'}+5x=3$
- 
- $s^{2}x(s)+2sX(s)+5x(s)=3/s$
- 
- $Xs(s^{2}+2s+5)=3/s$
- 
- $x(s)=\frac{3}{s(s^{2}+2s+5)}$
- 
- $x(s)=\frac{A}{s}+\frac{Bs+C}{s^{2}+2s+s}$
- 
- Hacemos formula cuadratica para saber cuanto vale s
- 
- $r=\frac{-2+-\sqrt{4-(4)(1)(5)}}{2}$
- 
- $r=\frac{-2+-\sqrt{-16}}{2}$
- 
- $r=\frac{-2+-(-4)}{2}$
- 
- $s=-1+-(2i)$
- 
- Seguimos con la ecuacion
- 
- $A=\frac{3s}{s(s^{2}+2s+5)}\left |s=0...  A=\frac{3}{s} \right |$
- 
- $=\frac{3}{s}\left | s=s-1+2i...=Bs+c\right |=s=-1+2i$
- 
- $\frac{3}{-1+2i}=-B+2Bi+c$
- 
- $\frac{3(-1-2i)}{-1+2i(-1-2i)}=-B+2Bi+C$
- 
- $\frac{-3-6i}{1+2i-2i+4}=-B+2Bi+C$
- 
- $\frac{-3-6i}{5}=-B+2Bi+C$
- 
- $-\frac{6}{5}=2B$
- 
- $B=-\frac{6}{10}$
- 
- $C=-\frac{3}{5}-\frac{3}{5}=-\frac{6}{5}$
- 
- $X(s)=\frac{3/5}{s}-\frac{3/5s-6/5}{s^{2}+2s+5-4+4}$
- 
-$\frac{s}{5}\left [ \frac{(s+2)}{(s+1)^{2}+4} \right ]+\frac{3}{5}\left [ \frac{s+1}{(s+1)^{2}+4} \right ]+\left [ \frac{1}{(s+1)+4}\right]$
- 
- $L^{-1}{X(s)}=\frac{3}{5}-\frac{3}{5}e^{-t}cos(2t)-\frac{3}{10}e^{-t}sen(2t)$
- 
- ## 3 . EJERCICIOS PROPUESTOS
- 
- EJERCCIO 1
- 
- $y′′+4y=sin(2t),           y(0)=0,          y′(0)=14$
- 
- Aplicamos la Transformada de Laplace a ambos lados
- 
- $L{y^{''}}+4L{y}=L{sin(2t)}$
- 
- Usamos las transformadas
- 
- $L{y^{′′}}=s^{2}Y(s)−sy(0)−y^{'}(0)=s^{2}Y(s)-1$
- 
- $L{y}=Y(s)$
- 
- $L\left\{sen(2t) \right\}=\frac{2}{s^{2}+4}$
- 
- Despejamos Y(s)
- 
- $Y(s)=\frac{1+\frac{2}{s^{2}+4}}{s^{2}+4}$
- 
- $Y(s)=\frac{1}{s^{2+4}}+\frac{2}{(s^{2}+4)^{2}}$
- 
- Aplicamos la transformada inversa de LaPlace
- 
- $L^{-1}\left\{ \frac{1}{s^{2}+4}\right\}=\frac{sin(2t)}{2}$
- 
- La segunda parte requiere de la formula:
- 
- $L^{-1}=\left\{ \frac{2}{(s^{2}+4)^{2}}\right\}=\frac{t}{2}sin(2t)$
- 
- Por lo tanto
- 
- $y(t)=\frac{sin(2t)}{2}+\frac{t}{2}sin(2t)$
- 
- Solucion:
- 
- Aplicamos la transformada de Laplace
- 
- $L\left\{ y^{''}\right\}-2L\left\{ y^{'}\right\}+2L\left\{ y\right\}=L\left\{ u_{\pi }(t)\right\}$
- 
- usamos:
- 
- $L\left\{ y^{''}\right\}=s^{2}Y(s)-ys(0)-y^{'}(0)=s^{2}Y(s)-1$
- 
- $L\left\{ y^{'}\right\}=sY(s)-y(0)=sY(s)$
- 
- $L\left\{ y\right\}=Y(s)$
- 
- Y para la funcion escalon:
- 
- $L\left\{ u_{\pi }(t)\right\}=\frac{e^{-\pi s}}{s}$
- 
- Entonces
- 
- $(s^{2}-2s+2s)Y(s)-1=\frac{e^{-\pi s}}{s}$
- 
- Despejamos Y(s)
- 
- $Y(s)=\frac{1}{s^{2}-2s+2}+\frac{e^{-\pi s}}{s(s^{2}-2s+2)}$
- 
- 
- Hacemos transformada inversa de Laplace
- 
- Primera parte:
- 
- $L^{-1}\left\{ \frac{1}{(s-1)^{2}+1}\right\}=e^{t}sin(t)$
- 
- 
- La segunda requiere descomócision por partes (fraciones parciales y formulas)
- 
- $L^{-1}\left\{ \frac{e^{-\pi s}}{s(s^{2}-2s+2)}\right\}=u_{\pi }(t)*g(t-\pi )$
- 
- Donde g es la transformada inversa de $\frac{1}{s(s^{2}-2s+2)}$ que se obtiene aplicando la inversa
- Y con esto llegamos a la solucion de la ecuacion
- 
- $y(t)=e^{t}sin(t)+u_{\pi }(t)*g(t-\pi )$
- 
- 
- ## 4. CONCLUSIONES 
- 
- Resolver ecuaciones diferenciales es una herramienta clave en matemáticas aplicadas. Gracias a ella, podemos modelar y predecir cómo se comportan distintos fenómenos en campos como la física, la ingeniería, la economía y la biología. Usando métodos tanto analíticos como numéricos, logramos encontrar soluciones que pueden ser exactas o aproximadas, dependiendo de lo complejas que sean las ecuaciones y de cómo se apliquen.
- Técnicas como la separación de variables, el método de los coeficientes indeterminados, la transformada de Laplace, y métodos numéricos como Euler o Runge-Kutta, nos ayudan a resolver problemas que están relacionados con cambios en el tiempo o en el espacio. A esto se le suma que las herramientas computacionales han dado un gran paso para solucionar ecuaciones diferenciales complejas que no se pueden resolver de manera analítica.
- En resumen, estudiar y resolver ecuaciones diferenciales es critical para entender y modelar sistemas dinámicos en el mundo real. Para aplicarlas de manera efectiva, no solo se necesita conocimiento teórico, sino también la habilidad de usar métodos computacionales avanzados que nos ofrezcan resultados precisos y útiles en la práctica.
- 
- ## 5. REFERENCIAS
- 
- Clase de sistemas dinamicos
- https://www.youtube.com/watch?v=_-v7jWOX2PY
+
+## 1. MOVIMIENTO VERTICAL
+
+En el caso vertical se debe tomar en cuenta la energía debida a la posición inicial:
+
+$U_{0} = mgx_{0} + \frac{1}{2}k\delta^{2}$
+
+Si está en equilibrio, entonces:
+
+$k\delta = mg$
+
+Ahora, la energía potencial total:
+
+$U = mg(x_{0} - x) + \frac{1}{2}k(\delta + x)^{2}$
+
+Distribuyendo los términos:
+
+$U = mgx_{0} - mgx + \frac{1}{2}k\delta^{2} + k\delta x + \frac{1}{2}kx^{2}$
+
+Agrupando términos:
+
+$U = mgx_{0} + \frac{1}{2}k\delta^{2} - (mg - k\delta)x + \frac{1}{2}kx^{2}$
+
+Como $k\delta = mg$, entonces:
+
+$U = U_{0} + \frac{1}{2}kx^{2}$
+
+Energía cinética
+
+$T = \frac{1}{2}m{x'}^{2}$
+
+Energía total
+
+$T + U = \frac{1}{2}m{x'}^{2} + U_{0} + \frac{1}{2}kx^{2} = \text{constante}$
+
+Derivando para obtener la ecuación de movimiento:
+
+$\frac{d}{dt}(T + U) = m{x'}x'' + kx{x'} = 0$
+
+Factorizando:
+
+$(mx'' + kx){x'} = 0$
+
+<p align="center">
+  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+</p>
+
+El cilindro no se desliza (conservativo)
+
+$J = \frac{1}{2}mR^{2}$
+
+Energía total:
+
+$T + U = \frac{1}{2}m\dot{x}^{2} + \frac{1}{2}J\dot{\theta}^{2} + \frac{1}{2}kx^{2} = \text{constante}$
+
+Sustituyendo $J = \frac{1}{2}mR^{2}$ y $\dot{x} = R\dot{\theta}$:
+
+$\frac{3}{4}m\dot{x}^{2} + \frac{1}{2}kx^{2} = \text{constante}$
+
+Derivando:
+
+$\frac{3}{2}m\dot{x}\ddot{x} + kx\dot{x} = 0$
+
+Factorizando:
+
+$(m\ddot{x} + \frac{3}{2}k x)\dot{x} = 0$
+
+Energía cinética:
+
+$T = \frac{1}{2}m\dot{x}^{2} + \frac{1}{2}J\dot{\theta}^{2}$
+
+Energía potencial:
+
+$U = \frac{1}{2}kx^{2}$
+
+Movimiento rotacional:
+
+Usamos la relación $x = R\theta$ para expresar todo en función de $\theta$:
+
+$\ddot{\theta} + \frac{2k}{3m}\theta = 0
+Comentarios
+
+Usualmente se utilizan para sistemas simples, ya que entre más complejo sea el sistema, más energías intervienen y más difícil se vuelve establecer el procedimiento.
+
+## 2.SISTEMAS ELÉCTRICOS
+
+IMAGEN
+<p align="center">
+  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+</p>
+El fenómeno físico que modela este comportamiento
+
+El fenómeno físico que modela este comportamiento son las leyes de Kirchhoff para el circuito.
+
+LEY DE OHM
+
+$R = \frac{v(t)}{i(t)}$
+
+CARGA DE UN CONDENSADOR
+
+$i(t) = C\frac{dv(t)}{dt}$
+
+CARGA DE UN INDUCTOR
+
+$v(t) = L\frac{di(t)}{dt}$
+
+EJEMPLO
+<p align="center">
+  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+</p>
+
+APLICANDO LEY DE KIRCHHOFF
+
+$$
+-u + v_{R} + v_{L} + v_{C} = 0
+$$
+
+$$
+-u(t) + i(t) \cdot R + L\frac{di(t)}{dt} + y(t) = 0
+$$
+
+$$
+i(t) = C\frac{dy(t)}{dt}
+$$
+
+*Aún no está en términos de la variable y, sustituimos i(t):*
+
+$$
+-u(t) + RC\frac{dy(t)}{dt} + LC\frac{d^{2}y(t)}{dt^{2}} + y(t) = 0
+$$
+
+## 3. Ejemplo
+1.
+ Obtener el modelo para el circuito de la figura:
+ <p align="center">
+  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+</p>
+APLICANDO LEY DE KIRCHHOFF
+
+$$
+-u + v_{R1} + v_{R2} + v_{C} = 0
+$$
+
+$$
+-u + I(R_{1} + R_{2}) + v_{C} = 0
+$$
+
+$$
+-u + C(R_{1} + R_{2})v_{C} + v_{C} = 0
+$$
+
+Sabemos que
+
+$$
+I_{R1} = I_{R2}
+$$
+
+Reemplazamos:
+
+$$
+\frac{u - y}{R_{1}} = \frac{y - v_{c}}{R_{2}}
+$$
+
+$$
+-\frac{v_{c}}{R_{2}} = \frac{u - y}{R_{1}} = -\frac{y}{R_{2}}
+$$
+
+$$
+-\frac{v_{c}}{R_{2}} = \frac{u}{R_{1}} - y \left( \frac{1}{R_{1}} + \frac{1}{R_{2}} \right)
+$$
+
+Aún no está en términos de la variable y:
+
+$$
+-v_{c} = u \frac{R_{1}}{R_{2}} - y \left( \frac{R_{2}}{R_{1}} + 1 \right)
+$$
+
+$$
+v_{c} = -u \frac{R_{1}}{R_{2}} + y \left( \frac{R_{2}}{R_{1}} + 1 \right)
+$$
+
+$$
+v_{c}^{'} = -u^{'} \frac{R_{1}}{R_{2}} + y^{'} \left( \frac{R_{2}}{R_{1}} + 1 \right)
+$$
+
+## 4. Ejercicios
+APLICANDO LEY DE KIRCHHOFF
+
+$$
+\sum v = 0
+$$
+
+$$
+-u + v_{R1} + v_{R2} + v_{R3} = 0
+$$
+
+Reemplazamos:
+
+$$
+-u(t) + i(t) \cdot R_{1} + i(t) \cdot R_{2} + i(t) \cdot R_{3} + y(t) = 0
+$$
+
+Aún no está en términos de la variable y:
+
+$$
+-u(t) + C \frac{dy(t)}{dt} \cdot R_{1} + C \frac{dy(t)}{dt} \cdot R_{2} + C \frac{dy(t)}{dt} \cdot R_{3} + y(t) = 0
+$$
+
+$$
+-u(t) + C R_{1} \frac{dy(t)}{dt} + C R_{2} \frac{dy(t)}{dt} + C R_{3} \frac{dy(t)}{dt}_
+
+<p align="center">
+  <img src="nombre-de-la-imagen.png" alt="Descripción de la imagen" width="400"/>
+</p>
+APLICANDO LEY DE KIRCHHOFF
+
+$$
+\sum v = 0
+$$
+
+$$
+-u + v_{R1} = 0
+$$
+
+Reemplazamos:
+
+$$
+-u(t) + i(t) \cdot R_{1} + y(t) = 0
+$$
+
+Aún no está en términos de la variable y:
+
+$$
+u(t) + C \frac{dy(t)}{dt} \cdot R_{1} + y(t) = 0
+$$
+
+$$
+-u(t) + C R_{1} \frac{dy(t)}{dt} + y(t) = 0
+$$
+
+---
+
+## 4. CONCLUSIONES
+
+Los sistemas mecánicos y eléctricos son dos grandes categorías en el estudio de los sistemas dinámicos, cada uno con sus propias características físicas, pero a menudo se pueden modelar de manera similar con matemáticas. Ambos tipos de sistemas reaccionan a estímulos externos y evolucionan con el tiempo, lo que nos permite analizarlos usando herramientas comunes como ecuaciones diferenciales, diagramas de bloques o representaciones en el espacio de estados. Por un lado, los sistemas mecánicos se basan en principios como la segunda ley de Newton y se describen en términos de desplazamiento, velocidad y fuerza. Por otro lado, los sistemas eléctricos se fundamentan en leyes como la de Ohm y las de Kirchhoff, y se describen en términos de corriente, voltaje y carga. A pesar de estas diferencias, podemos encontrar equivalencias entre ambos a través de analogías mecánico-eléctricas, lo que facilita el análisis cruzado y el diseño de soluciones interdisciplinarias. Entender tanto los sistemas mecánicos como los eléctricos dentro de la teoría de sistemas dinámicos es clave para el desarrollo de tecnologías modernas, desde el control automático de robots hasta el diseño de circuitos en la electrónica avanzada, promoviendo un enfoque integral y sistémico en la ingeniería.
+
+---
+
+### 5. BIBLIOGRAFÍAS
+
+- Ogata, K. *Ingeniería de Control Moderna*. 5 edición. Prentice Hall.
+- C. Chen, *Analog and Digital Control System Design*, New York, Saunders College Publishing.
+- [Aulas ECCI](https://aulas.ecci.edu.co/mod/resource/view.php?id=217849)
