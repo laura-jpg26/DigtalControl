@@ -475,7 +475,9 @@ $$m\ddot{x}+kx=0$$
 
 
 📚2.
-
+ <p align="center">
+   <img src="images/plantilla/ejermplo.jpg" alt="SISTEMA" width="500" height="200">
+</p>
 
 
 
