@@ -87,9 +87,8 @@ Usualmente se utilizan para sistemas simples, ya que entre más complejo sea el 
 
 ## 2.SISTEMAS ELÉCTRICOS
 
-IMAGEN
 <p align="center">
-  <img src="images/plantilla/JOAN3" alt="Descripción de la imagen" width="400"/>
+  <img src="images/plantilla/JOAN3.png" alt="Descripción de la imagen" width="400"/>
 </p>
 El fenómeno físico que modela este comportamiento
 
@@ -109,7 +108,7 @@ $v(t) = L\frac{di(t)}{dt}$
 
 EJEMPLO
 <p align="center">
-  <img src="images/plantilla/JOAN4" alt="Descripción de la imagen" width="400"/>
+  <img src="images/plantilla/JOAN4.png" alt="Descripción de la imagen" width="400"/>
 </p>
 
 APLICANDO LEY DE KIRCHHOFF
