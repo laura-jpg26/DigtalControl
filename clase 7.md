@@ -108,8 +108,10 @@ pretty(xSol)
 ```
 
 💡 Ejemplo 2: Sistema Masa-Resorte sin Amortiguador (Movimiento libre)
+<p align="center">
+   <img src="images/plantilla/ejemplo2.png" >
+</p>
 
-![Ejemplo 2](ejemplo2.png)
 
 📌 Enunciado:
 El sistema tiene:
@@ -146,8 +148,10 @@ pretty(xSol)
 ## 6. Ejecicios 
 ### Ejercicio 1
 Determinar la posición de equilibrio y la frecuencia angular del sistema de resorte, masa y polea mostrados. El resorte tiene una constante $k$, y la polea puede considerarse como desprovista de fricción y de masa despreciable.
+<p align="center">
+   <img src="images/plantilla/ejercicio1clase.png" >
+</p>
 
-![Ejercicio 1](ejercicio1clase.png)
 
 En el equilibrio, sobre la masa m actúa su peso hacia abajo, y la tensión de la cuerda hacia arriba. Por tanto, la condición de equilibrio para la masa $m$ es:
 
@@ -188,8 +192,11 @@ $$m\frac{d^{2}t}{dt^{2}}=-k\frac{y}{4}$$
  ### Ejercicio 2
 
 Determinar la posición de equilibrio y la frecuencia angular del sistema de masa única mostrado. La masa de la polea es despreciable.
+<p align="center">
+   <img src="images/plantilla/ejercicio2clase.png" >
+</p>
 
-![Ejercicio 2](ejercicio2clase.png)
+
 
 En el equilibrio, sobre la masa $m$ actúa su peso y la tensión del hilo. De aquí que la tensión de equilibrio sea:
 
