@@ -57,7 +57,7 @@ $$e_{o}=e_{i}(1+\frac{R2}{R1})$$
 ## 4. Ejemplos
 ### 💡 **Ejemplo 1:** Encontrar el valor de $R_1$ en el circuito.
 
-![Figura 1. Nodos](nodos.png)
+![Figura 1. Nodos](images/plantilla/nodos.png)
 
 **Análisis paso a paso:**
 
@@ -84,7 +84,7 @@ $\[
 
 💡 **Ejemplo 2:** Calcular la ganancia de un amplificador no inversor.
 
-![Figura 2. Amplificador no inversor](amplificadornoinversor.png)
+![Figura 2. Amplificador no inversor](images/plantilla/amplificadornoinversor.png)
 
 **Análisis paso a paso:**
 
