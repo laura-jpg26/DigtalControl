@@ -476,7 +476,7 @@ $$m\ddot{x}+kx=0$$
 
 📚2.
  <p align="center">
-   <img src="images/plantilla/ejermplo.png" alt="ejemplo" width="500" height="200">
+   <img src="images/plantilla/ejermplo.png" alt="ejemplo" width="500" height="450">
 </p>
 
 
