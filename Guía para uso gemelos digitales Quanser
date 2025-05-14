@@ -29,14 +29,17 @@
 4. Arrastra el bloque `HIL Initialize` al modelo Simulink.
 5. Haz doble clic en el bloque `HIL Initialize` para configurarlo.
 6. Configura en la pestaña **Main**:
-   - **Board type**: `qube_servo3_usb`
+   - **Board type**: `qube_servo2_usb`
    - Haz clic en **Defaults** para aplicar las opciones por defecto.
    - **Board identifier**: `0@tcpip://localhost:18922`  
-     *(Para usar el Qube-Servo 3 virtual con disco)*
+     *(Para usar el Qube-Servo 2 virtual con disco)*
    - Marca la opción **Active during normal simulation**
    - Haz clic en **OK**
 
-7. Verifica que el disco del Qube-Servo 3 esté abierto en **Quanser Interactive Labs**.
+![Confguración QUARC](images/plantilla/Quanser_conf.PNG)
+*Figura 3: Configuración interfaz QUARC*
+
+7. Verifica que el disco del Qube-Servo 2 esté abierto en **Quanser Interactive Labs**.
 
 ---
 
@@ -47,7 +50,7 @@
 ![Run Simulation](#)
 *Figura 3: Botón "Run" en la pestaña Simulation*
 
-9. Si no hay errores, la tira LED del Qube-Servo 3 se pondrá **verde**.
+9. Si no hay errores, la tira LED del Qube-Servo 2 se pondrá **verde**.
 10. El botón "Run" ahora será un botón "Stop". Haz clic en él para detener el modelo.
 
 ---
