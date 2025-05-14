@@ -59,6 +59,10 @@
    - Marca la opción **Active during normal simulation**
    - Haz clic en **OK**
 
+![Configuración HIL](images/plantilla/Quanser_conf.PNG)
+ 
+*Figura 6: Configuración bloque HIL*
+
 7. Verifica que el disco del Qube-Servo 2 esté abierto en **Quanser Interactive Labs**.
 
 ---
@@ -69,13 +73,13 @@
 
 ![Run Simulation](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/boton%20run.png)
 
-*Figura 6: Botón "Run" en la pestaña Simulation*
+*Figura 7: Botón "Run" en la pestaña Simulation*
 
 9. Si no hay errores, la tira LED del Qube-Servo 2 se pondrá **verde**.
 
 ![qube servo conectado](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/qube%20servo%20verde.PNG)
 
-*Figura 7: Tira led del Qube servo en verde*
+*Figura 8: Tira led del Qube servo en verde*
 
 11. El botón "Run" ahora será un botón "Stop". Haz clic en él para detener el modelo.
 
@@ -100,7 +104,7 @@
 
 ![Stall Detection](https://github.com/jorgecote/DigtalControl/blob/main/images/plantilla/stall%20torque%20detector.png)
 
-*Figura 8: Subsistema de detección de bloqueo (Stall)*
+*Figura 9: Subsistema de detección de bloqueo (Stall)*
 
 18. Ejecuta el controlador QUARC nuevamente.
 19. Establece el bloque `Constant` a `0.5` para aplicar 0.5V al motor.  
