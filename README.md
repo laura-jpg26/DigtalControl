@@ -24,6 +24,19 @@ Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y fina
 
 $$R=\frac{V}{I}$$
 
+$${
+\begin{pmatrix*}[r]
+63 & 71 & 2\\
+6 & 829 & 12\\
+599 & 9 & 361
+\end{pmatrix*}
+}={\begin{pmatrix*}[r]
+63 & 71 & 2\\
+6 & 829 & 12\\
+599 & 9 & 361
+\end{pmatrix*}}$$
+
+
 ## 6. Figuras
 Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
 * Primero escribimos ![]().
