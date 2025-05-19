@@ -3,7 +3,7 @@ En clase se abordó el tema de la función de transferencia, explicando en qué 
 
 # 1. Funcion  de transferencia
 > 🔑 Esta consiste en aplicar la transformada de Laplace a la ecuación diferencial del sistema, despejando la relación entre la salida y la entrada, de forma que se obtiene:
-$$ \frac{Y(s)}{U(s)}$$
+$$\frac{Y(s)}{U(s)}$$
 
 > 🔑 Esto se aplica únicamente cuando se desea obtener funciones de transferencia. En cambio, si se quiere resolver directamente la ecuación diferencial, es necesario considerar las condiciones iniciales, las cuales no siempre son iguales a cero.
 
@@ -91,6 +91,8 @@ $s=-1$ y $s=-2$
 
   
 </div>
+
+
 
 
 
