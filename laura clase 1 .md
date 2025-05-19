@@ -35,7 +35,7 @@ $N(s)=0$  por lo cual $3s-1=0$
 $s=\frac{1}{3}$
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
 
-  <img src="images/plantilla/zeros1.png"  width="200" height="200">
+  <img src="images/plantilla/zeros1.png"  width="400" height="400">
 
   
 </div>
