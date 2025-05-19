@@ -28,11 +28,13 @@ Si n = m, la función bipropia.
 ## 3. Zeros de una funcion de transferencia
 Si se iguala N(s) a cero, se obtienen los valores de s que cumplen esa condición; cuando el numerador es cero, toda la función de transferencia se anula, por lo que a estos valores se les llama ceros. Estos valores pueden ser reales o complejos, lo que permite ubicarlos en un plano cartesiano.
 
-💡 Ejemplo: 
+### 💡 Ejemplo 1: 
 $ G(s)=\frac{Y(s)}{U(s)}= \frac{3s-1}{s^{2}+3s+2}$
 $N(s)=0$  por lo cual $3s-1=0$
 
 $s=\frac{1}{3}$
+
+*GRAFICA* 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
 
   <img src="images/plantilla/zeros1.png"  width="400" height="400">
@@ -40,12 +42,58 @@ $s=\frac{1}{3}$
   
 </div>
 
+### 💡 Ejemplo 2: 
+
+$$\frac{s^{4}+4s+1}{s^{2}+3s^{3}+3s^{2}+s+2}$$
+
+$s^{4}+4s+1=0$
+
+$s=\frac{-4\pm \sqrt{(4)^{2}-4(1)(1)}}{2(1)}$
+
+$s=\frac{-4\pm \sqrt{12}}{2}$
+
+Descomponiendo la raiz nos queda que:
+
+$s=\frac{-4\pm 2\sqrt{3}}{2}$
+
+$s=-2\pm \sqrt{3}$
+
+$s= -0.26$ y $s= -3.73$
+
+*GRAFICA*
+
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/zeros2.png"  width="400" height="400">
+
+  
+</div>
+
+## 3. Polos de una funcion de transferencia
+Si se iguala D(s) a cero, se obtienen los valores de s que satisfacen esa condición; cuando el denominador es cero, toda la función de transferencia tiende a infinito, por lo que a estos valores se les llama polos. Estos valores pueden ser reales o complejos, por lo que es posible ubicarlos en un plano cartesiano.
+### 💡 Ejemplo 3:
+
+$$G(s)=\frac{3s-1}{s^{2}+3s+2}$$
+
+>🔑El denominador de la función de transferencia corresponde al *polinomio característico* del sistema.
+
+$D(s)=0$ por lo cual $s^{2}+3s+2=0$
+
+$(s+1)(s+2)=0$
+
+$s=-1$ y $s=-2$
+
+*GRAFICA*
+
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/polos1.png"  width="400" height="400">
+
+  
+</div>
 
 
- Un sistema lineal es aquel que cumple con el principio de superposición, lo que significa que la respuesta a múltiples entradas simultáneas es la suma de las respuestas individuales a cada entrada por separado. Además, presenta proporcionalidad, es decir, si la entrada se escala, la salida también lo hace en la misma proporción.
-Por otro lado, los sistemas no lineales no cumplen con el principio de superposición. Sin embargo, pueden linealizarse en torno a un punto de operación específico, donde su comportamiento se aproxima al de un sistema lineal.
-En resumen, los sistemas lineales son predecibles y más fáciles de analizar matemáticamente, mientras que los no lineales requieren métodos adicionales, como la linealización, para su estudio en ciertos rangos de operación. 
-## 3.1. Modelamiento y validación
+
 Al crear un modelo matemático usando leyes físicas, siempre habrá un margen de error en los resultados. Para asegurarse de que el modelo sea preciso, es necesario compararlo con el sistema real. Si la diferencia es demasiado grande, se deben hacer ajustes hasta que el resultado sea suficientemente cercano. 
 ## 3.2. Influencia de parámetros
 Tomando como referencia un resorte, su comportamiento puede ser sinusoidal, presentar un decaimiento exponencial o una combinación de ambos.
