@@ -1,19 +1,42 @@
-# DEFINICION SISTEMAS DINAMICOS, REPASO TRANSFORMADA DE LAPLACE
-En clase, los estudiantes expresan con sus propias palabras las definiciones de sistema, sistema dinámico, planta y proceso. Luego, se explica su relación con la materia y se introducen los modelos dinámicos y ecuaciones diferenciales, repasando conceptos clave. Además, se analizan los sistemas lineales y no lineales, considerando la influencia de sus parámetros. Finalmente, se estudia la transformada de Laplace, desde sus fundamentos hasta su inversa, concluyendo con un ejercicio práctico.
-# 1. Conceptos
-> 🔑 Un *sistema* se define como una combinacion de componentes que actuan en conjunto parea alcanzar un objetivo especifico.
+# FUNCION DE TRANSFERENCIA, ZEROS Y POLOS
+En clase se abordó el tema de la función de transferencia, explicando en qué consiste y cómo se clasifica según el grado del polinomio. También se aprendió a calcular los ceros y los polos, así como a identificar el grado de una función de transferencia. Además, se estudió el teorema del valor final y se analizaron los efectos que tienen diferentes tipos de entradas al sistema, como una señal escalón o una rampa.
 
-> 🔑 Se considera un *Sitema dinamico* a aquel cuya salida en el presente dependa de una entrada en el pasado.
+# 1. Funcion  de transferencia
+> 🔑 Esta consiste en aplicar la transformada de Laplace a la ecuación diferencial del sistema, despejando la relación entre la salida y la entrada, de forma que se obtiene:
+$$ \frac{Y(s)}{U(s)}$$
 
-> 🔑 Se considera un *Sitema estatico* a aquel es aquel cuya salida en un momento dado depende únicamente de la entrada en ese mismo instante.
+> 🔑 Esto se aplica únicamente cuando se desea obtener funciones de transferencia. En cambio, si se quiere resolver directamente la ecuación diferencial, es necesario considerar las condiciones iniciales, las cuales no siempre son iguales a cero.
 
-> 🔑 Un *Proceso* se entiende como una serie de etapas secuenciales que facilitan el desarrollo o la producción de un producto o la consecución de un objetivo.
+## 2. Clasificación
+Una función de transferencia se puede expresar como una fracción algebraica, donde N(s) representa el numerador y D(s) el denominador. En este contexto, se denomina n al grado del polinomio en el numerador y m al grado del polinomio en el denominador.
 
-> 🔑 Una *Planta* se define como la infraestructura fija que posibilita la ejecución de un proceso.>
-## 2. Modelos dinamicos
-Es fundamental desarrollar un modelo matemático que represente la relación entre las variables de interés y el tiempo f(t)
-Las variables experimentan variaciones a lo largo del tiempo, y para comprender su evolución y comportamiento, es crucial cuantificar la magnitud de estos cambios y analizar cómo influyen en el sistema.
-## 3. Sistemas lineales y no lineales
+$$ G(s)=\frac{N(s)}{D(s)}$$
+
+Según esto, se pueden diferenciar tres casos para clasificar la función de transferencia:
+
+Si n > m, la función es impropia.
+ >🔑Esto significa que la función entrega energía sin haber recibido ninguna.
+
+Si m > n, la función es estrictamente propia.
+
+ > 🔑Significa que el sistema requiere energía para poder entregar energía.
+
+Si n = m, la función bipropia.
+
+ >🔑El sistema entrega energía simultáneamente a como la recibe, es decir, en el mismo instante en que ingresa energía.
+
+## 3. Zeros de una funcion de transferencia
+Si se iguala N(s) a cero, se obtienen los valores de s que cumplen esa condición; cuando el numerador es cero, toda la función de transferencia se anula, por lo que a estos valores se les llama ceros. Estos valores pueden ser reales o complejos, lo que permite ubicarlos en un plano cartesiano.
+
+💡 Ejemplo: 
+$ G(s)=\frac{Y(s)}{U(s)}= \frac{3s-1}{s^{2}+3s+2}$
+$N(s)=0$  por lo cual $3s-1=0$
+
+$s=\frac{1}{3}$
+
+
+
+
  Un sistema lineal es aquel que cumple con el principio de superposición, lo que significa que la respuesta a múltiples entradas simultáneas es la suma de las respuestas individuales a cada entrada por separado. Además, presenta proporcionalidad, es decir, si la entrada se escala, la salida también lo hace en la misma proporción.
 Por otro lado, los sistemas no lineales no cumplen con el principio de superposición. Sin embargo, pueden linealizarse en torno a un punto de operación específico, donde su comportamiento se aproxima al de un sistema lineal.
 En resumen, los sistemas lineales son predecibles y más fáciles de analizar matemáticamente, mientras que los no lineales requieren métodos adicionales, como la linealización, para su estudio en ciertos rangos de operación. 
