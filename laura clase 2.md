@@ -1,6 +1,3 @@
-Perfecto, con base en lo que me dictaste y siguiendo **tu mismo estilo y formato GitHub con dips para las imágenes**, aquí te dejo la redacción:
-
----
 
 # ÁLGEBRA DE BLOQUES
 
