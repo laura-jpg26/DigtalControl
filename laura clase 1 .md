@@ -10,7 +10,7 @@ $$\frac{Y(s)}{U(s)}$$
 ## 2. Clasificación
 Una función de transferencia se puede expresar como una fracción algebraica, donde N(s) representa el numerador y D(s) el denominador. En este contexto, se denomina n al grado del polinomio en el numerador y m al grado del polinomio en el denominador.
 
-$$ G(s)=\frac{N(s)}{D(s)}$$
+$$G(s)=\frac{N(s)}{D(s)}$$
 
 Según esto, se pueden diferenciar tres casos para clasificar la función de transferencia:
 
@@ -29,7 +29,9 @@ Si n = m, la función bipropia.
 Si se iguala N(s) a cero, se obtienen los valores de s que cumplen esa condición; cuando el numerador es cero, toda la función de transferencia se anula, por lo que a estos valores se les llama ceros. Estos valores pueden ser reales o complejos, lo que permite ubicarlos en un plano cartesiano.
 
 ### 💡 Ejemplo 1: 
-$ G(s)=\frac{Y(s)}{U(s)}= \frac{3s-1}{s^{2}+3s+2}$
+
+$G(s)=\frac{Y(s)}{U(s)}=\frac{3s-1}{s^{2}+3s+2}$
+
 $N(s)=0$  por lo cual $3s-1=0$
 
 $s=\frac{1}{3}$
@@ -100,7 +102,7 @@ $s=-1$ y $s=-2$
 
  $(s+3+)(s^{2}+0.5s+1)=0$
 
- $(s+3+)=0$       $s=-3$
+ $(s+3+)=0$    y    $s=-3$
 
  $s^{2}+0.5s+1=0$   
 
@@ -114,7 +116,7 @@ $s=-1$ y $s=-2$
 
  $s=\frac{-0.5\pm 1.93i}{2}$
 
- $s= -0.25+0.96i$    $s= -0.25-0.96i$
+ $s= -0.25+0.96i$   y  $s= -0.25-0.96i$
 
 ZEROS
 
