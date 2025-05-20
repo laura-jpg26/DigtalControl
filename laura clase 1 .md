@@ -142,7 +142,7 @@ Otra manera de clasificar las funciones de transferencia es según su orden o gr
 
 El error en estado estacionario se refiere al error que se presenta cuando $t\to \infty $ Para determinar este valor final del error, se puede utilizar el teorema del valor final, el cual permite calcular el comportamiento del sistema en ese instante.
 
-$$\displaystyle \lim_{t \to \infty } f(t)= \displaystyle \lim_{t \to \infty }sF(s)$$
+$$\displaystyle \lim_{t \to \infty } f(t)= \displaystyle \lim_{s \to 0}sF(s)$$
 
 ### 💡 Ejemplo 4:
 
@@ -158,170 +158,145 @@ $Y(s)=\frac{{\frac{4}{s}}}{5s+1}$
 
 El valor final de y(s) se puede determinar utilizando el teorema del valor final, el cual permite conocer el comportamiento de la salida cuando el tiempo tiende a infinito.
 
+$\displaystyle \lim_{t \to \infty } sY(s)= \displaystyle \lim_{t \to \infty } \frac{\frac{4}{s}}{5s+1}$
+
+$\displaystyle \lim_{s \to 0 } sY(s)= \displaystyle \lim_{s \to \0 } s \frac{\frac{4}{s}}{5s+1}$
+
+SIMPLIFICANDO
+
+$ \displaystyle \lim_{s \to \0 }  \frac{{4}}{5s+1}$  
+
+Reemplazando por 0
+
+$\frac{4}{1}=4$
+
+ ### 💡 EJERCICIO:
+
+ $$G(s)=\frac{8}{s^{3}+6s^{2}+11s+6}$$
+
+*SI LA ENTRADA ES UN RAMPA*
+
+$U(s)= \frac{1}{s^{2}}$
+
+$\displaystyle \lim_{s \to 0} s*\frac{\frac{8}{s^{2}}}{s^{3}+6s^{2}+11s+6}$
+
+$\displaystyle \lim_{s \to 0} \frac{\frac{8}{s}}{s^{3}+6s^{2}+11s+6}$
+
+Como al reemplazar $s^{3}+6s^{2}+11s+6$ el resultado tiende a cero en el denominador, el límite tiende a infinito, lo que indica que el sistema presenta un crecimiento no acotado o tiende a infinito.
 
 
+*SI LA ENTRADA ES UN ESCALON DE AMPLITUD 2* 
 
-
-
-Al crear un modelo matemático usando leyes físicas, siempre habrá un margen de error en los resultados. Para asegurarse de que el modelo sea preciso, es necesario compararlo con el sistema real. Si la diferencia es demasiado grande, se deben hacer ajustes hasta que el resultado sea suficientemente cercano. 
-## 3.2. Influencia de parámetros
-Tomando como referencia un resorte, su comportamiento puede ser sinusoidal, presentar un decaimiento exponencial o una combinación de ambos.
-* *Comportamiento sinusoidal* es cuando su respuesta varía en el tiempo siguiendo la forma de una onda seno o coseno. Esto significa que la salida oscila periódicamente, subiendo y bajando en un patrón repetitivo, en el caso del resorte seria como si este se estirara y se retraese sin desagaste, es decir, sin disminuir la distacia que se estira.
-* *Decaimiento exponencial* es un comportamiento en el que una cantidad disminuye progresivamente a lo largo del tiempo siguiendo una curva exponencial decreciente, en el caso del resorte a medida del tiempo tiende a dejar de estirarse a la misma deistancia, tendiendo a irse a reposo.
-* *Combinacion de ambos* es cuando la respuesta varia en el tiempo, pero su amplitud disminuye gradualmente hasta desaparecer, en el caso del resorte que tenga un amortiguamiento, por ejemplo encontrarse sumergido en agua.
-## 4. Repaso
-Se recuerda lo fundamental  de reconocer una ecuación diferencial, ya que permite modelar dinámicamente distintos sistemas. Además, algunos conceptos de cálculo vectorial son clave para comprender ciertos procesos relacionados.
-### 4.1 Ecuaciones diferenciales
-Las ecuaciones diferenciales son expresiones matemáticas que relacionan una función con sus derivadas. Se utilizan para relacionar la evolución de sistemas  en el tiempo, describiendo cómo una variable cambia en función de otra(tiempo). 
-
-### 4.2 Transformada de LaPlace
-La transformada de Laplace es una técnica matemática que permite cambiar una ecuación del tiempo al dominio de la frecuencia, haciendo más fácil su análisis. Convierte ecuaciones con derivadas en ecuaciones más simples de resolver.
-## 5. Transformada Inversa de LaPlace 
-La transformada inversa de Laplace permite regresar una ecuación del dominio de la frecuencia al dominio del tiempo. Su objetivo es recuperar la función original después de haber sido transformada, facilitando la interpretación del comportamiento del sistema en el tiempo.
-## 💡6. Ejemplo
-Se realiza el siguiente ejemplo en clase:
-
-$$G(s)=\frac{2s^{2}-4}{(s+1)(s+2)(s-3)}$$
-
-Se repasa el tema de fracciones parciales para resover la transformada de LaPlace inversa, siendo en este caso separar el denominador y asignar variables para resolver el sistema, tal que: 
-
-$$G(s)=\frac{A}{(s+1)}+\frac{B}{(s-2)}+\frac{C}{(s-3)}=\frac{2s^{2}-4}{(s+1)(s+2)(s-3)}$$
-
-Se resuelven las fracciones del lado izquierdo quedando de tal manera y luego igualando numerador con numerador: 
-
-$$A(s-2)(s-3)+B(s+1)(s-3)+C(s+1)(s-2)=2s^{2}-4$$
-
-Se resuleven parentesis: 
-
-$$A(s^{2}-5s+6)+B(s^{2}-2s-3)+C(s^{2}-s-2)=2s^{2}-4$$
-
-Se plantea el sistema de ecuaciones 3x3 igualando terminos similares en las dos partes de la igualadad, es decir:
-
- 1. $$A+B+C=2$$
+$$G(s)=\frac{8}{s^{3}+8s^{2}+15s}$$
  
- 2. $$-5A-2B-C=0$$
- 
- 3. $$6A-3B-2C=-4$$
- 
-Despejando el sistema 3x3 por metodo de sustitucion queda que: 
+$U(s)=\frac{2}{s}$
 
-1. $$A=2-C-B$$
-    
-2.Reemplazamos 1 en 2
-   
-$-5(2-C-B)-2B-C=0$
+$G(s)=\frac{\frac{16}{s}}{s^{3}+8s^{2}+15s}$
 
-$-10+5C+5B-2B-C=0$
+$G(s)=\frac{16}{s(s^{3}+8s^{2}+15s)}$
 
-$-10+4C+3B=0$
+$\displaystyle \lim_{s \to 0}s*\frac{16}{s(s^{3}+8s^{2}+15s)}$
 
-$4C+3B=10$
+SIMPLIFICADO Y REEMPLAZANDO POR 0
 
-$C=\frac{10-3B}{4}$
-
-3. Remplazmos 1 y 2 en 3
-
-$6(2-C-B)-3B-2(\frac{10-3B}{4})=-4$
-
-$12-6C-6B-3B-2(\frac{10-3B}{4})=-4$
-
-$12-6(\frac{10-3B}{4})-6B-3B-2(\frac{10-3B}{4})=-4$
-
-$12-(\frac{60-18B}{4})-9B-(\frac{20-6B}{4})=-4$
-
-$12-15+(\frac{18B}{4})-9B-5+(\frac{6B}{4})=-4$
- 
-$-8-9B+(\frac{18}{4}+\frac{6}{4})B=-4$
-
-$-8-9B+6B=-4$
-
-$-9B+6B=4$
-
-$-3B=4$
-
-$B=\frac{-4}{3}$
-
-4.Remplazamos valor de B y C en 1
-
-$A=2-C-B$
-
-$A=2-(\frac{10-3(\frac{-4}{3})}{4})-(\frac{-4}{3})$
-
-$A=\frac{-1}{6}$
-
-5.Remplazmos valor de B en 2
-
-$C=\frac{10-3B}{4}$
-
-$C=(\frac{10-3(\frac{-4}{3})}{4})$
-
-$C=\frac{7}{2}$
-
-Por ultimo: 
-
-$$G(s)=\frac{\frac{-1}{6}}{s+1}+ \frac{\frac{-4}{3}}{s-2}+ \frac{\frac{7}{2}}{s-3}$$
+Obtenemos nuevamente que el límite tiende a infinito, lo cual indica que el sistema no alcanza un valor final estable.
 
 
 #  7.Ejercicios
 📚 1. 
-$$W(s)=\frac{3s+2}{(s-5)(s+2)}$$
+Perfecto, gracias por la explicación detallada. A continuación, te presento un **ejercicio similar** planteado por mí, siguiendo exactamente el estilo que usaste y en formato GitHub, con ecuaciones entre signos de dólar y corchetes en lugar de paréntesis grandes. También usé **solo decimales**, como pediste.
 
-$W(s)=\frac{A}{(s-5)}+\frac{B}{(s+2)}=\frac{3s+2}{(s-5)(s+2)}$
+---
 
-$A(s+2)+B(s-5)=3s+2$
+## Ejercicio propuesto
 
-$As+2A+Bs-5B=3s+2$
+Dada la siguiente función de transferencia:
 
-$A+B=3$
+$$G(s) = \frac{s + 1.5}{(s + 2)(s^2 + 0.6s + 1.2)}$$
 
-$2A-5B=2$
+ZEROS
 
-1. $A=3-B$
-2.
-$2(3-B)-5B=2$
+Para encontrar los ceros, igualamos el numerador a cero:
 
-$6-2B-5B=2$
+$s + 1.5 = 0 \Rightarrow s = -1.5$
 
-$6-7B=2$
+$s = -1.5\$
 
-$-7B=-4$
-
-$B=\frac{4}{(7)}$
+POLOS
 
 
-3.
-$A=3-(\frac{4}{7)}$
-   
-$A=\frac{17}{(7)}$
+Primero igualamos a cero el primer factor del denominador:
+$ s + 2 = 0 \Rightarrow s = -2$
 
-$$W(s)=\frac{\frac{17}{7}}{(s-5)}+\frac{\frac{4}{7}}{(s+2)}$$
+Ahora resolvemos:
+
+$s^2 + 0.6s + 1.2 = 0$
+
+Aplicamos la fórmula cuadrática:
+
+$s = \frac{-0.6 \pm \sqrt{[0.6]^2 - 4[1][1.2]}}{2[1]}$
+
+$s = \frac{-0.6 \pm \sqrt{0.36 - 4.8}}{2}$
+
+$s = \frac{-0.6 \pm \sqrt{-4.44}}{2}$
+
+$s = \frac{-0.6 \pm 2.107i}{2}$
+
+$s = -0.3 \pm 1.0535i$
+
+
+$s = -2\$
+
+$s = -0.3 + 1.0535i\$
+
+$s = -0.3 - 1.0535i\$
+
+ <div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/zerosypolos2.png"  width="500" height="500">
+
+  
+</div>
+
+
 
 📚 2. 
-$$F(s)=\frac{(s-5)}{(s+3)(s-2)}$$ 
+Perfecto, gracias por el dictado. A continuación, te presento un **ejercicio similar** sobre el **Teorema del Valor Final**, redactado en **formato GitHub** con todas las ecuaciones en signos de dólar (\$) y manteniendo el estilo que usaste: entrada tipo escalón, números decimales, simplificaciones claras y evaluación final del límite.
 
-$F(s)=\frac{(s-5)}{(s+3)(s-2)}=\frac{A}{(S-5)}+\frac{B}{(S-2)}$
+---
 
-$A(s-2)+B(s+3)=s-5$
+## Ejercicio propuesto
 
-$As-2A+Bs+3B=s-5$
+Si la entrada es un **escalón unitario**, y la función de transferencia es:
 
-$A+B=1$
+$$Y(s) = \frac{3}{(4s + 1)}$$
 
-$-2A+3B=-5$
+*ENTRADA ESCALON*
 
-$A=1-B$
+$$R(s) = \frac{1}{s}$$
 
-$-2(1-B)+3B=-5$
+La salida del sistema será:
 
-$-2+2B+3B=-5$
+$Y(s) = \frac{3}{(4s + 1)} \cdot \frac{1}{s} = \frac{3}{s(4s + 1)}$
 
-$B=\frac{-3}{(5)}$
+Aplicamos el **teorema del valor final**:
 
-$A=1-(\frac{-3}{(5)})$
+$\lim_{s \to 0} \left[ s \cdot Y(s) \right] = \lim_{s \to 0} \left[ s \cdot \frac{3}{s(4s + 1)} \right]$
 
-$A=\frac{8}{(5)}$
+Simplificamos 
 
-$$F(s)=\frac{\frac{8}{(5)}}{(S-5)}+\frac{\frac{-3}{(5)}}{(S-2)}$$
+$\lim_{s \to 0} \left[ \frac{3}{4s + 1} \right]$
+
+Evaluamos el límite cuando \$s \to 0\$:
+
+$\frac{3}{4(0) + 1} = \frac{3}{1} = 3$
+
+El valor final de la salida es:
+
+$\lim_{t \to \infty} y(t) = 3$
+
+
+
 
 ## 8. Conclusiones
 En conclusión, la clase explicó qué son los sistemas dinámicos y cómo se pueden estudiar usando modelos matemáticos y ecuaciones diferenciales. Se diferenciaron los sistemas lineales y no lineales, resaltando la importancia de validar los modelos para que sean precisos. También se repasó la transformada de Laplace y su inversa, herramientas útiles para resolver ecuaciones de manera más sencilla.
