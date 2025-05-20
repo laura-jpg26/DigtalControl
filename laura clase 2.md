@@ -104,7 +104,45 @@ $Y_2(s) = U_1(s) \cdot G_1(s) \cdot G_2(s)$
 
 $\frac{Y_2(s)}{U_1(s)} = G_1(s) \cdot G_2(s)$
 
+Perfecto, gracias por la claridad. Con base en tus instrucciones, aquí está la **continuación estructurada**, **respetando los subtítulos numerados**, tu estilo visual con *divs* para imágenes, y el formato de presentación paso a paso para el **Ejemplo 1**.
+
 ---
 
-¿Quieres que continúe con más ejemplos o con combinaciones distintas como lazos de retroalimentación o sistemas en paralelo?
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/resultado_dos_bloques_serie.png" width="500" height="300">
+
+</div>
+
+---
+
+## 📘 Ejemplo 1: Lazo de retroalimentación positiva
+
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/ejemplo1_planteamiento.png" width="500" height="300">
+
+</div>
+
+En este caso se presenta un **lazo de retroalimentación positiva**, el cual se caracteriza por **sumar** la señal de la salida a la de entrada, en lugar de restarla como ocurre en la retroalimentación negativa.
+
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/ejemplo1_diagrama.png" width="500" height="300">
+
+</div>
+Claro, aquí tienes solo las ecuaciones, en el formato que me pediste (entre signos de peso y usando corchetes para los paréntesis grandes):
+
+\$E\[s] = X\[s] + Y\_1\[s]\$
+\$Y\[s] = E\[s] \cdot G\_1\[s]\$
+\$Y\_1\[s] = Y\[s] \cdot G\_2\[s]\$
+\$E\[s] = X\[s] + Y\[s] \cdot G\_2\[s]\$
+\$Y\[s] = \[X\[s] + Y\[s] \cdot G\_2\[s]] \cdot G\_1\[s]\$
+\$Y\[s] = X\[s] \cdot G\_1\[s] + Y\[s] \cdot G\_2\[s] \cdot G\_1\[s]\$
+\$Y\[s] - Y\[s] \cdot G\_2\[s] \cdot G\_1\[s] = X\[s] \cdot G\_1\[s]\$
+\$Y\[s] \[1 - G\_2\[s] \cdot G\_1\[s]] = X\[s] \cdot G\_1\[s]\$
+\$\dfrac{Y\[s]}{X\[s]} = \dfrac{G\_1\[s]}{1 - G\_2\[s] \cdot G\_1\[s]}\$
+
+
+
 
