@@ -160,7 +160,7 @@ El valor final de y(s) se puede determinar utilizando el teorema del valor final
 
 $\displaystyle \lim_{t \to \infty } sY(s)= \displaystyle \lim_{t \to \infty } \frac{\frac{4}{s}}{5s+1}$
 
-$\displaystyle \lim_{s \to 0 } sY(s)= \displaystyle \lim_{s \to \0 } s \frac{\frac{4}{s}}{5s+1}$
+$\displaystyle \lim_{s \to 0 } sY(s)= \displaystyle \lim_{s \to 0 } s \frac{\frac{4}{s}}{5s+1}$
 
 SIMPLIFICANDO
 
