@@ -39,7 +39,7 @@ $s=\frac{1}{3}$
 *GRAFICA* 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
 
-  <img src="images/plantilla/zeros1.png"  width="400" height="400">
+  <img src="images/plantilla/zeros1.png"  width="500" height="500">
 
   
 </div>
@@ -66,7 +66,7 @@ $s= -0.26$ y $s= -3.73$
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
 
-  <img src="images/plantilla/zeros2.png"  width="400" height="400">
+  <img src="images/plantilla/zeros2.png"  width="500" height="500">
 
   
 </div>
@@ -89,7 +89,7 @@ $s=-1$ y $s=-2$
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
 
-  <img src="images/plantilla/polos1.png"  width="400" height="400">
+  <img src="images/plantilla/polos1.png"  width="500" height="500">
 
   
 </div>
@@ -116,14 +116,19 @@ $s=-1$ y $s=-2$
 
  $s=\frac{-0.5\pm 1.93i}{2}$
 
- $s= -0.25+0.96i$   y  $s= -0.25-0.96i$
+ $s= -0.25+0.96i$                                $s= -0.25-0.96i$
 
 ZEROS
 
-$s+2=0$  $s=-2$
+$s+2=0$                                          $s=-2$
  
 
- 
+ <div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/zerosypolos1.png"  width="500" height="500">
+
+  
+</div>
 
 
 
