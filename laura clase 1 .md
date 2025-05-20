@@ -164,7 +164,7 @@ $\displaystyle \lim_{s \to 0 } sY(s)= \displaystyle \lim_{s \to \0 } s \frac{\fr
 
 SIMPLIFICANDO
 
-$ \displaystyle \lim_{s \to \0 }  \frac{{4}}{5s+1}$  
+$ \displaystyle \lim_{s \to 0 }  \frac{{4}}{5s+1}$  
 
 Reemplazando por 0
 
@@ -202,7 +202,7 @@ SIMPLIFICADO Y REEMPLAZANDO POR 0
 Obtenemos nuevamente que el límite tiende a infinito, lo cual indica que el sistema no alcanza un valor final estable.
 
 
-#  7.Ejercicios
+#  6.Ejercicios
 📚 1. 
 Perfecto, gracias por la explicación detallada. A continuación, te presento un **ejercicio similar** planteado por mí, siguiendo exactamente el estilo que usaste y en formato GitHub, con ecuaciones entre signos de dólar y corchetes en lugar de paréntesis grandes. También usé **solo decimales**, como pediste.
 
@@ -298,9 +298,14 @@ $\lim_{t \to \infty} y(t) = 3$
 
 
 
-## 8. Conclusiones
-En conclusión, la clase explicó qué son los sistemas dinámicos y cómo se pueden estudiar usando modelos matemáticos y ecuaciones diferenciales. Se diferenciaron los sistemas lineales y no lineales, resaltando la importancia de validar los modelos para que sean precisos. También se repasó la transformada de Laplace y su inversa, herramientas útiles para resolver ecuaciones de manera más sencilla.
+## 7. Conclusiones
+En esta clase se abordaron los conceptos fundamentales relacionados con la función de transferencia, una herramienta clave en el análisis de sistemas en el dominio de Laplace. Aprendimos que una función de transferencia representa la relación entre la salida y la entrada de un sistema lineal e invariante en el tiempo. Además, se explicó cómo identificar y calcular los ceros y polos del sistema a partir de los valores que anulan el numerador y el denominador, respectivamente, y cómo representarlos en el plano complejo.
 
-## 9. Referencias
+También se revisó el concepto de grado u orden de la función de transferencia, el cual está determinado por el polinomio del denominador (polinomio característico) y permite clasificar el tipo de sistema (propio, impropio, estrictamente propio). Finalmente, se aplicó el teorema del valor final para determinar el comportamiento del sistema cuando el tiempo tiende a infinito, especialmente frente a entradas comunes como el escalón.
+
+Estos conceptos son esenciales para entender la estabilidad, el comportamiento y la respuesta de los sistemas dinámicos.
+
+## 8. Referencias
 Ejercicio 1: Ejemplo formulado por el estudiante
-Ejercicio 2: Platzi. (s.f.). Transformada de Laplace de la derivada de una función - PVI - Repaso. Recuperado el [fecha de consulta], de https://platzi.com/tutoriales/1320-ecuaciones/8937-transformada-de-laplace-de-la-derivada-de-una-funcion-pvi-repaso/
+Ejercicio 2: Ejemplo formulado por el estudiante
+
