@@ -133,13 +133,12 @@ En este caso se presenta un **lazo de retroalimentación positiva**, el cual se 
 </div>
 Claro, aquí tienes solo las ecuaciones, en el formato que me pediste (entre signos de peso y usando corchetes para los paréntesis grandes):
 
-\$E\[s] = X\[s] + Y\_1\[s]\$
-\$Y\[s] = E\[s] \cdot G\_1\[s]\$
-\$Y\_1\[s] = Y\[s] \cdot G\_2\[s]\$
-\$E\[s] = X\[s] + Y\[s] \cdot G\_2\[s]\$
-\$Y\[s] = \[X\[s] + Y\[s] \cdot G\_2\[s]] \cdot G\_1\[s]\$
-\$Y\[s] = X\[s] \cdot G\_1\[s] + Y\[s] \cdot G\_2\[s] \cdot G\_1\[s]\$
-\$Y\[s] - Y\[s] \cdot G\_2\[s] \cdot G\_1\[s] = X\[s] \cdot G\_1\[s]\$
+Claro, aquí tienes las tres ecuaciones enumeradas y en el formato que me pediste:
+
+1. \$Y\[s] = X\[s] + Y\_1\[s]\$
+2. \$Y\[s] = E\[s] \cdot G\_1\[s]\$
+3. \$Y\_1\[s] = Y\[s] \cdot G\_2\[s]\$
+
 \$Y\[s] \[1 - G\_2\[s] \cdot G\_1\[s]] = X\[s] \cdot G\_1\[s]\$
 \$\dfrac{Y\[s]}{X\[s]} = \dfrac{G\_1\[s]}{1 - G\_2\[s] \cdot G\_1\[s]}\$
 
