@@ -71,7 +71,7 @@ $s= -0.26$ y $s= -3.73$
   
 </div>
 
-## 3. Polos de una funcion de transferencia
+## 4. Polos de una funcion de transferencia
 Si se iguala D(s) a cero, se obtienen los valores de s que satisfacen esa condición; cuando el denominador es cero, toda la función de transferencia tiende a infinito, por lo que a estos valores se les llama polos. Estos valores pueden ser reales o complejos, por lo que es posible ubicarlos en un plano cartesiano.
 ### 💡 Ejemplo 3:
 
@@ -129,6 +129,36 @@ $s+2=0$                                          $s=-2$
 
   
 </div>
+
+## 5.Grado de una función de transferencia
+
+$$G(s)=\frac{3s-1}{s^{2}+3s+2}$$
+
+Donde $s^{2}+3s+2$ es el polinomio caracteristico
+
+Otra manera de clasificar las funciones de transferencia es según su orden o grado, el cual está definido por el polinomio característico, es decir, el polinomio del denominador. Por ejemplo, si dicho polinomio es de segundo grado (como G(s)) , entonces se dice que la función de transferencia es de segundo orden.
+
+### 5.1 Teorema del valor final
+
+El error en estado estacionario se refiere al error que se presenta cuando $t\to \infty $ Para determinar este valor final del error, se puede utilizar el teorema del valor final, el cual permite calcular el comportamiento del sistema en ese instante.
+
+$$\displaystyle \lim_{t \to \infty } f(t)= \displaystyle \lim_{t \to \infty }sF(s)$$
+
+### 💡 Ejemplo 4:
+
+$$G(s)= \frac{Y(s)}{U(s)}= \frac{4}{5s+1}$$
+
+$Y(s)=\frac{4+U(s)}{5s+1}$
+
+*SI LA ENTRADA ES UN ESCALON*
+
+$U(s)=\frac{1}{s}$
+
+$Y(s)=\frac{{\frac{4}{s}}}{5s+1}$
+
+El valor final de y(s) se puede determinar utilizando el teorema del valor final, el cual permite conocer el comportamiento de la salida cuando el tiempo tiende a infinito.
+
+
 
 
 
