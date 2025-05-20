@@ -139,8 +139,12 @@ Claro, aquí tienes las tres ecuaciones enumeradas y en el formato que me pedist
 2. \$Y\[s] = E\[s] \cdot G\_1\[s]\$
 3. \$Y\_1\[s] = Y\[s] \cdot G\_2\[s]\$
 
-\$Y\[s] \[1 - G\_2\[s] \cdot G\_1\[s]] = X\[s] \cdot G\_1\[s]\$
-\$\dfrac{Y\[s]}{X\[s]} = \dfrac{G\_1\[s]}{1 - G\_2\[s] \cdot G\_1\[s]}\$
+$Y(s) = G_1(s) \cdot \left( X(s) + Y_1(s) \right)$
+  
+$Y(s) = G_1(s) \cdot X(s) + G_1(s) \cdot Y_1(s)$
+
+$Y(s) = G_1(s) \cdot X(s) + G_1(s) \cdot Y(s) \cdot G_2(s)$
+
 
 
 
