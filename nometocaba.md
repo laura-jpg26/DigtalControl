@@ -145,6 +145,13 @@ $Y(s) = G_1(s) \cdot X(s) + G_1(s) \cdot Y_1(s)$
 
 $Y(s) = G_1(s) \cdot X(s) + G_1(s) \cdot Y(s) \cdot G_2(s)$
 
+$Y(s) = G_1(s) \cdot X(s) + G_1(s) \cdot Y(s) \cdot G_2(s)$
+
+$Y(s) - Y(s) \cdot G_1(s) \cdot G_2(s) = X(s) \cdot G_1(s)$
+
+$Y(s) \cdot \left[1 - G_1(s) \cdot G_2(s)\right] = X(s) \cdot G_1(s)$
+
+$\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 - G_1(s) \cdot G_2(s)}$
 
 
 
