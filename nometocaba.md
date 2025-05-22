@@ -187,11 +187,14 @@ $\Delta = 1 - L_1$
 $\frac{E_0}{E_1} = P = \frac{P_1 \Delta_1}{\Delta} = \frac{G1G2}{1 - L_1}$
 
 ## 6. Conclusiones
+
 La fórmula de Mason facilita el análisis de sistemas de control representados por diagramas de flujo, evitando cálculos manuales complejos al integrar de forma ordenada las ganancias de trayectos y lazos. Comprender cómo calcular las ganancias, identificar trayectos directos y lazos, y usar los determinantes $\Delta$ y $\Delta_k$ es clave para aplicar esta herramienta con éxito. Así, podemos obtener la función de transferencia total del sistema de manera eficiente y precisa, lo que es fundamental para el diseño y análisis de sistemas dinámicos.
 
 
 ## 7. Referencias
+
 Clase Sistemas Dinamicos, Universidad ECCI
+
 Ejercicio propuesto por el estudiante
 
 
