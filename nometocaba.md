@@ -14,13 +14,15 @@ Luego, aprendimos sobre la fórmula de Mason, una herramienta para calcular la f
 
 Es la relación entre las variables del sistema
 
-  <img src="images/plantilla/flecha.png" alt="M2" width="200" height="500">
+  <img src="images/plantilla/flecha.png"  width="200" height="700">
 </div>
 
 *NODO*
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
+  
   Es la representación de señales
-  <img src="images/plantilla/nodo.png" alt="M2" width="200" height="200">
+  
+  <img src="images/plantilla/nodo.png"  width="200" height="200">
 </div>
 
 ## 3. INTERPRETACION
