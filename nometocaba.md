@@ -29,7 +29,7 @@ Es la relación entre las variables del sistema
 Dado que el nodo representa una señal y la flecha indica la relación entre variables, cuando una flecha parte de un nodo —es decir, cuando hay una conexión de entrada a salida—, se interpreta que la señal de salida es igual a la señal de entrada multiplicada por la ganancia o relación entre esas variables.
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
  
-  <img src="images/plantilla/producto.png" alt="M2" width="200" height="200">
+  <img src="images/plantilla/producto.png" alt="M2" width="300" height="200">
 </div>
 
 $$Y(s)=F(s)X(s)$$
@@ -105,7 +105,7 @@ $\frac{C(s)}{R(s)} = \frac{P_1 \times \Delta_1}{\Delta} = \frac{G_1 \times G_2 \
 ### 4.2💡Ejemplo 2:
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
-  <img src="images/plantilla/ejemplo2mason.png" alt="M2" width="200" height="200">
+  <img src="images/plantilla/ejemplo2mason.png" width="500" height="300">
 </div>
 
 Ganancias de Trayectorias Directas
@@ -143,7 +143,7 @@ Se reemplazan los datos utilizando las ecuaciones previamente definidas.
 ### 5.1 📚Ejercicio 1: 
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
-  <img src="images/plantilla/ejerciciomason1.png" alt="M2" width="200" height="200">
+  <img src="images/plantilla/ejerciciomason1.png" width="500" height="300">
 </div>
 
 Directos
@@ -168,7 +168,7 @@ $\frac{E_0}{E_1} = P = \frac{P_1 \Delta_1}{\Delta} = \frac{G1G2G3G4}{1 - (L_1 + 
 
 ### 5.1 📚Ejercicio 2: 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
-  <img src="images/plantilla/ejerciciomason2.png" alt="M2" width="200" height="200">
+  <img src="images/plantilla/ejerciciomason2.png"  width="500" height="300">
 </div>
 Directos
 
