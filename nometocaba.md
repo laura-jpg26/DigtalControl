@@ -1,5 +1,10 @@
 # DIAGRAMA  DE FLUJO DE SEÑALES
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
+En esta clase abordamos conceptos básicos sobre caminos y lazos en sistemas representados por grafos dirigidos. Un camino o trayecto es una secuencia de ramas conectadas en el sentido de sus flechas; si no se repite ningún nodo, el camino es abierto, y si inicia y termina en el mismo nodo sin repetir otros, es un lazo o camino cerrado. La ganancia de un lazo es el producto de las ganancias de las ramas que lo componen.
+
+También definimos los trayectos directos, que son caminos desde un nodo de entrada hasta un nodo de salida sin repetir nodos, y cuya ganancia es el producto de las ganancias de sus ramas.
+
+Luego, aprendimos sobre la fórmula de Mason, una herramienta para calcular la función de transferencia total de sistemas complejos de manera sistemática. Esta fórmula utiliza las ganancias de los trayectos directos ($P_k$), los determinantes $\Delta$ y $\Delta_k$, que se construyen considerando lazos que no se tocan entre sí y su relación con cada trayecto.
+
 ## 1. DIAGRAMA DE FLUJO DE SEÑALES
 >🔑 Este tipo de diagramas proporciona una forma alternativa de representar sistemas complejos, permitiendo simplificar el proceso de obtención de la función de transferencia total. Además, la fórmula de Mason resulta especialmente útil para calcular dicha función en sistemas con múltiples lazos o estructuras altamente complejas.
 ## 2. ELEMENTOS
@@ -75,9 +80,11 @@ COEFICIENTES
 </div>
 
 Trayectorias Directas
+
 $P_1 = 1 \times 1 \times G_1 \times G_2 \times G_3 \times 1 = G_1 \times G_2 \times G_3$
 
 Lazos Cerrados
+
 $L_1 = G_1 \times G_2 \times H_1$
 
 $L_2 = - G_2 \times G_3 \times H_2$
@@ -89,6 +96,7 @@ Cofactores
 $\Delta = 1 - L_1 + L_2 + L_3$
 
 $\Delta_1 = 1$, porque todos los lazos tocan a $P_k$
+
 $\frac{C(s)}{R(s)} = \frac{P_1 \times \Delta_1}{\Delta} = \frac{G_1 \times G_2 \times G_3}{1 - G_1 \times G_2 \times H_1 + G_2 \times G_3 \times H_2 + G_1 \times G_2 \times G_3}$
 
 ### 4.2💡Ejemplo 2:
@@ -97,7 +105,8 @@ $\frac{C(s)}{R(s)} = \frac{P_1 \times \Delta_1}{\Delta} = \frac{G_1 \times G_2 \
   <img src="images/plantilla/ejemplo2mason.png" alt="M2" width="200" height="200">
 </div>
 
-Gnanacias de Trayectorias Directas
+Ganancias de Trayectorias Directas
+
 $P_1 = G1G2G3G4G5$
 
 $P_2 = G1G6G4G5$
@@ -105,6 +114,7 @@ $P_2 = G1G6G4G5$
 $P_3 = G1G2G7$
 
 Lazos Cerrados
+
 $L_1 = -G4H1$
 
 $L_2 = -G2G7H2$
@@ -114,6 +124,7 @@ $L_3 = -G6G4G5H2$
 $L_4 = -G2G3G4G5H2$
 
 Cofactores
+
 $\Delta_1 = 1$
 
 $\Delta_2 = 1$
@@ -125,6 +136,8 @@ $\frac{CDS}{RDS} = \frac{1}{\Delta} (P_1 \Delta_1 + P_2 \Delta_2 + P_3 \Delta_3)
 Se reemplazan los datos utilizando las ecuaciones previamente definidas.
 
 ## 5.Ejercicios
+
+### 5.1 📚Ejercicio 1: 
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
   <img src="images/plantilla/ejerciciomason1.png" alt="M2" width="200" height="200">
@@ -150,84 +163,33 @@ $\Delta = 1 - (L_1 + L_2 + L_3) + L_1L_3$
 
 $\frac{E_0}{E_1} = P = \frac{P_1 \Delta_1}{\Delta} = \frac{G1G2G3G4}{1 - (L_1 + L_2 + L_3) + L_1L_3}$
 
+### 5.1 📚Ejercicio 2: 
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+  <img src="images/plantilla/ejerciciomason2.png" alt="M2" width="200" height="200">
+</div>
+Directos
+
+$P_1 = 1 \cdot G1 \cdot 1 \cdot G2 = G1G2$
+
+Lazos
+
+$L_1 = -G1G2$
+
+Cofactores
+
+$\Delta_1 = 1$
+
+$\Delta = 1 - L_1$
+
+$\frac{E_0}{E_1} = P = \frac{P_1 \Delta_1}{\Delta} = \frac{G1G2}{1 - L_1}$
+
+## 6. Conclusiones
+La fórmula de Mason facilita el análisis de sistemas de control representados por diagramas de flujo, evitando cálculos manuales complejos al integrar de forma ordenada las ganancias de trayectos y lazos. Comprender cómo calcular las ganancias, identificar trayectos directos y lazos, y usar los determinantes $\Delta$ y $\Delta_k$ es clave para aplicar esta herramienta con éxito. Así, podemos obtener la función de transferencia total del sistema de manera eficiente y precisa, lo que es fundamental para el diseño y análisis de sistemas dinámicos.
 
 
-
-## 5. Ecuaciones
-Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
-
-💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
-
-$$R=\frac{V}{I}$$
-
-$${
-\begin{pmatrix*}[r]
-63 & 71 & 2\\
-6 & 829 & 12\\
-599 & 9 & 361
-\end{pmatrix*}
-}={\begin{pmatrix*}[r]
-63 & 71 & 2\\
-6 & 829 & 12\\
-599 & 9 & 361
-\end{pmatrix*}}$$
-
-
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
-
-💡**Ejemplo 2:**
-
-![Figura de prueba](images/plantilla/Captura2.PNG)
-
-Figura 1. Figura de prueba
-
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
-
-## 7. Tablas
-En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
-
-💡**Ejemplo 3:** 
-
-| **Resultado** | **x = número de intentos hasta primer éxito** |
-|---------------|-----------------------------------------------|
-|       S       |                       1                       |
-|       FS      |                       2                       |
-|      FFS      |                       3                       |
-|      ...      |                      ...                      |
-|    FFFFFFS    |                       7                       |
-|      ...      |                      ...                      |
-
-Tabla 1. Tabla de ejemplo
-
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
-
-## 8. Código
-Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
-
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
-
-## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
-
-## Rúbrica
-| 0-1                                                                                   | 1-2                                                                                  | 2-3                                                                                                                                                                               | 3-4                                                                                                                                                                       | 4-5                                                                                                                                                                               |
-|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Presenta menos del 10% de los temas o no presenta por  el medio y formato  solicitado | Presenta menos del 40% de los temas solicitados, y  cumple parcialmente la plantilla | Presenta menos del 60% de los temas solicitados (con descripciones, gráficos tablas, etc), y cumple  parcialmente la plantilla. No presenta la totalidad  de ejercicios resueltos | Presenta menos del 80% de los temas solicitados (con descripciones, gráficos, tablas, etc) y cumple con  la plantilla. No presenta  la totalidad de ejercicios  resueltos | Presenta el 100% de los temas vistos en clase (con descripciones, gráficos, tablas, etc), siguiendo totalmente la plantilla. presenta la  totalidad de los ejercicios solicitados |
-
-## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
-
-## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+## 7. Referencias
+Clase Sistemas Dinamicos, Universidad ECCI
+Ejercicio propuesto por el estudiante
 
 
 
