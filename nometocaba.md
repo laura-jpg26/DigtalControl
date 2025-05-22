@@ -1,157 +1,149 @@
-
-# ÁLGEBRA DE BLOQUES
-
-Durante esta clase se abordó el concepto de **álgebra de bloques**, una herramienta visual y matemática que permite representar y simplificar sistemas dinámicos. Este método fue introducido por **J. Watts**, quien desarrolló una serie de diagramas para representar el funcionamiento de la **máquina de vapor** y entender cómo fluían las señales dentro del sistema.
-
-## 1. Elementos del álgebra de bloques
-
-### 🔹 Bloque funcional
-
-Representa una **operación matemática** o el conjunto de **reglas** que transforman una señal. Generalmente, contiene funciones como ganancias, derivadas, integrales o funciones de transferencia.
+# DIAGRAMA  DE FLUJO DE SEÑALES
+El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
+## 1. DIAGRAMA DE FLUJO DE SEÑALES
+>🔑 Este tipo de diagramas proporciona una forma alternativa de representar sistemas complejos, permitiendo simplificar el proceso de obtención de la función de transferencia total. Además, la fórmula de Mason resulta especialmente útil para calcular dicha función en sistemas con múltiples lazos o estructuras altamente complejas.
+## 2. ELEMENTOS
+*FLECHA*
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
 
-  <img src="images/plantilla/bloque_funcional.png" width="450" height="250">
-
+Es la relación entre las variables del sistema
+  <img src="images/plantilla/flecha.png" alt="M2" width="200" height="200">
 </div>
 
----
-
-### 🔹 Flechas (Señales)
-
-Representan el **flujo de información** dentro del sistema. Cada flecha simboliza una **señal** o una **variable** que se transmite de un bloque a otro.
-
+*NODO*
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
-
-  <img src="images/plantilla/flechas_senales.png" width="450" height="250">
-
+  Es la representación de señales
+  <img src="images/plantilla/nodo.png" alt="M2" width="200" height="200">
 </div>
 
----
-
-### 🔹 Punto de suma
-
-Indica la realización de una **operación algebraica** entre señales (suma o resta), siempre que sean **de las mismas dimensiones**.
-
+## 3. INTERPRETACION
+Dado que el nodo representa una señal y la flecha indica la relación entre variables, cuando una flecha parte de un nodo —es decir, cuando hay una conexión de entrada a salida—, se interpreta que la señal de salida es igual a la señal de entrada multiplicada por la ganancia o relación entre esas variables.
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
-
-  <img src="images/plantilla/punto_suma.png" width="450" height="250">
-
+ 
+  <img src="images/plantilla/producto.png" alt="M2" width="200" height="200">
 </div>
 
----
+$$Y(s)=F(s)X(s)$$
 
-### 🔹 Ramificación
-
-Se usa para representar una **derivación** de la misma señal hacia varios bloques. Esto permite que una única variable sea utilizada en distintos procesos simultáneamente.
-
+Cuando varias señales convergen en un mismo nodo, se interpreta que en ese punto se realiza la suma de todas ellas, cada una multiplicada por su respectiva ganancia.
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
-
-  <img src="images/plantilla/ramificacion.png" width="450" height="250">
-
+ 
+  <img src="images/plantilla/sumanodos.png" alt="M2" width="200" height="200">
 </div>
+$$Y(s)=F_{1}(s)X_{1}(s)+F_{2}(s)X_{2}(s)-F_{3}(s)X_{3}(s)$$
 
----
 
-## 2. Interpretación del diagrama
+## 3. DEFINICIONES
 
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+>🔑*Camino o trayectoria* : Un camino o trayectoria es un recorrido por una secuencia de ramas (aristas) conectadas siguiendo el sentido de las flechas en un grafo dirigido.
 
-  <img src="images/plantilla/interpretacion_basica.png" width="500" height="300">
+>🔑* Camino abierto* : Si en dicho recorrido no se visita ningún nodo más de una vez (es decir, no se repiten nodos), se dice que el camino o trayectoria es abierto.
 
-</div>
+>🔑*Ciclo simple* : Si el camino o trayectoria comienza y termina en el mismo nodo, y no se repite ningún otro nodo en el recorrido, se dice que es un camino o trayectoria cerrado (también conocido como ciclo simple o circuito simple).
+Ganancia de lazo: Es el producto de las ganancias de las ramas que forman un lazo (ciclo).
 
-### 🔑 Cuando se tiene un sistema con una **entrada**, una **función de transferencia** y una **salida**, se interpreta matemáticamente como:
+>🔑*Trayecto o camino directo* : Es un camino que conecta un nodo de entrada con un nodo de salida, sin cruzar ningún nodo más de una vez.
 
-$Y(s) = G(s) \cdot U(s)$
+>🔑*Ganancia de trayecto directo* : Es el producto de las ganancias de las ramas que componen ese trayecto directo.
 
----
+>🔑*Lazo* : Un lazo es un camino o trayecto cerrado, es decir, que comienza y termina en el mismo nodo sin pasar por ningún otro nodo más de una vez.
 
-## 3. Composición de sistemas (dos bloques en serie)
+>🔑*Ganancia de lazo* : Es el producto de las ganancias de las ramas que conforman ese lazo.
 
-Cuando hay **dos sistemas conectados en cascada**, se puede realizar una deducción matemática paso a paso. Supongamos dos funciones de transferencia conectadas en serie, **G₁(s)** y **G₂(s)**:
 
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
 
-  <img src="images/plantilla/dos_bloques_serie.png" width="500" height="300">
+## 4. FORMULA DE MASON
+$$P=\frac{1}{\Delta }\sum P_{k}\Delta _{k}$$
 
-</div>
+La fórmula de Mason, también conocida como Teorema de Mason, fue desarrollada por Samuel Jefferson Mason en la década de 1950. Es una herramienta fundamental en teoría de sistemas y control para calcular la función de transferencia de sistemas representados mediante diagramas de flujo o grafos dirigidos. La fórmula permite obtener la relación entre la salida y la entrada del sistema considerando todos los caminos directos y lazos del grafo, sin necesidad de simplificar el sistema manualmente. Esto facilita el análisis de sistemas complejos de forma sistemática y eficiente.
 
-Entonces, se describe el comportamiento del sistema así:
+COEFICIENTES
 
-* $\frac{Y_1(s)}{U_1(s)} = G_1(s)$
-* $\frac{Y_2(s)}{U_2(s)} = G_2(s)$
+- $p_k$ es la ganancia o es igual a la ganancia de los caminos directos.
 
-Si además sabemos que:
+- $\Delta$ es igual a $1$ menos la suma de las ganancias de los lazos, más la suma producto de los lazos que no se toquen, menos la suma producto de tres lazos que no se toquen, más puntos suspensivos.
 
-* $U_2(s) = Y_1(s)$
+- $\Delta_k$ es igual a $1$ menos la suma de las ganancias de los lazos que no toquen la trayectoria $P_k$, más la suma de las ganancias de los lazos que no toquen la trayectoria $P_k$ y que no se toquen entre sí, menos la suma de las ganancias de tres lazos que no toquen la trayectoria $P_k$ y que no se toquen entre sí.
 
-Entonces:
+Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
 
-### 📌 Paso 1:
+## 5. Ecuaciones
+Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
 
-$Y_1(s) = U_1(s) \cdot G_1(s)$
+💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
 
-### 📌 Paso 2:
+$$R=\frac{V}{I}$$
 
-$Y_2(s) = Y_1(s) \cdot G_2(s)$
+$${
+\begin{pmatrix*}[r]
+63 & 71 & 2\\
+6 & 829 & 12\\
+599 & 9 & 361
+\end{pmatrix*}
+}={\begin{pmatrix*}[r]
+63 & 71 & 2\\
+6 & 829 & 12\\
+599 & 9 & 361
+\end{pmatrix*}}$$
 
-### 📌 Paso 3:
 
-$Y_2(s) = U_1(s) \cdot G_1(s) \cdot G_2(s)$
+## 6. Figuras
+Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
+* Primero escribimos ![]().
+* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
+* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
 
-### 📌 Resultado final:
+💡**Ejemplo 2:**
 
-$\frac{Y_2(s)}{U_1(s)} = G_1(s) \cdot G_2(s)$
+![Figura de prueba](images/plantilla/Captura2.PNG)
 
-Perfecto, gracias por la claridad. Con base en tus instrucciones, aquí está la **continuación estructurada**, **respetando los subtítulos numerados**, tu estilo visual con *divs* para imágenes, y el formato de presentación paso a paso para el **Ejemplo 1**.
+Figura 1. Figura de prueba
 
----
+Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
 
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+## 7. Tablas
+En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
 
-  <img src="images/plantilla/resultado_dos_bloques_serie.png" width="500" height="300">
+💡**Ejemplo 3:** 
 
-</div>
+| **Resultado** | **x = número de intentos hasta primer éxito** |
+|---------------|-----------------------------------------------|
+|       S       |                       1                       |
+|       FS      |                       2                       |
+|      FFS      |                       3                       |
+|      ...      |                      ...                      |
+|    FFFFFFS    |                       7                       |
+|      ...      |                      ...                      |
 
----
+Tabla 1. Tabla de ejemplo
 
-## 📘 Ejemplo 1: Lazo de retroalimentación positiva
+Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
 
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+## 8. Código
+Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
 
-  <img src="images/plantilla/ejemplo1_planteamiento.png" width="500" height="300">
+💡**Ejemplo 4:**
+```
+var sumar2 = function(numero) {
+  return numero + 2;
+}
+```
 
-</div>
+## 9. Ejercicios
+Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
 
-En este caso se presenta un **lazo de retroalimentación positiva**, el cual se caracteriza por **sumar** la señal de la salida a la de entrada, en lugar de restarla como ocurre en la retroalimentación negativa.
+## Rúbrica
+| 0-1                                                                                   | 1-2                                                                                  | 2-3                                                                                                                                                                               | 3-4                                                                                                                                                                       | 4-5                                                                                                                                                                               |
+|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Presenta menos del 10% de los temas o no presenta por  el medio y formato  solicitado | Presenta menos del 40% de los temas solicitados, y  cumple parcialmente la plantilla | Presenta menos del 60% de los temas solicitados (con descripciones, gráficos tablas, etc), y cumple  parcialmente la plantilla. No presenta la totalidad  de ejercicios resueltos | Presenta menos del 80% de los temas solicitados (con descripciones, gráficos, tablas, etc) y cumple con  la plantilla. No presenta  la totalidad de ejercicios  resueltos | Presenta el 100% de los temas vistos en clase (con descripciones, gráficos, tablas, etc), siguiendo totalmente la plantilla. presenta la  totalidad de los ejercicios solicitados |
 
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+## 10. Conclusiones
+Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
 
-  <img src="images/plantilla/ejemplo1_diagrama.png" width="500" height="300">
+## 11. Referencias
+Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
 
-</div>
-Claro, aquí tienes solo las ecuaciones, en el formato que me pediste (entre signos de peso y usando corchetes para los paréntesis grandes):
-
-Claro, aquí tienes las tres ecuaciones enumeradas y en el formato que me pediste:
-
-1. \$Y\[s] = X\[s] + Y\_1\[s]\$
-2. \$Y\[s] = E\[s] \cdot G\_1\[s]\$
-3. \$Y\_1\[s] = Y\[s] \cdot G\_2\[s]\$
-
-$Y(s) = G_1(s) \cdot \left( X(s) + Y_1(s) \right)$
-  
-$Y(s) = G_1(s) \cdot X(s) + G_1(s) \cdot Y_1(s)$
-
-$Y(s) = G_1(s) \cdot X(s) + G_1(s) \cdot Y(s) \cdot G_2(s)$
-
-$Y(s) = G_1(s) \cdot X(s) + G_1(s) \cdot Y(s) \cdot G_2(s)$
-
-$Y(s) - Y(s) \cdot G_1(s) \cdot G_2(s) = X(s) \cdot G_1(s)$
-
-$Y(s) \cdot \left[1 - G_1(s) \cdot G_2(s)\right] = X(s) \cdot G_1(s)$
-
-$\frac{Y(s)}{X(s)} = \frac{G_1(s)}{1 - G_1(s) \cdot G_2(s)}$
 
 
 
