@@ -34,7 +34,7 @@ $a\dot{y}(t) + b y(t) = c u(t)$
 
 $\frac{y(s)}{u(s)} = \frac{c}{as + b}$  
 
-$r_1 a_1 = \dot{h}_1 = r_1 (q_i - h_1)$
+$r_1 a_1 \dot{h}_1 = r_1 q_i - h_1$
 
       
 LasELEMENTOS
