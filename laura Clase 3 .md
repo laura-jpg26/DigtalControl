@@ -83,7 +83,10 @@ Podemos identificar que  $k = r_1$     $\tau = r_1 a_1$
 
 Vamos a dividir todo por $b$ que sería 4, entonces nos queda  
 
-$\frac{y(s)}{u(s)} = \frac{0.8}{\frac{4}{4} s + \frac{4}{4}} = \frac{0.8}{s + 1}$
+$\frac{y(s)}{u(s)} = \frac{0.8}{4} \bigg/ \left(\frac{s}{4} + \frac{4}{4}\right)$  
+
+$\frac{y(s)}{u(s)} = \frac{0.2}{\frac{1}{4} s + 1}$
+
 
 
 
