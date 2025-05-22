@@ -31,6 +31,7 @@ Cuando varias señales convergen en un mismo nodo, se interpreta que en ese punt
  
   <img src="images/plantilla/sumanodos.png" alt="M2" width="200" height="200">
 </div>
+
 $$Y(s)=F_{1}(s)X_{1}(s)+F_{2}(s)X_{2}(s)-F_{3}(s)X_{3}(s)$$
 
 
@@ -66,7 +67,29 @@ COEFICIENTES
 
 - $\Delta_k$ es igual a $1$ menos la suma de las ganancias de los lazos que no toquen la trayectoria $P_k$, más la suma de las ganancias de los lazos que no toquen la trayectoria $P_k$ y que no se toquen entre sí, menos la suma de las ganancias de tres lazos que no toquen la trayectoria $P_k$ y que no se toquen entre sí.
 
-Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
+###4.1💡Ejemplo 1:
+
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+ 
+  <img src="images/plantilla/ejemplo1mason.png" alt="M2" width="200" height="200">
+</div>
+
+Trayectorias Directas
+$P_1 = 1 \times 1 \times G_1 \times G_2 \times G_3 \times 1 = G_1 \times G_2 \times G_3$
+
+Lazos Cerrados
+$L_1 = G_1 \times G_2 \times H_1$
+
+$L_2 = - G_2 \times G_3 \times H_2$
+
+$L_3 = - G_1 \times G_2 \times G_3$
+
+$\Delta = 1 - L_1 + L_2 + L_3$
+
+$\Delta_1 = 1$, porque todos los lazos tocan a $P_k$
+$\frac{C(s)}{R(s)} = \frac{P_1 \times \Delta_1}{\Delta} = \frac{G_1 \times G_2 \times G_3}{1 - G_1 \times G_2 \times H_1 + G_2 \times G_3 \times H_2 + G_1 \times G_2 \times G_3}$
+
+
 
 ## 5. Ecuaciones
 Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
