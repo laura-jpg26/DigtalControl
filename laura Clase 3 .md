@@ -29,11 +29,12 @@ Los coeficientes $a$, $b$ y $c$ que aparecen en la ecuación diferencial represe
  
   <img src="images/plantilla/edi1.png"  width="400" height="200">
 </div>
-a\dot{y}(t) + b y(t) = c u(t)
 
-\frac{y(s)}{u(s)} = \frac{c}{as + b}
+$a\dot{y}(t) + b y(t) = c u(t)$  
 
-r_1 a_1 = \dot{h}_1 = r_1 (q_i - h_1)
+$\frac{y(s)}{u(s)} = \frac{c}{as + b}$  
+
+$r_1 a_1 = \dot{h}_1 = r_1 (q_i - h_1)$
 
       
 LasELEMENTOS
