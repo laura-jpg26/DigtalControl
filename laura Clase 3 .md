@@ -23,7 +23,7 @@ Al aplicar la transformada de Laplace, se puede observar que los parámetros con
 Los coeficientes $a$, $b$ y $c$ que aparecen en la ecuación diferencial representan parámetros físicos del sistema, como resistencias, inductancias, capacidades, masas o fricciones, dependiendo del tipo de sistema modelado. Estos parámetros son los que determinan el comportamiento dinámico del sistema.
 
 
-### 1.1 Ejemplo
+### 1.1 💡 Ejemplo 1: 
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
  
@@ -35,6 +35,60 @@ $a\dot{y}(t) + b y(t) = c u(t)$
 $\frac{y(s)}{u(s)} = \frac{c}{as + b}$  
 
 $r_1 a_1 \dot{h}_1 = r_1 q_i - h_1$
+
+Estas constantes serían las equivalentes a las constantes de la ecuación diferencial que habíamos mostrado antes, de $\frac{c}{as + b}$.  
+
+$a = r_1 a_1$  
+
+$b = 1$  
+
+$c = r_1$
+
+Estas constantes serían las equivalentes a la ecuación diferencial que habíamos mostrado antes, de $as + b$.  
+
+por lo cual, nos quedaría  
+
+$\frac{h_1(s)}{q_i(s)} = \frac{r_1}{r_1 a_1 s + 1}$
+
+## 2. FORMAS CANÓNICA
+
+La forma general de la ecuación diferencial no permite identificar directamente los parámetros temporales del sistema. Por ello, en control se prefiere usar la forma canónica.
+
+$$\frac{y(s)}{u(s)} = \frac{c}{as + b}$$
+
+Para obtenerla, se divide por $b$ todos los términos de la función de transferencia, de modo que esta quede expresada como:
+
+$\frac{y(s)}{u(s)} = \frac{\frac{c}{b}}{\frac{a}{b} s + 1}$
+
+La forma canónica considera ciertas constantes importantes para caracterizar el sistema.
+
+Primero, $\tau$ se define como $\frac{a}{b}$ y representa la constante de tiempo, que indica cuánto tarda el sistema en responder ante una entrada.
+
+Luego, $k$ es igual a $\frac{c}{b}$ y se denomina ganancia estática, que indica el valor final o estado estacionario que alcanza la salida.
+
+Por lo tanto, tomando en cuenta estas definiciones, la función de transferencia puede expresarse como la relación entre la salida y la entrada en el dominio de Laplace, dada por:
+
+$$\frac{y(s)}{u(s)} = \frac{k}{\tau s + 1}$$
+
+Siendo esta la forma canónica de sistemas de primer orden.
+
+Ahora, nos devolvemos al ejercicio anterior donde  
+
+$\frac{h_1(s)}{q_i(s)} = \frac{r_1}{r_1 a_1 s + 1}$  
+
+Podemos identificar que  $k = r_1$     $\tau = r_1 a_1$
+
+### 2.1 💡Ejemplo 2: 
+ $\frac{y(s)}{u(s)} = \frac{0.8}{s + 4}$  
+
+Vamos a dividir todo por $b$ que sería 4, entonces nos queda  
+
+$\frac{y(s)}{u(s)} = \frac{0.8}{\frac{4}{4} s + \frac{4}{4}} = \frac{0.8}{s + 1}$
+
+
+
+
+
 
       
 LasELEMENTOS
