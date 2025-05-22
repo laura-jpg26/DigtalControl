@@ -13,7 +13,7 @@ Luego, aprendimos sobre la fórmula de Mason, una herramienta para calcular la f
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
 
 Es la relación entre las variables del sistema
-  <img src="images/plantilla/flecha.png" alt="M2" width="200" height="200">
+  <img src="images/plantilla/flecha.png" alt="M2" width="400" height="200">
 </div>
 
 *NODO*
