@@ -14,7 +14,7 @@ Luego, aprendimos sobre la fórmula de Mason, una herramienta para calcular la f
 
 Es la relación entre las variables del sistema
 
-  <img src="images/plantilla/flecha.png"  width="200" height="700">
+  <img src="images/plantilla/flecha.webp"  width="500" height="300">
 </div>
 
 *NODO*
