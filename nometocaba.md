@@ -37,7 +37,7 @@ $$Y(s)=F(s)X(s)$$
 Cuando varias señales convergen en un mismo nodo, se interpreta que en ese punto se realiza la suma de todas ellas, cada una multiplicada por su respectiva ganancia.
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
  
-  <img src="images/plantilla/sumanodos.png" alt="M2" width="200" height="200">
+  <img src="images/plantilla/sumanodos.png"  width="400" height="200">
 </div>
 
 $$Y(s)=F_{1}(s)X_{1}(s)+F_{2}(s)X_{2}(s)-F_{3}(s)X_{3}(s)$$
@@ -79,7 +79,7 @@ COEFICIENTES
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
  
-  <img src="images/plantilla/ejemplo1mason.png" alt="M2" width="200" height="200">
+  <img src="images/plantilla/ejemplo1mason.png"  width="500" height="300">
 </div>
 
 Trayectorias Directas
