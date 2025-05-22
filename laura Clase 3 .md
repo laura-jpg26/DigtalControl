@@ -87,6 +87,13 @@ $\frac{y(s)}{u(s)} = \frac{0.8}{4} \bigg/ \left(\frac{s}{4} + \frac{4}{4}\right)
 
 $\frac{y(s)}{u(s)} = \frac{0.2}{\frac{1}{4} s + 1}$
 
+Por lo cual $\tau$ sería $0.25$ y $k$ sería $0.2$
+
+## 3. RESPUESTA TEMPORAL DE UN SISTEMA DE PRIMER ORDEN
+
+
+
+
 
 
 
