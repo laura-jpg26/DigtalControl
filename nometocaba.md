@@ -14,7 +14,7 @@ Luego, aprendimos sobre la fórmula de Mason, una herramienta para calcular la f
 
 Es la relación entre las variables del sistema
 
-  <img src="images/plantilla/flecha.webp"  width="500" height="300">
+  <img src="images/plantilla/flecha.webp"  width="400" height="200">
 </div>
 
 *NODO*
@@ -22,7 +22,7 @@ Es la relación entre las variables del sistema
   
   Es la representación de señales
   
-  <img src="images/plantilla/nodo.png"  width="200" height="200">
+  <img src="images/plantilla/nodo.png"  width="400" height="200">
 </div>
 
 ## 3. INTERPRETACION
