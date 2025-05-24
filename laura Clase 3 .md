@@ -89,7 +89,13 @@ $\frac{y(s)}{u(s)} = \frac{0.2}{\frac{1}{4} s + 1}$
 
 Por lo cual $\tau$ sería $0.25$ y $k$ sería $0.2$
 
-## 3. RESPUESTA TEMPORAL DE UN SISTEMA DE PRIMER ORDEN
+## 3. RESPUESTA TEMPORAL DE UN SISTEMA DE PRIMER ORDEN ANTE UNA ENTRADA ESCALON
+
+$y(s) = u(s) \cdot \frac{k}{\tau s + 1}$
+
+$y(s) = \frac{a}{s} \cdot \frac{k}{\tau s + 1}$
+
+$y(s) = \frac{ak}{s(\tau s + 1)}$
 
 
 
