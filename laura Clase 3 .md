@@ -78,7 +78,7 @@ $\frac{h_1(s)}{q_i(s)} = \frac{r_1}{r_1 a_1 s + 1}$
 
 Podemos identificar que  $k = r_1$     $\tau = r_1 a_1$
 
-### 2.1 💡Ejemplo 2: 
+*💡Ejemplo 2: *
  $\frac{y(s)}{u(s)} = \frac{0.8}{s + 4}$  
 
 Vamos a dividir todo por $b$ que sería 4, entonces nos queda  
@@ -122,7 +122,7 @@ $$\mathcal{L}^{-1} \{ Y(s) \} = y(t) = ak \left(1 - e^{-t/\tau} \right)$$
 
 Planteamos la tabla de relacion de $\tau$ vs $y(t)$
 
-| **$\tau$*     | **y(t)** |
+| *$\tau$*      | **y(t)** |
 |---------------|----------------------------------------------|
 |      $\tau$   |                      AK(0.632)               |
 |      $2\tau$  |                       AK(0.86)               |
@@ -131,202 +131,84 @@ Planteamos la tabla de relacion de $\tau$ vs $y(t)$
 |    $5\tau$    |                       AK(0.99)               |
 
 
-
-
-
-
-      
-LasELEMENTOS
-*FLECHA*
+Dando un resultado de tal forma: 
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
 
-Es la relación entre las variables del sistema
-
-  <img src="images/plantilla/flecha.webp"  width="400" height="200">
-</div>
-
-*NODO*
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+  <img src="images/plantilla/graficatao.png"  width="400" height="200">
   
-  Es la representación de señales
+</div>
+
+Concluimos que el estado estacionario comienza en $4\tau$ (cuatro veces la constante de tiempo), según lo establecido para nuestro curso:
+
+
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/estados.png"  width="400" height="200">
   
-  <img src="images/plantilla/nodo.png"  width="400" height="200">
 </div>
 
-## 3. INTERPRETACION
-Dado que el nodo representa una señal y la flecha indica la relación entre variables, cuando una flecha parte de un nodo —es decir, cuando hay una conexión de entrada a salida—, se interpreta que la señal de salida es igual a la señal de entrada multiplicada por la ganancia o relación entre esas variables.
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
- 
-  <img src="images/plantilla/producto.png" alt="M2" width="300" height="200">
+Durante el estado transitorio, el sistema experimenta una variación en su energía, mientras que en el estado estacionario dicha energía se mantiene constante, ademas $AK$ representa el valor máximo al que tenderá la función con el paso del tiempo, es decir, su valor en estado estacionario
+
+## 4. POLOS
+
+Los sistemas de primer orden se caracterizan por tener únicamente un polo en su función de transferencia
+
+*💡Ejemplo 3: *
+
+La función de transferencia de un sistema de primer orden tiene la forma:
+
+$G(s) = \frac{K}{\tau s + 1}$
+
+El polo del sistema se determina igualando el denominador a cero. Dependiendo del valor de $\tau$, obtenemos:
+
+- Si $\tau = 1$, el denominador es $s + 1 = 0$, lo que implica que $s = -1$  
+- Si $\tau = 2$, el denominador es $2s + 1 = 0$, despejando se obtiene $s = -\frac{1}{2}$  
+- Si $\tau = \frac{1}{2}$, el denominador es $\frac{1}{2}s + 1 = 0$, y por tanto $s = -2$
+
+  <div align="center" style="display: flex; justify-content: center; gap: 20px;">
+Como los polos se grafican en el plano complejo de Numeros reales vs Numeros Imaginarios, se podran ver ubicados los polos de la siguiente manera:
+
+  <img src="images/plantilla/polosspo.png"  width="400" height="200">
+  
 </div>
 
-$$Y(s)=F(s)X(s)$$
+>🔑Mientras más alejados estén los polos del sistema hacia la izquierda en el plano complejo (es decir, más negativos), mayor será la rapidez de respuesta del sistema.
 
-Cuando varias señales convergen en un mismo nodo, se interpreta que en ese punto se realiza la suma de todas ellas, cada una multiplicada por su respectiva ganancia.
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
- 
-  <img src="images/plantilla/sumanodos.png"  width="400" height="200">
+## 5. RESPUESTA A ENTRADA RAMPA
+ahora vamos a ver cómo responde el sistema a una entrada rampa, lo que significa que $U(s) = \dfrac{A}{s^2}$
+
+entonces tenemos que $Y(s) = \dfrac{AK}{s^2(\tau s + 1)}$
+
+vamos a utilizar fracciones parciales. escribimos:
+
+$Y(s) = AK \left( \dfrac{1}{s^2} - \dfrac{\tau}{s} + \dfrac{\tau^2}{\tau s + 1} \right)$
+
+ahora aplicamos la transformada inversa de Laplace:
+
+$\mathcal{L}^{-1}[Y(s)] = y(t) = AK \left( t - \tau + \tau e^{-\frac{t}{\tau}} \right)$
+
+  <div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/rampatao.png"  width="400" height="200">
+  
 </div>
 
-$$Y(s)=F_{1}(s)X_{1}(s)+F_{2}(s)X_{2}(s)-F_{3}(s)X_{3}(s)$$
+Planteamos la tabla de relacion de $\tau$ vs $y(t)$
 
 
-## 3. DEFINICIONES
+| *$\tau$*      | **y(t)** |
+|---------------|----------------------------------------------|
+|      $\tau$   |                      AK($ \tau(e^{-1})$)     |
+|      $2\tau$  |                       AK($ \tau(e^{-2})$)    |
+|      $3\tau$  |                       AK($ \tau(e^{-3})$)    |
+|      $4\tau$  |                     AK($ \tau(e^{-4})$)      |
+|    $5\tau$    |                       AK($ \tau(e^{-5})$)    |
 
->🔑*Camino o trayectoria* : Un camino o trayectoria es un recorrido por una secuencia de ramas (aristas) conectadas siguiendo el sentido de las flechas en un grafo dirigido.
+Como pudimos observar en la gráfica, va a tener en algún momento un comportamiento lineal, lo cual significa que vamos a poder calcular una pendiente de cómo trabajaría el sistema en esa parte. por lo cual podemos decir que:
 
->🔑* Camino abierto* : Si en dicho recorrido no se visita ningún nodo más de una vez (es decir, no se repiten nodos), se dice que el camino o trayectoria es abierto.
+$m = \dfrac{4\tau AK - 3\tau AK}{5\tau - 4\tau} = AK$
 
->🔑*Ciclo simple* : Si el camino o trayectoria comienza y termina en el mismo nodo, y no se repite ningún otro nodo en el recorrido, se dice que es un camino o trayectoria cerrado (también conocido como ciclo simple o circuito simple).
-Ganancia de lazo: Es el producto de las ganancias de las ramas que forman un lazo (ciclo).
-
->🔑*Trayecto o camino directo* : Es un camino que conecta un nodo de entrada con un nodo de salida, sin cruzar ningún nodo más de una vez.
-
->🔑*Ganancia de trayecto directo* : Es el producto de las ganancias de las ramas que componen ese trayecto directo.
-
->🔑*Lazo* : Un lazo es un camino o trayecto cerrado, es decir, que comienza y termina en el mismo nodo sin pasar por ningún otro nodo más de una vez.
-
->🔑*Ganancia de lazo* : Es el producto de las ganancias de las ramas que conforman ese lazo.
-
-
-
-## 4. FORMULA DE MASON
-$$P=\frac{1}{\Delta }\sum P_{k}\Delta _{k}$$
-
-La fórmula de Mason, también conocida como Teorema de Mason, fue desarrollada por Samuel Jefferson Mason en la década de 1950. Es una herramienta fundamental en teoría de sistemas y control para calcular la función de transferencia de sistemas representados mediante diagramas de flujo o grafos dirigidos. La fórmula permite obtener la relación entre la salida y la entrada del sistema considerando todos los caminos directos y lazos del grafo, sin necesidad de simplificar el sistema manualmente. Esto facilita el análisis de sistemas complejos de forma sistemática y eficiente.
-
-COEFICIENTES
-
-- $p_k$ es la ganancia o es igual a la ganancia de los caminos directos.
-
-- $\Delta$ es igual a $1$ menos la suma de las ganancias de los lazos, más la suma producto de los lazos que no se toquen, menos la suma producto de tres lazos que no se toquen, más puntos suspensivos.
-
-- $\Delta_k$ es igual a $1$ menos la suma de las ganancias de los lazos que no toquen la trayectoria $P_k$, más la suma de las ganancias de los lazos que no toquen la trayectoria $P_k$ y que no se toquen entre sí, menos la suma de las ganancias de tres lazos que no toquen la trayectoria $P_k$ y que no se toquen entre sí.
-
-### 4.1💡Ejemplo 1:
-
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
- 
-  <img src="images/plantilla/ejemplo1mason.png"  width="500" height="300">
-</div>
-
-Trayectorias Directas
-
-$P_1 = 1 \times 1 \times G_1 \times G_2 \times G_3 \times 1 = G_1 \times G_2 \times G_3$
-
-Lazos Cerrados
-
-$L_1 = G_1 \times G_2 \times H_1$
-
-$L_2 = - G_2 \times G_3 \times H_2$
-
-$L_3 = - G_1 \times G_2 \times G_3$
-
-Cofactores
-
-$\Delta = 1 - L_1 + L_2 + L_3$
-
-$\Delta_1 = 1$, porque todos los lazos tocan a $P_k$
-
-$\frac{C(s)}{R(s)} = \frac{P_1 \times \Delta_1}{\Delta} = \frac{G_1 \times G_2 \times G_3}{1 - G_1 \times G_2 \times H_1 + G_2 \times G_3 \times H_2 + G_1 \times G_2 \times G_3}$
-
-### 4.2💡Ejemplo 2:
-
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
-  <img src="images/plantilla/ejemplo2mason.png" width="500" height="300">
-</div>
-
-Ganancias de Trayectorias Directas
-
-$P_1 = G1G2G3G4G5$
-
-$P_2 = G1G6G4G5$
-
-$P_3 = G1G2G7$
-
-Lazos Cerrados
-
-$L_1 = -G4H1$
-
-$L_2 = -G2G7H2$
-
-$L_3 = -G6G4G5H2$
-
-$L_4 = -G2G3G4G5H2$
-
-Cofactores
-
-$\Delta_1 = 1$
-
-$\Delta_2 = 1$
-
-$\Delta_3 = 1 - L_1$
-
-$\frac{CDS}{RDS} = \frac{1}{\Delta} (P_1 \Delta_1 + P_2 \Delta_2 + P_3 \Delta_3)$
-
-Se reemplazan los datos utilizando las ecuaciones previamente definidas.
-
-## 5.Ejercicios
-
-### 5.1 📚Ejercicio 1: 
-
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
-  <img src="images/plantilla/ejerciciomason1.png" width="500" height="300">
-</div>
-
-Directos
-
-$P_1 = G1G2G3G4$
-
-Lazos
-
-$L_1 = -G1G2$
-
-$L_2 = -G2G3$
-
-$L_3 = -G3G4$
-
-Cofactores
-
-$\Delta_1 = 1$
-
-$\Delta = 1 - (L_1 + L_2 + L_3) + L_1L_3$
-
-$\frac{E_0}{E_1} = P = \frac{P_1 \Delta_1}{\Delta} = \frac{G1G2G3G4}{1 - (L_1 + L_2 + L_3) + L_1L_3}$
-
-### 5.1 📚Ejercicio 2: 
-<div align="center" style="display: flex; justify-content: center; gap: 20px;">
-  <img src="images/plantilla/ejerciciomason2.png"  width="500" height="300">
-</div>
-Directos
-
-$P_1 = 1 \cdot G1 \cdot 1 \cdot G2 = G1G2$
-
-Lazos
-
-$L_1 = -G1G2$
-
-Cofactores
-
-$\Delta_1 = 1$
-
-$\Delta = 1 - L_1$
-
-$\frac{E_0}{E_1} = P = \frac{P_1 \Delta_1}{\Delta} = \frac{G1G2}{1 - L_1}$
-
-## 6. Conclusiones
-
-La fórmula de Mason facilita el análisis de sistemas de control representados por diagramas de flujo, evitando cálculos manuales complejos al integrar de forma ordenada las ganancias de trayectos y lazos. Comprender cómo calcular las ganancias, identificar trayectos directos y lazos, y usar los determinantes $\Delta$ y $\Delta_k$ es clave para aplicar esta herramienta con éxito. Así, podemos obtener la función de transferencia total del sistema de manera eficiente y precisa, lo que es fundamental para el diseño y análisis de sistemas dinámicos.
-
-
-## 7. Referencias
-
-Clase Sistemas Dinamicos, Universidad ECCI
-
-Ejercicio propuesto por el estudiante
-
-
-
+Esto nos indica que la pendiente $m$ del sistema, cuando recibe una entrada tipo rampa, es igual a $AK$.
 
 
