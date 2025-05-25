@@ -23,7 +23,7 @@ Al aplicar la transformada de Laplace, se puede observar que los parámetros con
 Los coeficientes $a$, $b$ y $c$ que aparecen en la ecuación diferencial representan parámetros físicos del sistema, como resistencias, inductancias, capacidades, masas o fricciones, dependiendo del tipo de sistema modelado. Estos parámetros son los que determinan el comportamiento dinámico del sistema.
 
 
-### 1.1 💡 Ejemplo 1: 
+💡**Ejemplo 1:**
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
  
@@ -78,7 +78,7 @@ $\frac{h_1(s)}{q_i(s)} = \frac{r_1}{r_1 a_1 s + 1}$
 
 Podemos identificar que  $k = r_1$     $\tau = r_1 a_1$
 
-*💡Ejemplo 2: *
+💡**Ejemplo 2:**
  $\frac{y(s)}{u(s)} = \frac{0.8}{s + 4}$  
 
 Vamos a dividir todo por $b$ que sería 4, entonces nos queda  
@@ -154,7 +154,7 @@ Durante el estado transitorio, el sistema experimenta una variación en su energ
 
 Los sistemas de primer orden se caracterizan por tener únicamente un polo en su función de transferencia
 
-*💡Ejemplo 3: *
+💡**Ejemplo 3:**
 
 La función de transferencia de un sistema de primer orden tiene la forma:
 
@@ -166,7 +166,7 @@ El polo del sistema se determina igualando el denominador a cero. Dependiendo de
 - Si $\tau = 2$, el denominador es $2s + 1 = 0$, despejando se obtiene $s = -\frac{1}{2}$  
 - Si $\tau = \frac{1}{2}$, el denominador es $\frac{1}{2}s + 1 = 0$, y por tanto $s = -2$
 
-  <div align="center" style="display: flex; justify-content: center; gap: 20px;">
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
 Como los polos se grafican en el plano complejo de Numeros reales vs Numeros Imaginarios, se podran ver ubicados los polos de la siguiente manera:
 
   <img src="images/plantilla/polosspo.png"  width="400" height="200">
@@ -210,5 +210,13 @@ Como pudimos observar en la gráfica, va a tener en algún momento un comportami
 $m = \dfrac{4\tau AK - 3\tau AK}{5\tau - 4\tau} = AK$
 
 Esto nos indica que la pendiente $m$ del sistema, cuando recibe una entrada tipo rampa, es igual a $AK$.
+
+💡**Ejemplo 4:**
+
+  <div align="center" style="display: flex; justify-content: center; gap: 20px;">
+
+  <img src="images/plantilla/HORNO.png"  width="400" height="200">
+  
+</div>
 
 
