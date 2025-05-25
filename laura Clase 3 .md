@@ -107,7 +107,7 @@ $y(s) = \frac{ak}{s} - \frac{ak}{s + \frac{1}{\tau}}$
 
 Ahora aplicamos la transformada inversa de Laplace:  
 
-$\mathcal{L}^{-1} \{ y(s) \} = y(t) = ak \left(1 - e^{-t/\tau} \right)$
+$\mathcal{L}^{-1} \{ Y(s) \} = y(t) = ak \left(1 - e^{-t/\tau} \right)$
 
 
 
