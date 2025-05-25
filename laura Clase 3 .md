@@ -1,5 +1,7 @@
 # ECUACIONES DIFERENCIALES DE PRIMER ORDEN
 
+La clase trató sobre sistemas de primer orden descritos con ecuaciones diferenciales. Aprendimos a transformarlas usando Laplace y a expresarlas en forma canónica, lo que permite entender su comportamiento con dos parámetros clave: la constante de tiempo y la ganancia. También analizamos cómo responden a entradas como escalón y rampa, y cómo la posición del polo indica qué tan rápido actúa el sistema.
+
 ## 1. DESCRIPCIONES
 
 La forma general de una ecuación diferencial de primer orden consiste en una combinación lineal de la derivada de la variable dependiente y la propia variable, igualada a una función de entrada.
@@ -242,8 +244,23 @@ Finalmente, también recordamos que en los sistemas de primer orden, el valor de
 $y(\tau) \approx 0.63 \cdot 60 = 37.8$
 
 
+## 6. CONCLUCIONES
+
+Las ecuaciones diferenciales de primer orden permiten modelar sistemas físicos simples y lineales.
+
+La forma canónica facilita el análisis y diseño de sistemas en control, pues expresa claramente la constante de tiempo $\tau$ y la ganancia $K$.
+
+El comportamiento frente a entradas como escalón o rampa puede analizarse fácilmente aplicando Transformada de Laplace y técnicas como fracciones parciales.
+
+El tiempo $\tau$ determina qué tan rápido responde el sistema, y al cabo de $4\tau$ se considera que ha llegado al estado estacionario.
+
+La posición del polo en el plano complejo es clave para conocer la rapidez del sistema: cuanto más negativo el polo (más alejado del origen), más rápido será el sistema.
+
+Estos conceptos son fundamentales en el diseño de sistemas de control, permitiendo prever su comportamiento ante diferentes condiciones de entrada.
 
 
+## 7. REFERENCIAS
 
+Apuntes del curso y presentaciones de la clase Sistemas Dinamicos dada por Jorge Cote.
 
 
