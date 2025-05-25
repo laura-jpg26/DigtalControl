@@ -28,7 +28,7 @@ Si n = m, la función bipropia.
 ## 3. Zeros de una funcion de transferencia
 Si se iguala N(s) a cero, se obtienen los valores de s que cumplen esa condición; cuando el numerador es cero, toda la función de transferencia se anula, por lo que a estos valores se les llama ceros. Estos valores pueden ser reales o complejos, lo que permite ubicarlos en un plano cartesiano.
 
-### 💡 Ejemplo 1: 
+💡**Ejemplo 1:**
 
 $G(s)=\frac{Y(s)}{U(s)}=\frac{3s-1}{s^{2}+3s+2}$
 
@@ -44,7 +44,7 @@ $s=\frac{1}{3}$
   
 </div>
 
-### 💡 Ejemplo 2: 
+💡**Ejemplo 2:**
 
 $$\frac{s^{4}+4s+1}{s^{2}+3s^{3}+3s^{2}+s+2}$$
 
@@ -73,7 +73,7 @@ $s= -0.26$ y $s= -3.73$
 
 ## 4. Polos de una funcion de transferencia
 Si se iguala D(s) a cero, se obtienen los valores de s que satisfacen esa condición; cuando el denominador es cero, toda la función de transferencia tiende a infinito, por lo que a estos valores se les llama polos. Estos valores pueden ser reales o complejos, por lo que es posible ubicarlos en un plano cartesiano.
-### 💡 Ejemplo 3:
+💡**Ejemplo 3:**
 
 $$G(s)=\frac{3s-1}{s^{2}+3s+2}$$
 
@@ -144,7 +144,7 @@ El error en estado estacionario se refiere al error que se presenta cuando $t\to
 
 $$\displaystyle \lim_{t \to \infty } f(t)= \displaystyle \lim_{s \to 0}sF(s)$$
 
-### 💡 Ejemplo 4:
+💡**Ejemplo 4:**
 
 $$G(s)= \frac{Y(s)}{U(s)}= \frac{4}{5s+1}$$
 
