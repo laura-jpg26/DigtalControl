@@ -109,6 +109,7 @@ Ahora aplicamos la transformada inversa de Laplace:
 
 $\mathcal{L}^{-1} \{ Y(s) \} = y(t) = ak \left(1 - e^{-t/\tau} \right)$
 
+Si asumimos que $\tau=1$ y $AK=1$
 
 
 
