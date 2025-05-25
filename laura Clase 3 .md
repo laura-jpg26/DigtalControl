@@ -97,6 +97,17 @@ $y(s) = \frac{a}{s} \cdot \frac{k}{\tau s + 1}$
 
 $y(s) = \frac{ak}{s(\tau s + 1)}$
 
+Usando fracciones parciales:  
+
+$y(s) = \frac{c_1}{s} + \frac{c_2}{s + \frac{1}{\tau}}$  
+
+Nos queda que: 
+
+$y(s) = \frac{ak}{s} - \frac{ak}{s + \frac{1}{\tau}}$  
+
+Ahora aplicamos la transformada inversa de Laplace:  
+
+$\mathcal{L}^{-1} \{ y(s) \} = y(t) = ak \left(1 - e^{-t/\tau} \right)$
 
 
 
