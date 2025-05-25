@@ -111,7 +111,24 @@ $\mathcal{L}^{-1} \{ Y(s) \} = y(t) = ak \left(1 - e^{-t/\tau} \right)$
 
 Si asumimos que $\tau=1$ y $AK=1$
 
+<div align="center" style="display: flex; justify-content: center; gap: 20px;">
+ 
+  <img src="images/plantilla/graficaesc.png"  width="400" height="200">
+</div>
 
+ ### 3.1 Constante de tiempo del sistema
+Teniendo que el sistema sera:
+$$\mathcal{L}^{-1} \{ Y(s) \} = y(t) = ak \left(1 - e^{-t/\tau} \right)$$
+
+Planteamos la tabla de relacion de $\tau$ vs $y(t)$
+
+| **$\tau$*     | **y(t)** |
+|---------------|----------------------------------------------|
+|      $\tau$   |                      AK(0.632)               |
+|      $2\tau$  |                       AK(0.86)               |
+|      $3\tau$  |                       AK(0.950)              |
+|      $4\tau$  |                     AK(0.981)                |
+|    $5\tau$    |                       AK(0.99)               |
 
 
 
