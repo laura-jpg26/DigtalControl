@@ -203,7 +203,7 @@ Planteamos la tabla de relacion de $\tau$ vs $y(t)$
 |      $2\tau$  |                       $AK(\tau+\tau(e^{-2})$       |
 |      $3\tau$  |                      $AK(2\tau+\tau(e^{-3})$       |
 |      $4\tau$  |                     $AK(3\tau+\tau(e^{-4})$        |
-|    $5\tau$    |                       $AK(4\tau+\tau(e^{-5})$)     |
+|    $5\tau$    |                       $AK(4\tau+\tau(e^{-5})$     |
 
 Como pudimos observar en la gráfica, va a tener en algún momento un comportamiento lineal, lo cual significa que vamos a poder calcular una pendiente de cómo trabajaría el sistema en esa parte. por lo cual podemos decir que:
 
