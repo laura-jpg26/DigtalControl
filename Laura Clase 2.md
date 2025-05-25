@@ -74,8 +74,8 @@ COEFICIENTES
 - $\Delta$ es igual a $1$ menos la suma de las ganancias de los lazos, más la suma producto de los lazos que no se toquen, menos la suma producto de tres lazos que no se toquen, más puntos suspensivos.
 
 - $\Delta_k$ es igual a $1$ menos la suma de las ganancias de los lazos que no toquen la trayectoria $P_k$, más la suma de las ganancias de los lazos que no toquen la trayectoria $P_k$ y que no se toquen entre sí, menos la suma de las ganancias de tres lazos que no toquen la trayectoria $P_k$ y que no se toquen entre sí.
-
-### 4.1💡Ejemplo 1:
+- 
+💡**Ejemplo 1:**
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
  
@@ -102,7 +102,7 @@ $\Delta_1 = 1$, porque todos los lazos tocan a $P_k$
 
 $\frac{C(s)}{R(s)} = \frac{P_1 \times \Delta_1}{\Delta} = \frac{G_1 \times G_2 \times G_3}{1 - G_1 \times G_2 \times H_1 + G_2 \times G_3 \times H_2 + G_1 \times G_2 \times G_3}$
 
-### 4.2💡Ejemplo 2:
+💡**Ejemplo 2:**
 
 <div align="center" style="display: flex; justify-content: center; gap: 20px;">
   <img src="images/plantilla/ejemplo2mason.png" width="500" height="300">
