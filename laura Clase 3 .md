@@ -199,11 +199,11 @@ Planteamos la tabla de relacion de $\tau$ vs $y(t)$
 
 | *$\tau$*      | **y(t)** |
 |---------------|----------------------------------------------|
-|      $\tau$   |                      AK$\tau(e^{-1})$   |
-|      $2\tau$  |                       AK$\tau(e^{-2})$    |
-|      $3\tau$  |                       AK$\tau(e^{-3})$   |
-|      $4\tau$  |                     AK$\tau(e^{-4})$     |
-|    $5\tau$    |                       AK$\tau(e^{-5})$)   |
+|      $\tau$   |                      $AK\tau(e^{-1})$        |
+|      $2\tau$  |                       $AK\tau(e^{-2})$       |
+|      $3\tau$  |                      $AK\tau(e^{-3})$        |
+|      $4\tau$  |                     $AK\tau(e^{-4})$         |
+|    $5\tau$    |                       $AK\tau(e^{-5})$)      |
 
 Como pudimos observar en la gráfica, va a tener en algún momento un comportamiento lineal, lo cual significa que vamos a poder calcular una pendiente de cómo trabajaría el sistema en esa parte. por lo cual podemos decir que:
 
