@@ -229,13 +229,13 @@ $4\tau = 4 \cdot 8 = 32$
 
 Esto indica que el sistema habrá alcanzado prácticamente su respuesta final alrededor del tiempo $t = 32$ unidades de tiempo.
 
-Además, se menciona que el valor final de la función (el valor al que tiende la salida) es $60$, lo que implica que:
-
-$AK = 60$
-
 Sabemos que el sistema tiene una entrada de $3$ voltios, por lo tanto:
 
-$A = 3 \Rightarrow K = \dfrac{60}{3} = 20$
+$A = 3 \Rightarrow K = 20
+
+Por lo cual el valor final de la función (el valor al que tiende la salida) es $60$, lo que implica que:
+
+$AK = 60$
 
 Finalmente, también recordamos que en los sistemas de primer orden, el valor de $\tau$ corresponde al 63% del valor final. Es decir, cuando $t = \tau$, la salida ha alcanzado aproximadamente el $63%$ del valor de $AK = 60$, es decir:
 
